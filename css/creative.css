@@ -5,9 +5,10 @@ body {
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
 }
 hr {
-  border-color: rgba(239, 226, 202, 0.5);
+  border-color: rgba(221, 221, 221, 0.17);
   border-width: 3px;
   max-width: 50px;
 }
@@ -18,11 +19,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.17);
 }
 a:hover,
 a:focus {
-  color: rgba(104, 78, 31, 0.5);
+  color: rgba(68, 68, 68, 0.17);
 }
 h1,
 h2,
@@ -33,22 +34,22 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
-  font-size: 16px;
+  font-size: 30px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: rgba(239, 226, 202, 0.5);
+  background-color: rgba(221, 221, 221, 0.17);
 }
 .bg-primary-darken {
-  background-color: rgba(143, 108, 43, 0.5);
+  background-color: rgba(94, 94, 94, 0.17);
 }
 .bg-dark {
   background-color: #222222;
   color: red;
 }
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.6);
 }
 section {
   padding: 100px 0;
@@ -68,14 +69,14 @@ aside {
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
-  color: rgba(143, 108, 43, 0.5);
+  color: rgba(94, 94, 94, 0.17);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: rgba(227, 205, 163, 0.5);
+  color: rgba(196, 196, 196, 0.17);
 }
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
@@ -86,11 +87,11 @@ aside {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: rgba(239, 226, 202, 0.5);
+  color: rgba(221, 221, 221, 0.17);
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: rgba(25, 19, 8, 0.5) !important;
+  color: rgba(17, 17, 17, 0.17) !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -122,12 +123,12 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: rgba(143, 108, 43, 0.5);
+    color: rgba(94, 94, 94, 0.17);
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: rgba(227, 205, 163, 0.5);
+    color: rgba(196, 196, 196, 0.17);
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -135,7 +136,7 @@ aside {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: rgba(239, 226, 202, 0.5);
+    color: rgba(221, 221, 221, 0.17);
   }
 }
 header {
@@ -221,7 +222,7 @@ header .header-content .header-content-inner p {
   color: white;
   opacity: 0;
   display: block;
-  background: rgba(239, 226, 202, 0.9);
+  background: rgba(221, 221, 221, 0.9);
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -266,7 +267,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: rgba(239, 226, 202, 0.5);
+  color: rgba(221, 221, 221, 0.17);
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -322,8 +323,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: rgba(239, 226, 202, 0.5);
-  border-color: rgba(239, 226, 202, 0.5);
+  background-color: rgba(221, 221, 221, 0.17);
+  border-color: rgba(221, 221, 221, 0.17);
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -335,8 +336,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: rgba(233, 215, 182, 0.5);
-  border-color: rgba(231, 211, 175, 0.5);
+  background-color: rgba(208, 208, 208, 0.17);
+  border-color: rgba(203, 203, 203, 0.17);
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -361,11 +362,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: rgba(239, 226, 202, 0.5);
-  border-color: rgba(239, 226, 202, 0.5);
+  background-color: rgba(221, 221, 221, 0.17);
+  border-color: rgba(221, 221, 221, 0.17);
 }
 .btn-primary .badge {
-  color: rgba(239, 226, 202, 0.5);
+  color: rgba(221, 221, 221, 0.17);
   background-color: #ffffff;
 }
 .btn {
