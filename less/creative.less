@@ -24,10 +24,10 @@ hr.light {
 
 a {
     .transition-all;
-    color: @theme-primary;
+    color: darken(@theme-primary,90%);
     &:hover,
     &:focus {
-        color: darken(@theme-primary, 10%);
+        color: darken(@theme-primary, 60%);
     }
 }
 
@@ -49,6 +49,11 @@ p {
 .bg-primary {
     background-color: @theme-primary;
 }
+
+.bg-primary-darken {
+    background-color: darken(@theme-primary, 50%);
+}
+
 
 .bg-dark {
     background-color: @theme-dark;
@@ -79,7 +84,7 @@ aside {
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
-        color: @theme-primary;
+        color: darken(@theme-primary,50%);
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
@@ -103,7 +108,7 @@ aside {
             &.active {
                 > a,
                 > a:focus {
-                    color: @theme-primary !important;
+                    color: darken(@theme-primary, 80%) !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -133,7 +138,7 @@ aside {
             background-color: white;
             border-color: fade(@theme-dark, 5%);
             .navbar-header .navbar-brand {
-                color: @theme-primary;
+                color: darken(@theme-primary,50%);
                 font-size: 14px;
                 &:hover,
                 &:focus {
