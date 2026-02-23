@@ -580,6 +580,80 @@ header .header-content .header-content-inner p {
   color: #fff;
 }
 
+/* ===== Reviews Section ===== */
+#avis .section-heading {
+    color: #2E4057;
+}
+#avis hr {
+    border-color: #D4924B;
+}
+.reviews-summary {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.reviews-summary .reviews-avg-stars {
+    color: #D4924B;
+    font-size: 1.8rem;
+}
+.reviews-summary .reviews-avg-score {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2E4057;
+    margin-left: 10px;
+}
+.reviews-summary .reviews-count {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+.review-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    height: 100%;
+}
+.review-card .review-stars {
+    color: #D4924B;
+    margin-bottom: 10px;
+}
+.review-card .review-name {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    color: #2E4057;
+}
+.review-card .review-date {
+    color: #999;
+    font-size: 14px;
+}
+.review-card .review-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+.review-extra {
+    display: none;
+}
+.btn-reviews {
+    margin-top: 20px;
+}
+.review-toggle {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #999;
+    text-decoration: underline;
+}
+.review-toggle:hover {
+    color: #D4924B;
+}
+html[lang="fr"] .review-toggle {
+    display: none;
+}
+
 /* ===== Selection ===== */
 ::selection {
   color: white;

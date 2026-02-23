@@ -153,6 +153,9 @@
                         <a class="nav-link" href="#photo">Photos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#avis">Reviews</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
@@ -422,6 +425,572 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Avis -->
+    <section class="bg-primary" id="avis" aria-label="Guest reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h2 class="section-heading">Guest reviews</h2>
+                    <hr style="border-color:#D4924B; margin-bottom:30px;">
+                    <div class="reviews-summary">
+                        <span class="reviews-avg-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="reviews-avg-score">4.9/5</span>
+                        <span class="reviews-count">37 reviews</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Avis 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Karine</span>
+                            <span class="review-date">Février 2026</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very good stay, matches the description. Accommodating host, practical key box. Very well equipped with appliances and dishes."</p>
+                        <p class="review-text review-original" style="display:none">"Séjour très bon et conforme à la description. Hôte arrangeant, boîte à clé pratique. Très bien équipé en électroménager et vaisselle."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <!-- Avis 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Marie</span>
+                            <span class="review-date">Août 2025</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="review-text review-translated">"Lots of space, very pleasant living area."</p>
+                        <p class="review-text review-original" style="display:none">"Beaucoup d'espace, pièce à vivre très agréable."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <!-- Avis 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Manuela</span>
+                            <span class="review-date">Juillet 2025</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very pleasant, the jacuzzi is a real bonus. Well equipped, spacious and warm."</p>
+                        <p class="review-text review-original" style="display:none">"Très agréable, le jacuzzi est un vrai plus. Bien équipé, spacieux et chaleureux."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <!-- Avis 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Denis</span>
+                            <span class="review-date">Avril 2025</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Great sporty stay, very well equipped. Close to the village and the lake."</p>
+                        <p class="review-text review-original" style="display:none">"Super séjour sportif, très bien équipé. Proche du village et du point d'eau."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <!-- Avis 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Clarisse</span>
+                            <span class="review-date">Août 2025</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"At the top of the village with beautiful walks. Pleasant, practical, spacious and bright."</p>
+                        <p class="review-text review-original" style="display:none">"En haut du village avec de belles balades. Agréable, pratique, spacieux et lumineux."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <!-- Avis 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Antony</span>
+                            <span class="review-date">Juillet 2024</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very good week with friends in a magnificent setting."</p>
+                        <p class="review-text review-original" style="display:none">"Très bonne semaine entre amis dans un cadre magnifique."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <!-- Avis 7-37 (cachés par défaut) -->
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Denise</span>
+                            <span class="review-date">Août 2020</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Great spot, very well equipped for hiking. Jacuzzi appreciated."</p>
+                        <p class="review-text review-original" style="display:none">"Super spot, très bien équipé pour les randos. Jacuzzi apprécié."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Gian-Battista</span>
+                            <span class="review-date">Août 2018</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Perfect for 12 people, large space with many bathrooms and toilets. Very well equipped, jacuzzi. Friendly welcome."</p>
+                        <p class="review-text review-original" style="display:none">"Parfait pour 12 personnes, grande surface avec nombreuses SDB et WC. Très bien équipé, jacuzzi. Accueil sympa."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">João Paulo</span>
+                            <span class="review-date">Juin 2018</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Spacious and bright triplex. Hiking, paragliding and jacuzzi after the hike. Good welcome."</p>
+                        <p class="review-text review-original" style="display:none">"Triplex spacieux et lumineux. Rando, parapente et jacuzzi après la rando. Bon accueil."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Jb</span>
+                            <span class="review-date">Octobre 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Ideal weekend. Spacious and very well equipped. Good communication with the host."</p>
+                        <p class="review-text review-original" style="display:none">"Week-end idéal. Spacieux et très bien équipé. Bonne communication avec l'hôte."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Dominique</span>
+                            <span class="review-date">Juillet 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Well located and well equipped. Large living room. Water heater issue quickly handled by the owner."</p>
+                        <p class="review-text review-original" style="display:none">"Bien situé et bien équipé. Grande pièce de vie. Souci de chauffe-eau géré rapidement par le propriétaire."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Audrey</span>
+                            <span class="review-date">Juin 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very pleasant stay with friends and children. Well laid out and equipped. Functional and spacious jacuzzi."</p>
+                        <p class="review-text review-original" style="display:none">"Séjour entre amis avec enfants très agréable. Bien agencé et équipé. Jacuzzi fonctionnel et spacieux."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Audrey</span>
+                            <span class="review-date">Mai 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Weekend with friends. Main room bigger than in photos. Hiking nearby, jacuzzi a big plus."</p>
+                        <p class="review-text review-original" style="display:none">"Week-end entre copains. Pièce principale plus grande qu'en photos. Rando à proximité, jacuzzi un gros plus."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Yvan</span>
+                            <span class="review-date">Août 2020</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Nicely decorated and well equipped. Cyrille very available and kind."</p>
+                        <p class="review-text review-original" style="display:none">"Joliment décoré et bien équipé. Cyrille très disponible et gentil."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Martine</span>
+                            <span class="review-date">Juillet 2020</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Family stay with hikes and lake. Super equipped with jacuzzi. Ready to go back!"</p>
+                        <p class="review-text review-original" style="display:none">"Séjour en grande famille avec randos et plan d'eau. Super équipé avec jacuzzi. Prêts à y retourner !"</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Didier</span>
+                            <span class="review-date">Février 2019</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Excellent family week. Spacious and matches the description. Good welcome."</p>
+                        <p class="review-text review-original" style="display:none">"Excellente semaine en famille. Spacieux et conforme à la description. Bon accueil."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Mathilde</span>
+                            <span class="review-date">Février 2019</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Beautiful view and jacuzzi. Bathrooms in almost every bedroom, well-equipped kitchen. Ski bus, 2 lounges. Perfect with children."</p>
+                        <p class="review-text review-original" style="display:none">"Belle vue et jacuzzi. SDB dans presque toutes les chambres, cuisine bien équipée. Skibus, 2 salons. Parfait avec enfants."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Maïté</span>
+                            <span class="review-date">Décembre 2017</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very well located and functional. Tasteful decor, responsive host. Warm welcome."</p>
+                        <p class="review-text review-original" style="display:none">"Très bien situé et fonctionnel. Déco soignée, hôte réactif. Accueil chaleureux."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Eloise</span>
+                            <span class="review-date">Février 2024</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very well equipped for large groups. Well located. Reported issues were dealt with quickly."</p>
+                        <p class="review-text review-original" style="display:none">"Très bien équipé pour les grands groupes. Bien situé. Les défauts signalés ont été traités rapidement."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Marie</span>
+                            <span class="review-date">Août 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Ideal with friends. Large spaces for 7 adults and 5 children. Clean, warm welcome. Lake 5 min away."</p>
+                        <p class="review-text review-original" style="display:none">"Idéal entre amis. Grands espaces pour 7 adultes et 5 enfants. Propre, accueil chaleureux. Plan d'eau à 5 min."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Guillaume</span>
+                            <span class="review-date">Septembre 2018</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Perfect for 12 people. Large table for cooking together. Mountains and jacuzzi."</p>
+                        <p class="review-text review-original" style="display:none">"Parfait pour 12 personnes. Grande table pour cuisiner ensemble. Montagne et jacuzzi."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Jean-François</span>
+                            <span class="review-date">Mai 2018</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very well equipped with great decor. In May the resort is deserted, ideal for walks."</p>
+                        <p class="review-text review-original" style="display:none">"Très bien équipé avec une déco top. En mai la station est déserte, idéal pour les balades."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Annelise</span>
+                            <span class="review-date">Août 2022</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very well located, close to amenities. Lots of space and nicely decorated."</p>
+                        <p class="review-text review-original" style="display:none">"Très bien situé, proche des commodités. Beaucoup de place et bien décoré."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Justin</span>
+                            <span class="review-date">Août 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very clean and very spacious. Activities nearby. Amazing holiday!"</p>
+                        <p class="review-text review-original" style="display:none">"Très propre et très spacieux. Activités proches. Vacances géniales !"</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Julien</span>
+                            <span class="review-date">Février 2020</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Excellent. Very well equipped and designed. Ideally located."</p>
+                        <p class="review-text review-original" style="display:none">"Excellent. Très bien équipé et conçu. Idéalement placé."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Daphné</span>
+                            <span class="review-date">Avril 2017</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Well located, everything on foot. Well equipped and nicely decorated. We'll be back!"</p>
+                        <p class="review-text review-original" style="display:none">"Bien situé, tout à pied. Bien équipé et joliment décoré. On reviendra !"</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Any</span>
+                            <span class="review-date">Décembre 2018</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very well equipped, warm and friendly. Matches the description."</p>
+                        <p class="review-text review-original" style="display:none">"Très bien équipé, chaleureux et convivial. Conforme à la description."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Stéphanie</span>
+                            <span class="review-date">Novembre 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very good family weekend. Large, well-equipped chalet."</p>
+                        <p class="review-text review-original" style="display:none">"Très bon week-end en famille. Grand chalet bien équipé."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Xavier</span>
+                            <span class="review-date">Septembre 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Pleasant contact, person on site available and attentive. Perfect."</p>
+                        <p class="review-text review-original" style="display:none">"Contact agréable, personne sur place disponible et à l'écoute. Parfait."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Gaëtan</span>
+                            <span class="review-date">Juin 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Matches the photos, great for a weekend."</p>
+                        <p class="review-text review-original" style="display:none">"Conforme aux photos, top pour un week-end."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Céline</span>
+                            <span class="review-date">Mai 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Excellent stay in a magnificent chalet. We'll be back!"</p>
+                        <p class="review-text review-original" style="display:none">"Excellent séjour dans un magnifique chalet. On reviendra !"</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Nicolas</span>
+                            <span class="review-date">Octobre 2020</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Great welcome and location. Cyrille very friendly."</p>
+                        <p class="review-text review-original" style="display:none">"Accueil et site au top. Cyrille très sympa."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Aurélie, Marie-France &amp; Francine</span>
+                            <span class="review-date">Août 2018</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very pleasant and very well equipped. Modern and warm."</p>
+                        <p class="review-text review-original" style="display:none">"Très agréable et très bien équipé. Moderne et chaleureux."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Fiona</span>
+                            <span class="review-date">Janvier 2023</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"More spacious than in photos. Large social spaces, well-equipped kitchen. Ideal for a large group."</p>
+                        <p class="review-text review-original" style="display:none">"Plus spacieux qu'en photos. Grands espaces sociaux, cuisine bien équipée. Idéal pour un grand groupe."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Lionel</span>
+                            <span class="review-date">Octobre 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Great stay, magnificent chalet."</p>
+                        <p class="review-text review-original" style="display:none">"Super séjour, chalet magnifique."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Max</span>
+                            <span class="review-date">Juillet 2021</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Very beautiful chalet, I highly recommend."</p>
+                        <p class="review-text review-original" style="display:none">"Très beau chalet, je recommande fortement."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 review-extra">
+                    <div class="review-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Erika</span>
+                            <span class="review-date">Janvier 2019</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text review-translated">"Beautiful property with excellent amenities. Highly recommended."</p>
+                        <p class="review-text review-original" style="display:none">"Belle propriété avec d'excellents équipements. Hautement recommandé."</p>
+                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">Show original</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary btn-reviews" id="btnShowReviews">Show all reviews</button>
+            </div>
+        </div>
+    <script>
+    function toggleOriginal(link) {
+        var card = link.closest('.review-card');
+        var translated = card.querySelector('.review-translated');
+        var original = card.querySelector('.review-original');
+        var showing = original.style.display !== 'none';
+        translated.style.display = showing ? '' : 'none';
+        original.style.display = showing ? 'none' : '';
+    }
+    </script>
+        <script>
+        document.getElementById('btnShowReviews').addEventListener('click', function() {
+            var items = document.querySelectorAll('.review-extra');
+            for (var i = 0; i < items.length; i++) items[i].classList.remove('review-extra');
+            this.style.display = 'none';
+        });
+        </script>
     </section>
 
     <!-- Contact -->
