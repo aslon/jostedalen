@@ -706,6 +706,60 @@ html[lang="fr"] .review-toggle {
     padding: 16px 20px;
 }
 
+/* ===== Tarifs Section ===== */
+#tarifs .section-heading {
+    color: #2E4057;
+}
+.tarifs-table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+.tarifs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+}
+.tarifs-table thead th {
+    background-color: #2E4057;
+    color: #fff;
+    padding: 12px 10px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.tarifs-table thead th:last-child {
+    text-align: right;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+.tarifs-table tbody td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    white-space: nowrap;
+}
+.tarifs-table .tarif-available {
+    background-color: #c6efce;
+}
+.tarifs-table .tarif-reserved {
+    background-color: #fcd4b6;
+}
+.tarifs-table .tarif-price {
+    text-align: right;
+    font-weight: 700;
+}
+@media (max-width: 575.98px) {
+    .tarifs-table {
+        font-size: 13px;
+    }
+    .tarifs-table tbody td,
+    .tarifs-table thead th {
+        padding: 6px 6px;
+    }
+}
+
 /* ===== Selection ===== */
 ::selection {
   color: white;

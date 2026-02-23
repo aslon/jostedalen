@@ -210,10 +210,10 @@
                         <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#tarifs">Tarieven</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1j4C7VlidDkygGa2XSj7j42hpfkdl_n5pe_vC9F0RtaA/pubhtml?gid=0&single=true" target="_blank" rel="noopener">Tarieven</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <!-- Language Switcher -->
                     <li class="nav-item dropdown" id="langSwitcher">
@@ -1109,6 +1109,25 @@
         </div>
     </section>
 
+    <!-- Tarifs -->
+    <section class="bg-primary" id="tarifs" aria-label="Tarieven en beschikbaarheid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h2 class="section-heading text-center" style="color:#2E4057;">Tarieven &amp; Beschikbaarheid</h2>
+                    <hr style="border-color:#D4924B; margin-bottom:30px;">
+                    <div id="tarifsContainer"
+                         data-source="/data/tarifs.json"
+                         data-label-from="van"
+                         data-label-day="zaterdag"
+                         data-label-reserved="gereserveerd"
+                         data-label-note="Tarief, eindschoonmaak inbegrepen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="bg-primary-darken" aria-label="Contact">
         <div class="container">
@@ -1162,6 +1181,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/creative.js"></script>
+
+    <!-- Tarifs -->
+    <script src="/js/tarifs.js"></script>
 
     <!-- Language Switcher -->
     <script src="/js/lang-switcher.js"></script>

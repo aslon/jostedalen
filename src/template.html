@@ -206,10 +206,10 @@
                         <a class="nav-link" href="#faq">{{nav_faq}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">{{nav_contact}}</a>
+                        <a class="nav-link" href="#tarifs">{{nav_tarifs}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1j4C7VlidDkygGa2XSj7j42hpfkdl_n5pe_vC9F0RtaA/pubhtml?gid=0&single=true" target="_blank" rel="noopener">{{nav_tarifs}}</a>
+                        <a class="nav-link" href="#contact">{{nav_contact}}</a>
                     </li>
                     <!-- Language Switcher -->
                     <li class="nav-item dropdown" id="langSwitcher">
@@ -1105,6 +1105,25 @@
         </div>
     </section>
 
+    <!-- Tarifs -->
+    <section class="bg-primary" id="tarifs" aria-label="{{section_tarifs_aria}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h2 class="section-heading text-center" style="color:#2E4057;">{{section_tarifs_title}}</h2>
+                    <hr style="border-color:#D4924B; margin-bottom:30px;">
+                    <div id="tarifsContainer"
+                         data-source="/data/tarifs.json"
+                         data-label-from="{{tarifs_from}}"
+                         data-label-day="{{tarifs_day}}"
+                         data-label-reserved="{{tarifs_reserved}}"
+                         data-label-note="{{tarifs_note}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="bg-primary-darken" aria-label="{{section_contact_aria}}">
         <div class="container">
@@ -1158,6 +1177,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/creative.js"></script>
+
+    <!-- Tarifs -->
+    <script src="/js/tarifs.js"></script>
 
     <!-- Language Switcher -->
     <script src="/js/lang-switcher.js"></script>
