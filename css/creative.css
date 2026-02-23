@@ -16,8 +16,6 @@ hr.light {
   border-color: white;
 }
 a {
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: rgba(0, 0, 0, 0.17);
 }
@@ -39,7 +37,7 @@ p {
   margin-bottom: 20px;
 }
 .bg-primary {
-  background-color: rgba(221, 221, 221, 0.17);
+  background-color: rgba(221, 221, 221, 0.17) !important;
 }
 .bg-primary-darken {
   background-color: rgba(94, 94, 94, 0.17);
@@ -60,95 +58,84 @@ aside {
 .no-padding {
   padding: 0;
 }
-.navbar-default {
-  background-color: white;
-  border-color: rgba(34, 34, 34, 0.05);
+
+/* ===== Navbar (Bootstrap 5) ===== */
+#mainNav {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
   transition: all 0.35s;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.navbar-default .navbar-header .navbar-brand {
-  color: rgba(94, 94, 94, 0.17);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+#mainNav .navbar-brand {
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 700;
   text-transform: uppercase;
+  transition: all 0.35s;
 }
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-  color: rgba(196, 196, 196, 0.17);
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus {
+  color: white;
 }
-.navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
+#mainNav .nav-link {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+#mainNav .nav-link:hover,
+#mainNav .nav-link:focus {
+  color: white;
+}
+#mainNav .nav-link.active {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Scrolled state (replaces .affix) */
+#mainNav.navbar-scrolled {
+  background-color: white;
+  border-bottom-color: rgba(34, 34, 34, 0.05);
+}
+#mainNav.navbar-scrolled .navbar-brand {
+  color: rgba(94, 94, 94, 0.17);
+  font-size: 14px;
+}
+#mainNav.navbar-scrolled .navbar-brand:hover,
+#mainNav.navbar-scrolled .navbar-brand:focus {
+  color: rgba(196, 196, 196, 0.17);
+}
+#mainNav.navbar-scrolled .nav-link {
   color: #222222;
 }
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
+#mainNav.navbar-scrolled .nav-link:hover,
+#mainNav.navbar-scrolled .nav-link:focus {
   color: rgba(221, 221, 221, 0.17);
 }
-.navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
+#mainNav.navbar-scrolled .nav-link.active {
   color: rgba(17, 17, 17, 0.17) !important;
-  background-color: transparent;
 }
-.navbar-default .nav > li.active > a:hover,
-.navbar-default .nav > li.active > a:focus:hover {
-  background-color: transparent;
-}
-@media (min-width: 768px) {
-  .navbar-default {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-  .navbar-default .navbar-header .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .navbar-default .navbar-header .navbar-brand:hover,
-  .navbar-default .navbar-header .navbar-brand:focus {
-    color: white;
-  }
-  .navbar-default .nav > li > a,
-  .navbar-default .nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .navbar-default .nav > li > a:hover,
-  .navbar-default .nav > li > a:focus:hover {
-    color: white;
-  }
-  .navbar-default.affix {
+
+/* Mobile: solid white bg */
+@media (max-width: 991.98px) {
+  #mainNav {
     background-color: white;
-    border-color: rgba(34, 34, 34, 0.05);
+    border-bottom-color: rgba(34, 34, 34, 0.05);
   }
-  .navbar-default.affix .navbar-header .navbar-brand {
+  #mainNav .navbar-brand {
     color: rgba(94, 94, 94, 0.17);
-    font-size: 14px;
   }
-  .navbar-default.affix .navbar-header .navbar-brand:hover,
-  .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: rgba(196, 196, 196, 0.17);
-  }
-  .navbar-default.affix .nav > li > a,
-  .navbar-default.affix .nav > li > a:focus {
+  #mainNav .nav-link {
     color: #222222;
   }
-  .navbar-default.affix .nav > li > a:hover,
-  .navbar-default.affix .nav > li > a:focus:hover {
-    color: rgba(221, 221, 221, 0.17);
-  }
 }
+
+/* ===== Header ===== */
 header {
   position: relative;
   width: 100%;
   min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/head.jpg');
+  background-image: url('../img/head.webp');
   text-align: center;
   color: #ffffff;
 }
@@ -180,8 +167,6 @@ header .header-content .header-content-inner p {
   header .header-content {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 0 50px;
   }
@@ -197,6 +182,8 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+
+/* ===== Sections ===== */
 .section-heading {
   margin-top: 0;
 }
@@ -212,11 +199,17 @@ header .header-content .header-content-inner p {
 .service-box p {
   margin-bottom: 0;
 }
+
+/* ===== Portfolio / Gallery ===== */
 .portfolio-box {
   position: relative;
   display: block;
   max-width: 650px;
   margin: 0 auto;
+}
+.portfolio-box img {
+  width: 100%;
+  height: auto;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
@@ -228,8 +221,6 @@ header .header-content .header-content-inner p {
   text-align: center;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
@@ -263,111 +254,37 @@ header .header-content .header-content-inner p {
     font-size: 22px;
   }
 }
+
+/* ===== Buttons ===== */
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: rgba(221, 221, 221, 0.17);
-}
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
+  color: rgba(221, 221, 221, 0.17) !important;
 }
 .btn-default {
   color: #222222;
   background-color: #ffffff;
   border-color: #ffffff;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
+.btn-default:focus {
   color: #222222;
   background-color: #f2f2f2;
   border-color: #ededed;
-}
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  background-image: none;
-}
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
-.btn-default.disabled:hover,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default:hover,
-.btn-default.disabled:focus,
-.btn-default[disabled]:focus,
-fieldset[disabled] .btn-default:focus,
-.btn-default.disabled.focus,
-.btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
-  background-color: #ffffff;
-  border-color: #ffffff;
-}
-.btn-default .badge {
-  color: #ffffff;
-  background-color: #222222;
 }
 .btn-primary {
   color: #ffffff;
   background-color: rgba(221, 221, 221, 0.17);
   border-color: rgba(221, 221, 221, 0.17);
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
+.btn-primary:focus {
   color: #ffffff;
   background-color: rgba(208, 208, 208, 0.17);
   border-color: rgba(203, 203, 203, 0.17);
-}
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  background-color: rgba(221, 221, 221, 0.17);
-  border-color: rgba(221, 221, 221, 0.17);
-}
-.btn-primary .badge {
-  color: rgba(221, 221, 221, 0.17);
-  background-color: #ffffff;
 }
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -379,11 +296,24 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl {
   padding: 15px 30px;
 }
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: #222222;
+
+/* ===== Scroll animations (replaces WOW.js + animate.css) ===== */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Bootstrap Icons size helper (replaces fa-3x) ===== */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* ===== Selection ===== */
 ::selection {
   color: white;
   text-shadow: none;
@@ -393,10 +323,6 @@ img::selection {
   color: white;
   background: transparent;
 }
-img::-moz-selection {
-  color: white;
-  background: transparent;
-}
 body {
-  webkit-tap-highlight-color: #222222;
+  -webkit-tap-highlight-color: #222222;
 }
