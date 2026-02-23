@@ -28,9 +28,9 @@
 
     function render(data) {
         var html = '';
-        data.seasons.forEach(function (season) {
+        data.seasons.forEach(function (season, idx) {
             var seasonName = season.name[lang] || season.name.fr;
-            html += '<div class="tarifs-table-wrapper">';
+            html += '<div class="tarifs-table-wrapper" data-season-index="' + idx + '">';
             html += '<table class="tarifs-table">';
             html += '<thead><tr>';
             html += '<th colspan="5">' + seasonName + '</th>';
@@ -67,6 +67,30 @@
             html += '</tbody></table></div>';
         });
         container.innerHTML = html;
+
+        // Season filters (if 2+ seasons)
+        var labelAll = container.getAttribute('data-label-all');
+        if (data.seasons.length >= 2 && labelAll) {
+            var filterHtml = '<div class="tarifs-filters">';
+            filterHtml += '<button class="btn-tarifs-filter active" data-season="all">' + labelAll + '</button>';
+            data.seasons.forEach(function (season, idx) {
+                var seasonName = season.name[lang] || season.name.fr;
+                filterHtml += '<button class="btn-tarifs-filter" data-season="' + idx + '">' + seasonName + '</button>';
+            });
+            filterHtml += '</div>';
+            container.insertAdjacentHTML('afterbegin', filterHtml);
+
+            container.querySelectorAll('.btn-tarifs-filter').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    container.querySelectorAll('.btn-tarifs-filter').forEach(function (b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    var season = btn.getAttribute('data-season');
+                    container.querySelectorAll('.tarifs-table-wrapper').forEach(function (wrapper) {
+                        wrapper.style.display = (season === 'all' || wrapper.getAttribute('data-season-index') === season) ? '' : 'none';
+                    });
+                });
+            });
+        }
     }
 
     fetch(source)

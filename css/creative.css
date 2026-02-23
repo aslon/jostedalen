@@ -786,6 +786,137 @@ html[lang="fr"] .review-toggle {
     }
 }
 
+/* ===== Header CTA Button ===== */
+.header-cta {
+    margin-top: 30px;
+    animation: fadeInUp 1s ease-out 0.5s both;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Lightbox ===== */
+#photo .portfolio-box {
+    cursor: pointer;
+}
+#lightboxModal .modal-content {
+    background: transparent;
+    border: none;
+}
+#lightboxModal .modal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.lightbox-close:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.lightbox-prev { left: 15px; }
+.lightbox-next { right: 15px; }
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+.lightbox-counter {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+@media (max-width: 575.98px) {
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+    .lightbox-close {
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+    }
+}
+
+/* ===== Tarifs Season Filters ===== */
+.tarifs-filters {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.btn-tarifs-filter {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 300px;
+    border: 2px solid #2E4057;
+    background: transparent;
+    color: #2E4057;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn-tarifs-filter:hover {
+    background-color: #2E4057;
+    color: #fff;
+}
+.btn-tarifs-filter.active {
+    background-color: #2E4057;
+    color: #fff;
+}
+
 /* ===== Selection ===== */
 ::selection {
   color: white;

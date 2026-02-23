@@ -42,6 +42,7 @@
   "header_features": "240 m&sup2; &bull; 6 bedrooms &bull; Jacuzzi 6/7 seats",
   "header_capacity": "8 to 15 guests",
   "header_ski": "310 km of ski runs at 200 m &mdash; Les Sybelles ski area",
+  "header_cta": "View rates",
 
   "section_chalet_aria": "Chalet description",
   "section_chalet_title": "High-end triplex chalet",
@@ -222,6 +223,7 @@
   "tarifs_reserved": "reserved",
   "tarifs_note": "Rate, end-of-stay cleaning included",
   "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
+  "tarifs_all": "All seasons",
 
   "back_to_top_aria": "Back to top",
 

@@ -42,6 +42,7 @@
   "header_features": "240 m&sup2; &bull; 6 Schlafzimmer &bull; Jacuzzi 6/7 Plätze",
   "header_capacity": "8 bis 15 Personen",
   "header_ski": "310 km Pisten in 200 m &mdash; Skigebiet Les Sybelles",
+  "header_cta": "Preise ansehen",
 
   "section_chalet_aria": "Beschreibung des Chalets",
   "section_chalet_title": "Sehr komfortables Triplex-Chalet",
@@ -222,6 +223,7 @@
   "tarifs_reserved": "reserviert",
   "tarifs_note": "Preis, Endreinigung inklusive",
   "tarifs_book_msg": "Hallo, ich möchte das Chalet Jostedalen von Samstag {start} bis Samstag {end} reservieren.",
+  "tarifs_all": "Alle Saisons",
 
   "back_to_top_aria": "Zur&uuml;ck nach oben",
 

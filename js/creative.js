@@ -7,7 +7,7 @@
     "use strict";
 
     // Smooth scrolling for nav links (replaces jQuery Easing plugin)
-    document.querySelectorAll('a.nav-link[href^="#"], a.navbar-brand[href^="#"]').forEach(function (link) {
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
         link.addEventListener("click", function (e) {
             var targetId = this.getAttribute("href");
             if (targetId === "#") return;
