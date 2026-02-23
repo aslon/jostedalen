@@ -221,6 +221,7 @@
   "tarifs_day": "zaterdag",
   "tarifs_reserved": "gereserveerd",
   "tarifs_note": "Tarief, eindschoonmaak inbegrepen",
+  "tarifs_book_msg": "Hallo, ik wil graag Chalet Jostedalen reserveren van zaterdag {start} tot zaterdag {end}.",
 
   "back_to_top_aria": "Terug naar boven",
 

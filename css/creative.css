@@ -750,6 +750,29 @@ html[lang="fr"] .review-toggle {
     text-align: right;
     font-weight: 700;
 }
+.tarif-book {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+.tarif-book a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+.tarif-book a:hover {
+    transform: scale(1.2);
+}
+.tarif-book .bi-whatsapp {
+    color: #25D366;
+}
+.tarif-book .bi-chat-dots {
+    color: #34C759;
+}
 @media (max-width: 575.98px) {
     .tarifs-table {
         font-size: 13px;
@@ -757,6 +780,9 @@ html[lang="fr"] .review-toggle {
     .tarifs-table tbody td,
     .tarifs-table thead th {
         padding: 6px 6px;
+    }
+    .tarif-book a {
+        font-size: 16px;
     }
 }
 

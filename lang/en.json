@@ -221,6 +221,7 @@
   "tarifs_day": "Saturday",
   "tarifs_reserved": "reserved",
   "tarifs_note": "Rate, end-of-stay cleaning included",
+  "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
 
   "back_to_top_aria": "Back to top",
 
