@@ -1,6 +1,3 @@
-/* ===== Google Fonts ===== */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap');
-
 /* ===== Base ===== */
 html, body {
   height: 100%;
@@ -143,9 +140,15 @@ header {
   min-height: auto;
   background-size: cover;
   background-position: center;
-  background-image: url('../img/head.webp');
+  background-image: url('../img/head-768.webp');
   text-align: center;
   color: #ffffff;
+}
+@media (min-width: 769px) {
+  header { background-image: url('../img/head-1200.webp'); }
+}
+@media (min-width: 1201px) {
+  header { background-image: url('../img/head.webp'); }
 }
 header::before {
   content: '';
@@ -374,6 +377,7 @@ header .header-content .header-content-inner p {
   gap: 12px;
   z-index: 1000;
 }
+.backtotop-float,
 .whatsapp-float,
 .imessage-float {
   width: 56px;
@@ -388,12 +392,23 @@ header .header-content .header-content-inner p {
   transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
 }
+.backtotop-float {
+  background-color: #2E4057;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.backtotop-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 .whatsapp-float {
   background-color: #25D366;
 }
 .imessage-float {
   background-color: #34C759;
 }
+.backtotop-float:hover,
 .whatsapp-float:hover,
 .imessage-float:hover {
   transform: scale(1.1);
@@ -652,6 +667,43 @@ header .header-content .header-content-inner p {
 }
 html[lang="fr"] .review-toggle {
     display: none;
+}
+
+/* ===== FAQ Section ===== */
+#faq .section-heading {
+    color: #fff;
+}
+#faq .accordion-item {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#faq .accordion-button {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 16px 20px;
+    box-shadow: none;
+}
+#faq .accordion-button:not(.collapsed) {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #D4924B;
+}
+#faq .accordion-button::after {
+    filter: invert(1);
+}
+#faq .accordion-button:not(.collapsed)::after {
+    filter: invert(0.6) sepia(1) saturate(3) hue-rotate(15deg);
+}
+#faq .accordion-body {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 16px 20px;
 }
 
 /* ===== Selection ===== */

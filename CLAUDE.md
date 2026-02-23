@@ -88,3 +88,4 @@ Le site est disponible en 4 langues : FR (defaut), EN, NL, DE.
 ## Important Notes
 - Les SRI integrity hashes des CDN doivent correspondre exactement aux fichiers servis. Toujours verifier avec `openssl dgst -sha384 -binary <file> | openssl base64 -A` en cas de doute.
 - Le site est en francais (langue par defaut), avec versions EN, NL, DE.
+- **TOUJOURS propager les traductions** : toute modification dans un fichier `lang/*.json` doit etre repercutee dans les 3 autres fichiers de langue. Ne jamais modifier un seul fichier sans mettre a jour les autres.

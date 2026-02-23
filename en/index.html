@@ -57,6 +57,11 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/creative.css" type="text/css">
 
@@ -120,7 +125,53 @@
           "maxValue": 15
         }
       },
-      "tourBookingPage": "https://goo.gl/forms/bAMhK9uY5H"
+      "tourBookingPage": "https://goo.gl/forms/bAMhK9uY5H",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "bestRating": 5,
+        "worstRating": 1,
+        "ratingCount": 37
+      }
+    }
+    </script>
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I get to the chalet?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The chalet is located at the top of the village of Saint-Sorlin d'Arves (1600 m). Access via the A43 motorway, exit Saint-Jean-de-Maurienne, then D926. Private garage for 1 car, free parking nearby." }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the check-in and check-out times?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Check-in from 5 pm, check-out before 10 am. Secure key box for self check-in." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is bed linen provided?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Duvets are provided (1 per bed). Sheets and towels are not provided. Rental available as an option." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a ski pass available nearby?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Les Sybelles ski area (310 km of runs, 4th largest in France) is 200 m from the chalet. Free shuttle at 30 m. Ski passes available at the resort ticket offices." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are pets allowed?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, pets are accepted in the chalet on request." }
+        },
+        {
+          "@type": "Question",
+          "name": "What to do in summer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Hiking, climbing, horse riding, via ferrata, paragliding. Supervised lake at 200 m. Garden with barbecue." }
+        }
+      ]
     }
     </script>
 </head>
@@ -154,6 +205,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#avis">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -449,7 +503,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Karine</span>
-                            <span class="review-date">Février 2026</span>
+                            <span class="review-date">February 2026</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -464,7 +518,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Marie</span>
-                            <span class="review-date">Août 2025</span>
+                            <span class="review-date">August 2025</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
@@ -479,7 +533,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Manuela</span>
-                            <span class="review-date">Juillet 2025</span>
+                            <span class="review-date">July 2025</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -494,7 +548,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Denis</span>
-                            <span class="review-date">Avril 2025</span>
+                            <span class="review-date">April 2025</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -509,7 +563,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Clarisse</span>
-                            <span class="review-date">Août 2025</span>
+                            <span class="review-date">August 2025</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -524,7 +578,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Antony</span>
-                            <span class="review-date">Juillet 2024</span>
+                            <span class="review-date">July 2024</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -539,7 +593,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Denise</span>
-                            <span class="review-date">Août 2020</span>
+                            <span class="review-date">August 2020</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -553,7 +607,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Gian-Battista</span>
-                            <span class="review-date">Août 2018</span>
+                            <span class="review-date">August 2018</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -567,7 +621,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">João Paulo</span>
-                            <span class="review-date">Juin 2018</span>
+                            <span class="review-date">June 2018</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -581,7 +635,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Jb</span>
-                            <span class="review-date">Octobre 2021</span>
+                            <span class="review-date">October 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -595,7 +649,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Dominique</span>
-                            <span class="review-date">Juillet 2021</span>
+                            <span class="review-date">July 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -609,7 +663,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Audrey</span>
-                            <span class="review-date">Juin 2021</span>
+                            <span class="review-date">June 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -623,7 +677,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Audrey</span>
-                            <span class="review-date">Mai 2021</span>
+                            <span class="review-date">May 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -637,7 +691,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Yvan</span>
-                            <span class="review-date">Août 2020</span>
+                            <span class="review-date">August 2020</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -651,7 +705,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Martine</span>
-                            <span class="review-date">Juillet 2020</span>
+                            <span class="review-date">July 2020</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -665,7 +719,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Didier</span>
-                            <span class="review-date">Février 2019</span>
+                            <span class="review-date">February 2019</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -679,7 +733,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Mathilde</span>
-                            <span class="review-date">Février 2019</span>
+                            <span class="review-date">February 2019</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -693,7 +747,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Maïté</span>
-                            <span class="review-date">Décembre 2017</span>
+                            <span class="review-date">December 2017</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -707,7 +761,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Eloise</span>
-                            <span class="review-date">Février 2024</span>
+                            <span class="review-date">February 2024</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
@@ -721,7 +775,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Marie</span>
-                            <span class="review-date">Août 2021</span>
+                            <span class="review-date">August 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -735,7 +789,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Guillaume</span>
-                            <span class="review-date">Septembre 2018</span>
+                            <span class="review-date">September 2018</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -749,7 +803,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Jean-François</span>
-                            <span class="review-date">Mai 2018</span>
+                            <span class="review-date">May 2018</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -763,7 +817,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Annelise</span>
-                            <span class="review-date">Août 2022</span>
+                            <span class="review-date">August 2022</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -777,7 +831,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Justin</span>
-                            <span class="review-date">Août 2021</span>
+                            <span class="review-date">August 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -791,7 +845,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Julien</span>
-                            <span class="review-date">Février 2020</span>
+                            <span class="review-date">February 2020</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -805,7 +859,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Daphné</span>
-                            <span class="review-date">Avril 2017</span>
+                            <span class="review-date">April 2017</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -819,7 +873,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Any</span>
-                            <span class="review-date">Décembre 2018</span>
+                            <span class="review-date">December 2018</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -833,7 +887,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Stéphanie</span>
-                            <span class="review-date">Novembre 2021</span>
+                            <span class="review-date">November 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
@@ -847,7 +901,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Xavier</span>
-                            <span class="review-date">Septembre 2021</span>
+                            <span class="review-date">September 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -861,7 +915,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Gaëtan</span>
-                            <span class="review-date">Juin 2021</span>
+                            <span class="review-date">June 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -875,7 +929,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Céline</span>
-                            <span class="review-date">Mai 2021</span>
+                            <span class="review-date">May 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -889,7 +943,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Nicolas</span>
-                            <span class="review-date">Octobre 2020</span>
+                            <span class="review-date">October 2020</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -903,7 +957,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Aurélie, Marie-France &amp; Francine</span>
-                            <span class="review-date">Août 2018</span>
+                            <span class="review-date">August 2018</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -917,7 +971,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Fiona</span>
-                            <span class="review-date">Janvier 2023</span>
+                            <span class="review-date">January 2023</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -931,7 +985,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Lionel</span>
-                            <span class="review-date">Octobre 2021</span>
+                            <span class="review-date">October 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -945,7 +999,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Max</span>
-                            <span class="review-date">Juillet 2021</span>
+                            <span class="review-date">July 2021</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -959,7 +1013,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Erika</span>
-                            <span class="review-date">Janvier 2019</span>
+                            <span class="review-date">January 2019</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -991,6 +1045,68 @@
             this.style.display = 'none';
         });
         </script>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-primary-darken" id="faq" aria-label="Frequently asked questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2 class="section-heading text-center">Frequently asked questions</h2>
+                    <hr style="border-color:#D4924B; margin-bottom:30px;">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">How do I get to the chalet?</button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">The chalet is located at the top of the village of Saint-Sorlin d'Arves (1600 m). Access via the A43 motorway, exit Saint-Jean-de-Maurienne, then D926. Private garage for 1 car, free parking nearby.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">What are the check-in and check-out times?</button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Check-in from 5 pm, check-out before 10 am. Secure key box for self check-in.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">Is bed linen provided?</button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Duvets are provided (1 per bed). Sheets and towels are not provided. Rental available as an option.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">Is there a ski pass available nearby?</button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Les Sybelles ski area (310 km of runs, 4th largest in France) is 200 m from the chalet. Free shuttle at 30 m. Ski passes available at the resort ticket offices.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">Are pets allowed?</button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes, pets are accepted in the chalet on request.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">What to do in summer?</button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Hiking, climbing, horse riding, via ferrata, paragliding. Supervised lake at 200 m. Garden with barbecue.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact -->
@@ -1030,6 +1146,9 @@
 
     <!-- Boutons flottants contact -->
     <div class="floating-buttons">
+        <a href="#page-top" class="backtotop-float" aria-label="Back to top" id="backToTop">
+            <i class="bi bi-arrow-up"></i>
+        </a>
         <a href="sms:+33651311169&body=Hello%2C%20I%20would%20like%20information%20about%20Chalet%20Jostedalen" class="imessage-float" aria-label="Contact us via iMessage">
             <i class="bi bi-chat-dots"></i>
         </a>

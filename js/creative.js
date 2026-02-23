@@ -46,6 +46,14 @@
     window.addEventListener("scroll", updateNavbar, { passive: true });
     updateNavbar();
 
+    // Back to top button visibility
+    var backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        window.addEventListener('scroll', function() {
+            backToTop.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+    }
+
     // Scroll animations (replaces WOW.js + animate.css)
     var animatedElements = document.querySelectorAll(".animate-on-scroll");
     if (animatedElements.length > 0 && "IntersectionObserver" in window) {

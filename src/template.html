@@ -53,6 +53,11 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/creative.css" type="text/css">
 
@@ -116,7 +121,53 @@
           "maxValue": 15
         }
       },
-      "tourBookingPage": "https://goo.gl/forms/bAMhK9uY5H"
+      "tourBookingPage": "https://goo.gl/forms/bAMhK9uY5H",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 4.9,
+        "bestRating": 5,
+        "worstRating": 1,
+        "ratingCount": 37
+      }
+    }
+    </script>
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "{{faq_1_q}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{faq_1_a}}" }
+        },
+        {
+          "@type": "Question",
+          "name": "{{faq_2_q}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{faq_2_a}}" }
+        },
+        {
+          "@type": "Question",
+          "name": "{{faq_3_q}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{faq_3_a}}" }
+        },
+        {
+          "@type": "Question",
+          "name": "{{faq_4_q}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{faq_4_a}}" }
+        },
+        {
+          "@type": "Question",
+          "name": "{{faq_5_q}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{faq_5_a}}" }
+        },
+        {
+          "@type": "Question",
+          "name": "{{faq_6_q}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{faq_6_a}}" }
+        }
+      ]
     }
     </script>
 </head>
@@ -150,6 +201,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#avis">{{nav_avis}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">{{nav_faq}}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">{{nav_contact}}</a>
@@ -445,7 +499,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Karine</span>
-                            <span class="review-date">Février 2026</span>
+                            <span class="review-date">{{review_1_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -460,7 +514,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Marie</span>
-                            <span class="review-date">Août 2025</span>
+                            <span class="review-date">{{review_2_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
@@ -475,7 +529,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Manuela</span>
-                            <span class="review-date">Juillet 2025</span>
+                            <span class="review-date">{{review_3_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -490,7 +544,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Denis</span>
-                            <span class="review-date">Avril 2025</span>
+                            <span class="review-date">{{review_4_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -505,7 +559,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Clarisse</span>
-                            <span class="review-date">Août 2025</span>
+                            <span class="review-date">{{review_5_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -520,7 +574,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Antony</span>
-                            <span class="review-date">Juillet 2024</span>
+                            <span class="review-date">{{review_6_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -535,7 +589,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Denise</span>
-                            <span class="review-date">Août 2020</span>
+                            <span class="review-date">{{review_7_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -549,7 +603,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Gian-Battista</span>
-                            <span class="review-date">Août 2018</span>
+                            <span class="review-date">{{review_8_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -563,7 +617,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">João Paulo</span>
-                            <span class="review-date">Juin 2018</span>
+                            <span class="review-date">{{review_9_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -577,7 +631,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Jb</span>
-                            <span class="review-date">Octobre 2021</span>
+                            <span class="review-date">{{review_10_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -591,7 +645,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Dominique</span>
-                            <span class="review-date">Juillet 2021</span>
+                            <span class="review-date">{{review_11_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -605,7 +659,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Audrey</span>
-                            <span class="review-date">Juin 2021</span>
+                            <span class="review-date">{{review_12_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -619,7 +673,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Audrey</span>
-                            <span class="review-date">Mai 2021</span>
+                            <span class="review-date">{{review_13_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -633,7 +687,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Yvan</span>
-                            <span class="review-date">Août 2020</span>
+                            <span class="review-date">{{review_14_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -647,7 +701,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Martine</span>
-                            <span class="review-date">Juillet 2020</span>
+                            <span class="review-date">{{review_15_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -661,7 +715,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Didier</span>
-                            <span class="review-date">Février 2019</span>
+                            <span class="review-date">{{review_16_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -675,7 +729,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Mathilde</span>
-                            <span class="review-date">Février 2019</span>
+                            <span class="review-date">{{review_17_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -689,7 +743,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Maïté</span>
-                            <span class="review-date">Décembre 2017</span>
+                            <span class="review-date">{{review_18_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -703,7 +757,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Eloise</span>
-                            <span class="review-date">Février 2024</span>
+                            <span class="review-date">{{review_19_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
@@ -717,7 +771,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Marie</span>
-                            <span class="review-date">Août 2021</span>
+                            <span class="review-date">{{review_20_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -731,7 +785,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Guillaume</span>
-                            <span class="review-date">Septembre 2018</span>
+                            <span class="review-date">{{review_21_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -745,7 +799,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Jean-François</span>
-                            <span class="review-date">Mai 2018</span>
+                            <span class="review-date">{{review_22_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -759,7 +813,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Annelise</span>
-                            <span class="review-date">Août 2022</span>
+                            <span class="review-date">{{review_23_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -773,7 +827,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Justin</span>
-                            <span class="review-date">Août 2021</span>
+                            <span class="review-date">{{review_24_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -787,7 +841,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Julien</span>
-                            <span class="review-date">Février 2020</span>
+                            <span class="review-date">{{review_25_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -801,7 +855,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Daphné</span>
-                            <span class="review-date">Avril 2017</span>
+                            <span class="review-date">{{review_26_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -815,7 +869,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Any</span>
-                            <span class="review-date">Décembre 2018</span>
+                            <span class="review-date">{{review_27_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -829,7 +883,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Stéphanie</span>
-                            <span class="review-date">Novembre 2021</span>
+                            <span class="review-date">{{review_28_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
@@ -843,7 +897,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Xavier</span>
-                            <span class="review-date">Septembre 2021</span>
+                            <span class="review-date">{{review_29_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -857,7 +911,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Gaëtan</span>
-                            <span class="review-date">Juin 2021</span>
+                            <span class="review-date">{{review_30_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -871,7 +925,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Céline</span>
-                            <span class="review-date">Mai 2021</span>
+                            <span class="review-date">{{review_31_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -885,7 +939,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Nicolas</span>
-                            <span class="review-date">Octobre 2020</span>
+                            <span class="review-date">{{review_32_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -899,7 +953,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Aurélie, Marie-France &amp; Francine</span>
-                            <span class="review-date">Août 2018</span>
+                            <span class="review-date">{{review_33_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -913,7 +967,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Fiona</span>
-                            <span class="review-date">Janvier 2023</span>
+                            <span class="review-date">{{review_34_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -927,7 +981,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Lionel</span>
-                            <span class="review-date">Octobre 2021</span>
+                            <span class="review-date">{{review_35_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -941,7 +995,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Max</span>
-                            <span class="review-date">Juillet 2021</span>
+                            <span class="review-date">{{review_36_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -955,7 +1009,7 @@
                     <div class="review-card">
                         <div class="d-flex justify-content-between align-items-center mb-2">
                             <span class="review-name">Erika</span>
-                            <span class="review-date">Janvier 2019</span>
+                            <span class="review-date">{{review_37_date}}</span>
                         </div>
                         <div class="review-stars mb-2">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -987,6 +1041,68 @@
             this.style.display = 'none';
         });
         </script>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-primary-darken" id="faq" aria-label="{{section_faq_aria}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <h2 class="section-heading text-center">{{section_faq_title}}</h2>
+                    <hr style="border-color:#D4924B; margin-bottom:30px;">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">{{faq_1_q}}</button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">{{faq_1_a}}</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">{{faq_2_q}}</button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">{{faq_2_a}}</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">{{faq_3_q}}</button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">{{faq_3_a}}</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">{{faq_4_q}}</button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">{{faq_4_a}}</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">{{faq_5_q}}</button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">{{faq_5_a}}</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">{{faq_6_q}}</button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">{{faq_6_a}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact -->
@@ -1026,6 +1142,9 @@
 
     <!-- Boutons flottants contact -->
     <div class="floating-buttons">
+        <a href="#page-top" class="backtotop-float" aria-label="{{back_to_top_aria}}" id="backToTop">
+            <i class="bi bi-arrow-up"></i>
+        </a>
         <a href="sms:+33651311169&body={{contact_sms_message}}" class="imessage-float" aria-label="{{contact_float_imessage_aria}}">
             <i class="bi bi-chat-dots"></i>
         </a>
