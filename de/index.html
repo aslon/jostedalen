@@ -45,8 +45,8 @@
     <!-- Geo tags -->
     <meta name="geo.region" content="FR-73">
     <meta name="geo.placename" content="Saint-Sorlin d'Arves">
-    <meta name="geo.position" content="45.2225;6.2286">
-    <meta name="ICBM" content="45.2225, 6.2286">
+    <meta name="geo.position" content="45.2221;6.2224">
+    <meta name="ICBM" content="45.2221, 6.2224">
 
     <!-- LLMs -->
     <link rel="alternate" type="text/markdown" href="/de/llms.txt" title="LLM-friendly site summary">
@@ -61,6 +61,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload header images -->
+    <link rel="preload" href="/img/head-768.webp" as="image" type="image/webp">
+    <link rel="preload" href="/img/head-1200.webp" as="image" type="image/webp" media="(min-width: 769px)">
+    <link rel="preload" href="/img/head.webp" as="image" type="image/webp" media="(min-width: 1201px)">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/creative.css" type="text/css">
@@ -83,11 +88,12 @@
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 45.2225,
-        "longitude": 6.2286,
+        "latitude": 45.2221,
+        "longitude": 6.2224,
         "elevation": "1600"
       },
       "image": [
+        "https://www.location-chalet-jostedalen.com/img/chalet/s000.webp",
         "https://www.location-chalet-jostedalen.com/img/chalet/s001.webp",
         "https://www.location-chalet-jostedalen.com/img/chalet/s002.webp",
         "https://www.location-chalet-jostedalen.com/img/chalet/s003.webp",
@@ -95,7 +101,16 @@
         "https://www.location-chalet-jostedalen.com/img/chalet/s005.webp",
         "https://www.location-chalet-jostedalen.com/img/chalet/s006.webp",
         "https://www.location-chalet-jostedalen.com/img/chalet/s007.webp",
-        "https://www.location-chalet-jostedalen.com/img/chalet/s008.webp"
+        "https://www.location-chalet-jostedalen.com/img/chalet/s008.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s009.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s010.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s011.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s012.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s013.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s014.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s015.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s016.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s017.webp"
       ],
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "WLAN", "value": true },
@@ -282,6 +297,12 @@
                 <h3>8 bis 15 Personen</h3>
                 <h3>310 km Pisten in 200 m &mdash; Skigebiet Les Sybelles</h3>
                 <a href="#tarifs" class="btn btn-primary btn-xl header-cta">Preise ansehen</a>
+                <div class="header-share">
+                    <span class="share-label">Teilen</span>
+                    <a href="https://wa.me/?text=Entdecken%20Sie%20das%20Chalet%20Jostedalen%20in%20Saint-Sorlin%20d'Arves!%20https://www.location-chalet-jostedalen.com/de/" target="_blank" rel="noopener" aria-label="Auf WhatsApp teilen"><i class="bi bi-whatsapp"></i></a>
+                    <a href="mailto:?subject=Chalet%20Jostedalen%20-%20Saint-Sorlin%20d'Arves&body=Schau%20dir%20dieses%20Chalet%20f%C3%BCr%20unseren%20n%C3%A4chsten%20Urlaub%20an%3A%20https://www.location-chalet-jostedalen.com/de/" aria-label="Per E-Mail teilen"><i class="bi bi-envelope"></i></a>
+                    <a href="#" class="share-copy-link" data-url="https://www.location-chalet-jostedalen.com/de/" aria-label="Link kopieren"><i class="bi bi-link-45deg"></i></a>
+                </div>
             </div>
         </div>
     </header>
@@ -535,6 +556,72 @@
                         <span class="reviews-avg-score">4.9/5</span>
                         <span class="reviews-count">37 Bewertungen</span>
                     </div>
+                </div>
+            </div>
+            <div class="reviews-carousel-wrapper">
+                <div class="reviews-carousel" id="reviewsCarousel">
+                    <!-- Karine -->
+                    <div class="review-carousel-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Karine</span>
+                            <span class="review-date">Februar 2026</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Sehr guter Aufenthalt, entspricht der Beschreibung. Entgegenkommender Gastgeber, praktischer Schlüsseltresor. Sehr gut ausgestattet mit Haushaltsgeräten und Geschirr."</p>
+                    </div>
+                    <!-- Manuela -->
+                    <div class="review-carousel-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Manuela</span>
+                            <span class="review-date">Juli 2025</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Sehr angenehm, der Jacuzzi ist ein echtes Plus. Gut ausgestattet, geräumig und gemütlich."</p>
+                    </div>
+                    <!-- Gian-Battista -->
+                    <div class="review-carousel-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Gian-Battista</span>
+                            <span class="review-date">August 2018</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Perfekt für 12 Personen, große Fläche mit vielen Badezimmern und WCs. Sehr gut ausgestattet, Jacuzzi. Freundlicher Empfang."</p>
+                    </div>
+                    <!-- Martine -->
+                    <div class="review-carousel-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Martine</span>
+                            <span class="review-date">Juli 2020</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Familienaufenthalt mit Wanderungen und Badesee. Super ausgestattet mit Jacuzzi. Bereit zurückzukehren!"</p>
+                    </div>
+                    <!-- Fiona -->
+                    <div class="review-carousel-card">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="review-name">Fiona</span>
+                            <span class="review-date">Januar 2023</span>
+                        </div>
+                        <div class="review-stars mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="review-text">"Geräumiger als auf den Fotos. Große Gemeinschaftsräume, gut ausgestattete Küche. Ideal für eine große Gruppe."</p>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="carousel-dot active"></span>
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot"></span>
+                    <span class="carousel-dot"></span>
                 </div>
             </div>
             <div class="row">
@@ -1179,6 +1266,15 @@
                     <hr style="border-color:#D4924B; margin-bottom:40px;">
                 </div>
             </div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8">
+                    <div class="map-container">
+                        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=6.2124%2C45.2171%2C6.2324%2C45.2271&layer=mapnik&marker=45.2221%2C6.2224" loading="lazy"></iframe>
+                    </div>
+                    <p class="map-address">3406 Route du Col de la Croix de Fer, 73530 Saint-Sorlin d'Arves</p>
+                    <a href="https://www.openstreetmap.org/?mlat=45.2221&mlon=6.2224#map=16/45.2221/6.2224" target="_blank" rel="noopener" class="map-link"><i class="bi bi-arrows-fullscreen"></i> Karte vergr&ouml;&szlig;ern</a>
+                </div>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-md-3 text-center mb-4">
                     <i class="bi bi-telephone fa-3x animate-on-scroll"></i>
@@ -1244,6 +1340,9 @@
 
     <!-- Lightbox -->
     <script src="/js/lightbox.js"></script>
+
+    <!-- Reviews Carousel -->
+    <script src="/js/reviews-carousel.js"></script>
 
     <!-- Language Switcher -->
     <script src="/js/lang-switcher.js"></script>

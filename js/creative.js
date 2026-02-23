@@ -69,4 +69,17 @@
             observer.observe(el);
         });
     }
+
+    // Share: copy link to clipboard
+    document.querySelectorAll('.share-copy-link').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            var url = this.getAttribute('data-url');
+            navigator.clipboard.writeText(url).then(function () {
+                var icon = link.querySelector('i');
+                icon.className = 'bi bi-check-lg';
+                setTimeout(function () { icon.className = 'bi bi-link-45deg'; }, 2000);
+            });
+        });
+    });
 })();
