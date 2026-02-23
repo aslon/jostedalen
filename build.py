@@ -1,0 +1,183 @@
+#!/usr/bin/env python3
+"""Build script for multilingual Chalet Jostedalen website.
+
+Reads src/template.html and src/llms-template.txt, applies translations
+from lang/*.json, and generates static HTML pages + sitemap.xml.
+
+Usage: python3 build.py
+"""
+
+import json
+import os
+import re
+import sys
+from datetime import date
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DOMAIN = "https://www.location-chalet-jostedalen.com"
+LANGUAGES = ["fr", "en", "nl", "de"]
+DEFAULT_LANG = "fr"
+
+
+def load_template(filename):
+    path = os.path.join(BASE_DIR, "src", filename)
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read()
+
+
+def load_translations(lang):
+    path = os.path.join(BASE_DIR, "lang", f"{lang}.json")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def generate_hreflang_tags():
+    """Generate reciprocal hreflang link tags for all languages."""
+    lines = []
+    for lang in LANGUAGES:
+        if lang == DEFAULT_LANG:
+            url = f"{DOMAIN}/"
+        else:
+            url = f"{DOMAIN}/{lang}/"
+        lines.append(f'    <link rel="alternate" hreflang="{lang}" href="{url}">')
+    # x-default points to the default language
+    lines.append(f'    <link rel="alternate" hreflang="x-default" href="{DOMAIN}/">')
+    return "\n".join(lines)
+
+
+def generate_sitemap():
+    """Generate sitemap.xml with hreflang alternates."""
+    today = date.today().isoformat()
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ]
+
+    for lang in LANGUAGES:
+        if lang == DEFAULT_LANG:
+            loc = f"{DOMAIN}/"
+        else:
+            loc = f"{DOMAIN}/{lang}/"
+
+        lines.append("  <url>")
+        lines.append(f"    <loc>{loc}</loc>")
+        lines.append(f"    <lastmod>{today}</lastmod>")
+        lines.append("    <changefreq>monthly</changefreq>")
+        lines.append("    <priority>1.0</priority>")
+
+        # Add hreflang alternates
+        for alt_lang in LANGUAGES:
+            if alt_lang == DEFAULT_LANG:
+                alt_url = f"{DOMAIN}/"
+            else:
+                alt_url = f"{DOMAIN}/{alt_lang}/"
+            lines.append(
+                f'    <xhtml:link rel="alternate" hreflang="{alt_lang}" href="{alt_url}"/>'
+            )
+        lines.append(
+            f'    <xhtml:link rel="alternate" hreflang="x-default" href="{DOMAIN}/"/>'
+        )
+
+        lines.append("  </url>")
+
+    lines.append("</urlset>")
+    return "\n".join(lines)
+
+
+def apply_translations(template, translations, hreflang_tags):
+    """Replace {{key}} placeholders with translation values."""
+    result = template
+
+    # Flatten _meta keys into top-level
+    meta = translations.get("_meta", {})
+    flat = {}
+    flat.update(meta)
+    for key, value in translations.items():
+        if key != "_meta":
+            flat[key] = value
+
+    # Add generated values
+    flat["hreflang_tags"] = hreflang_tags
+
+    # Compute llms.txt URL
+    lang_code = meta.get("lang_code", "fr")
+    if lang_code == DEFAULT_LANG:
+        flat["llms_txt_url"] = "/llms.txt"
+    else:
+        flat["llms_txt_url"] = f"/{lang_code}/llms.txt"
+
+    # Replace all {{key}} placeholders
+    def replace_placeholder(match):
+        key = match.group(1)
+        if key in flat:
+            return str(flat[key])
+        return match.group(0)  # Leave unreplaced
+
+    result = re.sub(r"\{\{(\w+)\}\}", replace_placeholder, result)
+
+    # Check for unreplaced placeholders
+    unreplaced = re.findall(r"\{\{(\w+)\}\}", result)
+    if unreplaced:
+        unique = sorted(set(unreplaced))
+        print(f"  WARNING: Unreplaced placeholders for {meta.get('lang_code', '?')}: {', '.join(unique)}")
+
+    return result
+
+
+def write_file(filepath, content):
+    """Write content to file, creating directories as needed."""
+    os.makedirs(os.path.dirname(filepath) or ".", exist_ok=True)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(content)
+
+
+def main():
+    print("Building multilingual site...")
+
+    # Load templates
+    html_template = load_template("template.html")
+    llms_template = load_template("llms-template.txt")
+
+    # Generate hreflang tags (shared across all pages)
+    hreflang_tags = generate_hreflang_tags()
+
+    # Build each language
+    for lang in LANGUAGES:
+        print(f"  Building {lang}...")
+        translations = load_translations(lang)
+
+        # Generate HTML
+        html = apply_translations(html_template, translations, hreflang_tags)
+
+        # Generate llms.txt
+        llms = apply_translations(llms_template, translations, hreflang_tags)
+
+        # Determine output paths
+        if lang == DEFAULT_LANG:
+            html_path = os.path.join(BASE_DIR, "index.html")
+            llms_path = os.path.join(BASE_DIR, "llms.txt")
+        else:
+            html_path = os.path.join(BASE_DIR, lang, "index.html")
+            llms_path = os.path.join(BASE_DIR, lang, "llms.txt")
+
+        write_file(html_path, html)
+        write_file(llms_path, llms)
+
+    # Generate sitemap
+    print("  Building sitemap.xml...")
+    sitemap = generate_sitemap()
+    write_file(os.path.join(BASE_DIR, "sitemap.xml"), sitemap)
+
+    print("Done! Generated files:")
+    print("  - index.html (FR)")
+    print("  - llms.txt (FR)")
+    for lang in LANGUAGES:
+        if lang != DEFAULT_LANG:
+            print(f"  - {lang}/index.html")
+            print(f"  - {lang}/llms.txt")
+    print("  - sitemap.xml")
+
+
+if __name__ == "__main__":
+    main()

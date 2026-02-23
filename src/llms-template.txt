@@ -1,0 +1,82 @@
+# {{llms_title}}
+
+> {{llms_intro}}
+
+## {{llms_section_general}}
+
+- Nom : Chalet Jostedalen
+- Type : {{llms_type}}
+- Adresse : Saint-Sorlin d'Arves, 73530, Savoie, France
+- Altitude : 1600 m
+- Site web : {{canonical_url}}
+- Telephone : +33 6 51 31 11 69
+- Contact : https://goo.gl/forms/bAMhK9uY5H
+
+## {{llms_section_capacity}}
+
+- Surface : 240 m2
+- Chambres : 6
+- Capacite : 8 a 15 personnes
+- Type : Triplex
+- Orientation : {{llms_orientation}}
+- Vues : {{llms_views}}
+
+## {{llms_section_rooms}}
+
+- {{llms_room_1}}
+- {{llms_room_2}}
+- {{llms_room_3}}
+- {{llms_room_4}}
+- {{llms_room_5}}
+- {{llms_room_6}}
+- {{llms_room_7}}
+
+## {{llms_section_kitchen}}
+
+- {{llms_kitchen_1}}
+- {{llms_kitchen_2}}
+- {{llms_kitchen_3}}
+- {{llms_kitchen_4}}
+- {{llms_kitchen_5}}
+- {{llms_kitchen_6}}
+- {{llms_kitchen_7}}
+- {{llms_kitchen_8}}
+- {{llms_kitchen_9}}
+- {{llms_kitchen_10}}
+- {{llms_kitchen_11}}
+
+## {{llms_section_media}}
+
+- {{llms_media_1}}
+- {{llms_media_2}}
+- {{llms_media_3}}
+- {{llms_media_4}}
+- {{llms_media_5}}
+- {{llms_media_6}}
+- {{llms_media_7}}
+- {{llms_media_8}}
+
+## {{llms_section_baby}}
+
+- {{llms_baby_1}}
+- {{llms_baby_2}}
+- {{llms_baby_3}}
+- {{llms_baby_4}}
+
+## {{llms_section_nearby}}
+
+- {{llms_nearby_1}}
+- {{llms_nearby_2}}
+- {{llms_nearby_3}}
+- {{llms_nearby_4}}
+- {{llms_nearby_5}}
+- {{llms_nearby_6}}
+
+## {{llms_section_rates}}
+
+- Grille tarifaire : https://docs.google.com/spreadsheets/d/1j4C7VlidDkygGa2XSj7j42hpfkdl_n5pe_vC9F0RtaA/pubhtml?gid=0&single=true
+
+## {{llms_section_photos}}
+
+- {{llms_photos_count}}
+- {{llms_photos_desc}}
