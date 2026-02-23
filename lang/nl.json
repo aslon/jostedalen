@@ -181,5 +181,14 @@
   "llms_section_rates": "Tarieven",
   "llms_section_photos": "Foto's",
   "llms_photos_count": "18 foto's beschikbaar op de website",
-  "llms_photos_desc": "Buitenaanzicht, woonkamer, keuken, slaapkamers, badkamers, jacuzzi, terras, bergzicht, skipistes"
+  "llms_photos_desc": "Buitenaanzicht, woonkamer, keuken, slaapkamers, badkamers, jacuzzi, terras, bergzicht, skipistes",
+
+  "cookie_message": "Deze site gebruikt cookies om het bezoek te meten.",
+  "cookie_accept": "Accepteren",
+  "cookie_reject": "Weigeren",
+  "cookie_learn_more": "Meer informatie",
+
+  "404_title": "Pagina niet gevonden",
+  "404_message": "De pagina die u zoekt bestaat niet of is verplaatst.",
+  "404_back": "Terug naar de homepage"
 }

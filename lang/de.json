@@ -181,5 +181,14 @@
   "llms_section_rates": "Preise",
   "llms_section_photos": "Fotos",
   "llms_photos_count": "18 Fotos auf der Website verfügbar",
-  "llms_photos_desc": "Außenansicht, Wohnzimmer, Küche, Schlafzimmer, Badezimmer, Jacuzzi, Terrasse, Bergblick, Skipisten"
+  "llms_photos_desc": "Außenansicht, Wohnzimmer, Küche, Schlafzimmer, Badezimmer, Jacuzzi, Terrasse, Bergblick, Skipisten",
+
+  "cookie_message": "Diese Website verwendet Cookies zur Besuchermessung.",
+  "cookie_accept": "Akzeptieren",
+  "cookie_reject": "Ablehnen",
+  "cookie_learn_more": "Mehr erfahren",
+
+  "404_title": "Seite nicht gefunden",
+  "404_message": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+  "404_back": "Zur&uuml;ck zur Startseite"
 }

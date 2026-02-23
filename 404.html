@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2E4057">
+    <meta name="robots" content="noindex">
+
+    <title>404 - Chalet Jostedalen</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark navbar-scrolled">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Chalet Jostedalen</a>
+        </div>
+    </nav>
+
+    <div class="page-404">
+        <div class="page-404-content">
+            <div>
+                <h1>404</h1>
+                <h2 id="title404">Page non trouvée</h2>
+                <p id="message404">La page que vous cherchez n'existe pas ou a été déplacée.</p>
+                <a href="/" class="btn-back" id="back404">Retour à l'accueil</a>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-center" style="padding: 20px 0; font-size: 14px;">
+            <p style="margin: 0; color: rgba(255,255,255,0.6);">&copy; Chalet Jostedalen &mdash; Saint-Sorlin d'Arves, Savoie</p>
+        </footer>
+    </div>
+
+    <script>
+    (function () {
+        var translations = {
+            fr: {
+                title: "Page non trouvée",
+                message: "La page que vous cherchez n'existe pas ou a été déplacée.",
+                back: "Retour à l'accueil",
+                href: "/"
+            },
+            en: {
+                title: "Page not found",
+                message: "The page you are looking for does not exist or has been moved.",
+                back: "Back to homepage",
+                href: "/en/"
+            },
+            nl: {
+                title: "Pagina niet gevonden",
+                message: "De pagina die u zoekt bestaat niet of is verplaatst.",
+                back: "Terug naar de homepage",
+                href: "/nl/"
+            },
+            de: {
+                title: "Seite nicht gefunden",
+                message: "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+                back: "Zurück zur Startseite",
+                href: "/de/"
+            }
+        };
+
+        function detectLang() {
+            // Check localStorage preference
+            try {
+                var pref = localStorage.getItem('chalet_lang');
+                if (pref && translations[pref]) return pref;
+            } catch (e) {}
+
+            // Check URL path
+            var path = window.location.pathname;
+            var match = path.match(/^\/(en|nl|de)\//);
+            if (match) return match[1];
+
+            // Check browser language
+            var langs = navigator.languages || [navigator.language || 'fr'];
+            for (var i = 0; i < langs.length; i++) {
+                var code = langs[i].substring(0, 2).toLowerCase();
+                if (translations[code]) return code;
+            }
+            return 'fr';
+        }
+
+        var lang = detectLang();
+        var t = translations[lang];
+        document.documentElement.lang = lang;
+        document.getElementById('title404').textContent = t.title;
+        document.getElementById('message404').textContent = t.message;
+        document.getElementById('back404').textContent = t.back;
+        document.getElementById('back404').href = t.href;
+    })();
+    </script>
+
+</body>
+</html>

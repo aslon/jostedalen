@@ -192,3 +192,60 @@ Toutes les clés commençant par `llms_` sont utilisées dans le fichier `llms.t
 - `de/index.html` → idem DE
 - `llms.txt`, `en/llms.txt`, `nl/llms.txt`, `de/llms.txt` → générés depuis `src/llms-template.txt`
 - `sitemap.xml` → généré avec hreflang pour les 4 langues
+- `404.html` → copié depuis `src/404-template.html` (multilingue via JS)
+
+## Consentement cookies (GDPR)
+
+Le bandeau de consentement est géré par `js/cookie-consent.js`. Par défaut, **aucun script de tracking** (GTM, GA4, Meta Pixel) n'est chargé. GTM ne se charge que si l'utilisateur clique "Accepter".
+
+- Préférence stockée dans `localStorage` (`chalet_cookie_consent`)
+- Expiration : 6 mois
+- Clés de traduction : `cookie_message`, `cookie_accept`, `cookie_reject`, `cookie_learn_more`
+
+## Configurer le Meta Pixel (Facebook) dans GTM
+
+Le Meta Pixel doit être configuré **dans Google Tag Manager**, pas dans le code du site. Cela permet de respecter le consentement cookies (GTM ne charge que si l'utilisateur accepte).
+
+### Étapes
+
+1. **Accéder à GTM** : [tagmanager.google.com](https://tagmanager.google.com)
+2. **Ouvrir le conteneur** `GTM-552T5L7T`
+3. **Créer un tag "Custom HTML"** :
+   - Nom : `Meta Pixel - Base`
+   - Type : HTML personnalisé
+   - Coller le code du Meta Pixel fourni par Facebook :
+
+   ```html
+   <script>
+   !function(f,b,e,v,n,t,s)
+   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+   if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+   n.queue=[];t=b.createElement(e);t.async=!0;
+   t.src=v;s=b.getElementsByTagName(e)[0];
+   s.parentNode.insertBefore(t,s)}(window, document,'script',
+   'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', 'VOTRE_PIXEL_ID');
+   fbq('track', 'PageView');
+   </script>
+   ```
+
+   - Remplacer `VOTRE_PIXEL_ID` par l'ID du pixel (disponible dans Meta Business Suite > Événements > Pixels)
+
+4. **Configurer le déclencheur** : `All Pages` (toutes les pages)
+5. **Publier** le conteneur GTM
+
+### Événements supplémentaires (optionnel)
+
+Pour tracker des événements spécifiques (clic sur "Contact", soumission de formulaire), créer des tags supplémentaires dans GTM :
+
+- **Tag "Meta Pixel - Contact Click"** :
+  - Type : HTML personnalisé
+  - Code : `<script>fbq('track', 'Contact');</script>`
+  - Déclencheur : Clic sur les liens de contact
+
+### Vérification
+
+1. Installer l'extension navigateur [Meta Pixel Helper](https://chrome.google.com/webstore/detail/meta-pixel-helper)
+2. Visiter le site, accepter les cookies
+3. L'extension doit afficher le Pixel ID et l'événement `PageView`

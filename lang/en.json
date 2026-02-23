@@ -181,5 +181,14 @@
   "llms_section_rates": "Rates",
   "llms_section_photos": "Photos",
   "llms_photos_count": "18 photos available on the website",
-  "llms_photos_desc": "Exterior view, living room, kitchen, bedrooms, bathrooms, jacuzzi, terrace, mountain views, ski slopes"
+  "llms_photos_desc": "Exterior view, living room, kitchen, bedrooms, bathrooms, jacuzzi, terrace, mountain views, ski slopes",
+
+  "cookie_message": "This site uses cookies to measure audience.",
+  "cookie_accept": "Accept",
+  "cookie_reject": "Decline",
+  "cookie_learn_more": "Learn more",
+
+  "404_title": "Page not found",
+  "404_message": "The page you are looking for does not exist or has been moved.",
+  "404_back": "Back to homepage"
 }

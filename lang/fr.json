@@ -181,5 +181,14 @@
   "llms_section_rates": "Tarifs",
   "llms_section_photos": "Photos",
   "llms_photos_count": "18 photos disponibles sur le site web",
-  "llms_photos_desc": "Vue exterieure, sejour, cuisine, chambres, salles de bain, jacuzzi, terrasse, vues montagne, pistes de ski"
+  "llms_photos_desc": "Vue exterieure, sejour, cuisine, chambres, salles de bain, jacuzzi, terrasse, vues montagne, pistes de ski",
+
+  "cookie_message": "Ce site utilise des cookies pour mesurer l'audience.",
+  "cookie_accept": "Accepter",
+  "cookie_reject": "Refuser",
+  "cookie_learn_more": "En savoir plus",
+
+  "404_title": "Page non trouv&eacute;e",
+  "404_message": "La page que vous cherchez n'existe pas ou a &eacute;t&eacute; d&eacute;plac&eacute;e.",
+  "404_back": "Retour &agrave; l'accueil"
 }

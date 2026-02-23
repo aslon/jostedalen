@@ -164,6 +164,14 @@ def main():
         write_file(html_path, html)
         write_file(llms_path, llms)
 
+    # Generate 404 page (single file with JS-based language detection)
+    error_template_path = os.path.join(BASE_DIR, "src", "404-template.html")
+    if os.path.exists(error_template_path):
+        print("  Building 404.html...")
+        with open(error_template_path, "r", encoding="utf-8") as f:
+            error_html = f.read()
+        write_file(os.path.join(BASE_DIR, "404.html"), error_html)
+
     # Generate sitemap
     print("  Building sitemap.xml...")
     sitemap = generate_sitemap()
@@ -176,6 +184,7 @@ def main():
         if lang != DEFAULT_LANG:
             print(f"  - {lang}/index.html")
             print(f"  - {lang}/llms.txt")
+    print("  - 404.html")
     print("  - sitemap.xml")
 
 

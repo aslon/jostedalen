@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','{{gtm_id}}');</script>
-    <!-- End Google Tag Manager -->
+    <!-- GTM loaded conditionally by cookie-consent.js -->
+    <script>window.GTM_ID='{{gtm_id}}';</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2E4057">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
     <meta name="description" content="{{meta_description}}">
     <meta name="author" content="">
 
@@ -123,10 +123,9 @@
 
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
 
-    <!-- Google Tag Manager (noscript) -->
+    <!-- GTM noscript fallback (injected by cookie-consent.js when accepted) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{gtm_id}}"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
@@ -474,6 +473,18 @@
 
     <!-- Language Switcher -->
     <script src="/js/lang-switcher.js"></script>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-banner" style="display:none;">
+        <div class="cookie-banner-inner">
+            <p class="cookie-banner-text">{{cookie_message}}</p>
+            <div class="cookie-banner-buttons">
+                <button id="cookieAccept" class="btn btn-cookie-accept">{{cookie_accept}}</button>
+                <button id="cookieReject" class="btn btn-cookie-reject">{{cookie_reject}}</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/cookie-consent.js"></script>
 </body>
 
 </html>
