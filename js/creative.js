@@ -1,48 +1,64 @@
 /*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ * Chalet Jostedalen - Custom JavaScript
+ * Vanilla JS (no jQuery dependency)
  */
 
-(function($) {
-    "use strict"; // Start of use strict
+(function () {
+    "use strict";
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
+    // Smooth scrolling for nav links (replaces jQuery Easing plugin)
+    document.querySelectorAll('a.nav-link[href^="#"], a.navbar-brand[href^="#"]').forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            var targetId = this.getAttribute("href");
+            if (targetId === "#") return;
+            var target = document.querySelector(targetId);
+            if (!target) return;
+            e.preventDefault();
+            var offset = target.getBoundingClientRect().top + window.scrollY - 70;
+            window.scrollTo({ top: offset, behavior: "smooth" });
+        });
     });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    })
+    // Close mobile menu on link click
+    var navCollapse = document.getElementById("navbarNav");
+    if (navCollapse) {
+        navCollapse.querySelectorAll(".nav-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                var bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                if (bsCollapse) bsCollapse.hide();
+            });
+        });
+    }
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
-
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
+    // Navbar style change on scroll (replaces Bootstrap 3 affix)
+    var navbar = document.getElementById("mainNav");
+    function updateNavbar() {
+        if (window.scrollY > 100) {
+            navbar.classList.add("navbar-scrolled");
+            navbar.classList.remove("navbar-dark");
+            navbar.classList.add("navbar-light");
+        } else {
+            navbar.classList.remove("navbar-scrolled");
+            navbar.classList.add("navbar-dark");
+            navbar.classList.remove("navbar-light");
         }
-    );
+    }
+    window.addEventListener("scroll", updateNavbar, { passive: true });
+    updateNavbar();
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
-
-    // Initialize WOW.js Scrolling Animations
-    new WOW().init();
-
-})(jQuery); // End of use strict
+    // Scroll animations (replaces WOW.js + animate.css)
+    var animatedElements = document.querySelectorAll(".animate-on-scroll");
+    if (animatedElements.length > 0 && "IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animated");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        animatedElements.forEach(function (el) {
+            observer.observe(el);
+        });
+    }
+})();
