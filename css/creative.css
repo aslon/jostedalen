@@ -989,6 +989,9 @@ html[lang="fr"] .review-toggle {
         min-width: 280px;
         max-width: 280px;
     }
+    .reviews-carousel-wrapper {
+        display: none;
+    }
 }
 
 /* ===== Header Share ===== */
