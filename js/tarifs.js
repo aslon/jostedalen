@@ -42,9 +42,21 @@
                 var start = week[0];
                 var end = week[1];
                 var price = week[2];
+                var promo = week.length > 3 ? week[3] : null;
                 var cls = price === null ? 'tarif-reserved' : 'tarif-available';
-                var priceText = price === null ? labelReserved : formatPrice(price);
+                var priceText;
+                if (price === null) {
+                    priceText = labelReserved;
+                } else if (promo !== null) {
+                    var pct = Math.ceil((price - promo) / price * 100);
+                    priceText = '<span class="tarif-original">' + formatPrice(price) + '</span>'
+                        + '<span class="tarif-promo">' + formatPrice(promo) + '</span>'
+                        + '<span class="tarif-badge">-' + pct + '%</span>';
+                } else {
+                    priceText = formatPrice(price);
+                }
                 var bookCell = '';
+                var bookPrice = promo !== null ? promo : price;
                 if (price !== null) {
                     var msg = encodeURIComponent(buildBookMsg(start, end));
                     bookCell = '<td class="tarif-book">'
