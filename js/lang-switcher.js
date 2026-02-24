@@ -8,7 +8,7 @@
 (function () {
   'use strict';
 
-  var SUPPORTED_LANGS = ['fr', 'en', 'nl', 'de'];
+  var SUPPORTED_LANGS = ['fr', 'en', 'nl', 'de', 'it'];
   var DEFAULT_LANG = 'fr';
   var STORAGE_KEY = 'chalet_lang_pref';
 

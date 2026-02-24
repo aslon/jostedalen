@@ -72,6 +72,12 @@
                 message: "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
                 back: "Zurück zur Startseite",
                 href: "/de/"
+            },
+            it: {
+                title: "Pagina non trovata",
+                message: "La pagina che stai cercando non esiste o è stata spostata.",
+                back: "Torna alla homepage",
+                href: "/it/"
             }
         };
 
@@ -84,7 +90,7 @@
 
             // Check URL path
             var path = window.location.pathname;
-            var match = path.match(/^\/(en|nl|de)\//);
+            var match = path.match(/^\/(en|nl|de|it)\//);
             if (match) return match[1];
 
             // Check browser language

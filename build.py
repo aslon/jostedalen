@@ -15,7 +15,7 @@ from datetime import date
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DOMAIN = "https://www.location-chalet-jostedalen.com"
-LANGUAGES = ["fr", "en", "nl", "de"]
+LANGUAGES = ["fr", "en", "nl", "de", "it"]
 DEFAULT_LANG = "fr"
 
 
