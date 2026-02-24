@@ -732,16 +732,18 @@ html[lang="fr"] .review-toggle {
     margin-bottom: 25px;
 }
 .tarifs-contact-links {
-    white-space: nowrap;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
 }
 .tarifs-contact-sep {
-    margin: 0 4px;
     color: #ccc;
 }
 .tarifs-contact-msg a {
     color: #D4924B;
     font-weight: 600;
     text-decoration: none;
+    white-space: nowrap;
 }
 .tarifs-contact-msg a:hover {
     color: #2E4057;
