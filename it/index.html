@@ -34,6 +34,8 @@
     <meta property="og:description" content="Chalet triplex 240m², 6 camere, jacuzzi, 8-15 ospiti. Sulle piste, comprensorio Les Sybelles (310 km). Saint-Sorlin d'Arves, Savoia.">
     <meta property="og:url" content="https://www.location-chalet-jostedalen.com/it/">
     <meta property="og:image" content="https://www.location-chalet-jostedalen.com/img/chalet/s001.webp">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="426">
     <meta property="og:locale" content="it_IT">
     <meta property="og:site_name" content="Chalet Jostedalen">
 
@@ -42,6 +44,7 @@
     <meta name="twitter:title" content="Chalet Jostedalen - Affitto a Saint-Sorlin d'Arves">
     <meta name="twitter:description" content="Chalet triplex 240m², 6 camere, jacuzzi, 8-15 ospiti. Comprensorio Les Sybelles, Savoia.">
     <meta name="twitter:image" content="https://www.location-chalet-jostedalen.com/img/chalet/s001.webp">
+    <meta name="twitter:image:alt" content="Affitto Chalet Jostedalen - Saint-Sorlin d'Arves">
 
     <!-- Geo tags -->
     <meta name="geo.region" content="FR-73">
@@ -52,15 +55,20 @@
     <!-- LLMs -->
     <link rel="alternate" type="text/markdown" href="/it/llms.txt" title="LLM-friendly site summary">
 
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (async) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
 
-    <!-- Font Awesome Brands (Airbnb icon) -->
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/brands.min.css" rel="stylesheet">
+    <!-- Font Awesome Brands (async) -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/brands.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/brands.min.css"></noscript>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1745,22 +1753,22 @@
     </div>
 
     <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="/js/creative.min.js"></script>
+    <script defer src="/js/creative.min.js"></script>
 
     <!-- Tarifs -->
-    <script src="/js/tarifs.min.js"></script>
+    <script defer src="/js/tarifs.min.js"></script>
 
     <!-- Lightbox -->
-    <script src="/js/lightbox.min.js"></script>
+    <script defer src="/js/lightbox.min.js"></script>
 
     <!-- Reviews Carousel -->
-    <script src="/js/reviews-carousel.min.js"></script>
+    <script defer src="/js/reviews-carousel.min.js"></script>
 
     <!-- Language Switcher -->
-    <script src="/js/lang-switcher.min.js"></script>
+    <script defer src="/js/lang-switcher.min.js"></script>
 
     <!-- Cookie Consent Banner -->
     <div id="cookieConsent" class="cookie-banner" style="display:none;">
@@ -1772,7 +1780,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/cookie-consent.min.js"></script>
+    <script defer src="/js/cookie-consent.min.js"></script>
 </body>
 
 </html>
