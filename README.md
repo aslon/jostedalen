@@ -80,6 +80,11 @@ Location à la semaine (samedi au samedi) en haute saison. Week-end possible au 
 - [Contacter par WhatsApp](https://www.location-chalet-jostedalen.com/#contact)
 - [Contacter par iMessage / SMS](https://www.location-chalet-jostedalen.com/#contact)
 
+## Suivez-nous
+
+- [Facebook](https://www.facebook.com/ChaletJostedalen/)
+- [Instagram](https://www.instagram.com/chaletjostedalen/)
+
 ---
 
 Site disponible en 5 langues :
