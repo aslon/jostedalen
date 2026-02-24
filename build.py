@@ -13,6 +13,13 @@ import re
 import sys
 from datetime import date
 
+try:
+    import rcssmin
+    import rjsmin
+    HAS_MINIFIERS = True
+except ImportError:
+    HAS_MINIFIERS = False
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DOMAIN = "https://www.location-chalet-jostedalen.com"
 LANGUAGES = ["fr", "en", "nl", "de", "it"]
@@ -132,6 +139,47 @@ def write_file(filepath, content):
         f.write(content)
 
 
+def minify_assets():
+    """Minify CSS and JS files, creating .min versions."""
+    if not HAS_MINIFIERS:
+        print("  WARNING: rcssmin/rjsmin not installed, skipping minification")
+        print("           Install with: pip3 install rcssmin rjsmin")
+        return
+
+    # CSS files
+    css_files = ["css/creative.css"]
+    for css in css_files:
+        src = os.path.join(BASE_DIR, css)
+        dst = os.path.join(BASE_DIR, css.replace(".css", ".min.css"))
+        with open(src, "r", encoding="utf-8") as f:
+            original = f.read()
+        minified = rcssmin.cssmin(original)
+        with open(dst, "w", encoding="utf-8") as f:
+            f.write(minified)
+        saving = 100 - (len(minified) / len(original) * 100)
+        print(f"  {css} -> {os.path.basename(dst)} ({saving:.0f}% smaller)")
+
+    # JS files
+    js_files = [
+        "js/creative.js",
+        "js/tarifs.js",
+        "js/lightbox.js",
+        "js/reviews-carousel.js",
+        "js/lang-switcher.js",
+        "js/cookie-consent.js",
+    ]
+    for js in js_files:
+        src = os.path.join(BASE_DIR, js)
+        dst = os.path.join(BASE_DIR, js.replace(".js", ".min.js"))
+        with open(src, "r", encoding="utf-8") as f:
+            original = f.read()
+        minified = rjsmin.jsmin(original)
+        with open(dst, "w", encoding="utf-8") as f:
+            f.write(minified)
+        saving = 100 - (len(minified) / len(original) * 100)
+        print(f"  {js} -> {os.path.basename(dst)} ({saving:.0f}% smaller)")
+
+
 def main():
     print("Building multilingual site...")
 
@@ -176,6 +224,10 @@ def main():
     print("  Building sitemap.xml...")
     sitemap = generate_sitemap()
     write_file(os.path.join(BASE_DIR, "sitemap.xml"), sitemap)
+
+    # Minify CSS/JS
+    print("  Minifying assets...")
+    minify_assets()
 
     print("Done! Generated files:")
     print("  - index.html (FR)")
