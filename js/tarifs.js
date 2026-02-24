@@ -93,7 +93,7 @@
         }
     }
 
-    fetch(source)
+    fetch(source + '?v=' + Date.now())
         .then(function (response) { return response.json(); })
         .then(render)
         .catch(function (err) { console.error('Tarifs loading error:', err); });
