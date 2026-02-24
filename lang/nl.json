@@ -240,6 +240,7 @@
   "section_tarifs_title": "Tarieven &amp; Beschikbaarheid",
   "tarifs_from": "van",
   "tarifs_day": "zaterdag",
+  "tarifs_to": "tot",
   "tarifs_reserved": "gereserveerd",
   "tarifs_note": "Tarief, eindschoonmaak inbegrepen",
   "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",

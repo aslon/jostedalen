@@ -10,6 +10,7 @@
     var labelNote = container.getAttribute('data-label-note');
     var labelBookMsg = container.getAttribute('data-label-book-msg');
     var labelFootnote = container.getAttribute('data-label-footnote');
+    var labelTo = container.getAttribute('data-label-to');
 
     function formatDate(dateStr) {
         var parts = dateStr.split('-');
@@ -72,7 +73,7 @@
                 html += '<td>' + labelFrom + '</td>';
                 html += '<td>' + labelDay + '</td>';
                 html += '<td>' + formatDate(start) + '</td>';
-                html += '<td>' + labelDay + '</td>';
+                html += '<td><span class="tarif-day-desktop">' + labelTo + ' ' + labelDay + '</span><span class="tarif-day-mobile">' + labelTo + '</span></td>';
                 html += '<td>' + formatDate(end) + '</td>';
                 html += '<td class="tarif-price">' + priceText + '</td>';
                 html += bookCell;

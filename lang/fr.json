@@ -240,6 +240,7 @@
   "section_tarifs_title": "Tarifs &amp; Disponibilit&eacute;s",
   "tarifs_from": "du",
   "tarifs_day": "samedi",
+  "tarifs_to": "au",
   "tarifs_reserved": "r&eacute;serv&eacute;",
   "tarifs_note": "Tarif, m&eacute;nage fin de s&eacute;jour inclus",
   "tarifs_book_msg": "Bonjour, je souhaite réserver le Chalet Jostedalen du samedi {start} au samedi {end}.",

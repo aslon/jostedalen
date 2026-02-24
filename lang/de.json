@@ -240,6 +240,7 @@
   "section_tarifs_title": "Preise &amp; Verf&uuml;gbarkeit",
   "tarifs_from": "von",
   "tarifs_day": "Samstag",
+  "tarifs_to": "bis",
   "tarifs_reserved": "reserviert",
   "tarifs_note": "Preis, Endreinigung inklusive",
   "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
