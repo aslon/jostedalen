@@ -123,11 +123,12 @@ def apply_translations(template, translations, hreflang_tags):
 
     result = re.sub(r"\{\{(\w+)\}\}", replace_placeholder, result)
 
-    # Check for unreplaced placeholders
+    # Check for unreplaced placeholders (ignore inline_css, replaced separately)
     unreplaced = re.findall(r"\{\{(\w+)\}\}", result)
     if unreplaced:
-        unique = sorted(set(unreplaced))
-        print(f"  WARNING: Unreplaced placeholders for {meta.get('lang_code', '?')}: {', '.join(unique)}")
+        unique = sorted(set(unreplaced) - {"inline_css"})
+        if unique:
+            print(f"  WARNING: Unreplaced placeholders for {meta.get('lang_code', '?')}: {', '.join(unique)}")
 
     return result
 
@@ -147,7 +148,7 @@ def minify_assets():
         return
 
     # CSS files
-    css_files = ["css/creative.css"]
+    css_files = ["css/creative.css", "css/critical.css"]
     for css in css_files:
         src = os.path.join(BASE_DIR, css)
         dst = os.path.join(BASE_DIR, css.replace(".css", ".min.css"))
@@ -180,8 +181,30 @@ def minify_assets():
         print(f"  {js} -> {os.path.basename(dst)} ({saving:.0f}% smaller)")
 
 
+def build_inline_css():
+    """Build inline CSS from critical Bootstrap subset + creative styles."""
+    parts = []
+    for css_file in ["css/critical.min.css", "css/creative.min.css"]:
+        path = os.path.join(BASE_DIR, css_file)
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+        parts.append(content)
+    inline = "".join(parts)
+    # Fix relative URLs for inline use (../img/ -> /img/)
+    inline = inline.replace("../img/", "/img/")
+    print(f"  Inline CSS: {len(inline)} bytes (critical + creative)")
+    return inline
+
+
 def main():
     print("Building multilingual site...")
+
+    # Minify CSS/JS first (needed for inline CSS)
+    print("  Minifying assets...")
+    minify_assets()
+
+    # Build inline CSS (critical Bootstrap + creative)
+    inline_css = build_inline_css()
 
     # Load templates
     html_template = load_template("template.html")
@@ -197,6 +220,9 @@ def main():
 
         # Generate HTML
         html = apply_translations(html_template, translations, hreflang_tags)
+
+        # Inject inline CSS (done via string replace to avoid regex issues with CSS content)
+        html = html.replace("/* {{inline_css}} */", inline_css)
 
         # Generate llms.txt
         llms = apply_translations(llms_template, translations, hreflang_tags)
@@ -224,10 +250,6 @@ def main():
     print("  Building sitemap.xml...")
     sitemap = generate_sitemap()
     write_file(os.path.join(BASE_DIR, "sitemap.xml"), sitemap)
-
-    # Minify CSS/JS
-    print("  Minifying assets...")
-    minify_assets()
 
     print("Done! Generated files:")
     print("  - index.html (FR)")
