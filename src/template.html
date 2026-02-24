@@ -72,10 +72,6 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap">
     </noscript>
 
-    <!-- Preload header images -->
-    <link rel="preload" href="/img/head-768.webp" as="image" type="image/webp" media="(max-width: 768px)">
-    <link rel="preload" href="/img/head-1200.webp" as="image" type="image/webp" media="(min-width: 769px) and (max-width: 1200px)">
-    <link rel="preload" href="/img/head.webp" as="image" type="image/webp" media="(min-width: 1201px)">
 
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -319,6 +315,10 @@
 
     <!-- Header -->
     <header>
+        <img class="header-bg" src="/img/head-768.webp"
+             srcset="/img/head-768.webp 768w, /img/head-1200.webp 1200w, /img/head.webp 3008w"
+             sizes="100vw" fetchpriority="high" decoding="async"
+             width="768" height="510" alt="">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>{{header_title}}</h1>
