@@ -129,6 +129,12 @@
   "photo_alt_16": "Mountain surroundings",
   "photo_alt_17": "Ski slopes",
   "photo_alt_18": "Chalet in the snow",
+  "photo_alt_19": "Chalet staircase",
+  "photo_alt_20": "Chalet in summer",
+  "photo_alt_21": "Chalet in summer - view 2",
+  "photo_alt_22": "Chalet in the snow - view 2",
+  "photo_alt_23": "Slopes view",
+  "photo_alt_24": "Chalet view",
 
   "nav_avis": "Reviews",
   "nav_faq": "FAQ",
@@ -237,6 +243,7 @@
   "tarifs_note": "Rate, end-of-stay cleaning included",
   "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
   "tarifs_all": "All seasons",
+  "tarifs_contact_msg": "For any other dates, contact us:",
 
   "back_to_top_aria": "Back to top",
 

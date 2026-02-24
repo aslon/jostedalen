@@ -6,6 +6,39 @@
 (function () {
     "use strict";
 
+    // Phone number obfuscation (anti-bot scraping)
+    var _p = ['33', '651', '311', '169'];
+    window._phone = _p.join('');
+    function getWaMsg() {
+        var el = document.querySelector('[data-phone-link="wa"]');
+        return el ? (el.getAttribute('data-wa-msg') || '') : '';
+    }
+    function getSmsMsg() {
+        var el = document.querySelector('[data-phone-link="sms"]');
+        return el ? (el.getAttribute('data-sms-msg') || '') : '';
+    }
+
+    // Populate all phone links on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function () {
+        var ph = window._phone;
+        var display = '+' + ph.substring(0,2) + ' ' + ph[2] + ' ' + ph.substring(3,5) + ' ' + ph.substring(5,7) + ' ' + ph.substring(7,9) + ' ' + ph.substring(9,11);
+        document.querySelectorAll('[data-phone-link]').forEach(function (el) {
+            var type = el.getAttribute('data-phone-link');
+            var waMsg = el.getAttribute('data-wa-msg') || '';
+            var smsMsg = el.getAttribute('data-sms-msg') || '';
+            if (type === 'tel') {
+                el.href = 'tel:+' + ph;
+            } else if (type === 'wa') {
+                el.href = 'https://wa.me/' + ph + (waMsg ? '?text=' + waMsg : '');
+            } else if (type === 'sms') {
+                el.href = 'sms:+' + ph + (smsMsg ? '&body=' + smsMsg : '');
+            }
+        });
+        document.querySelectorAll('.phone-display').forEach(function (el) {
+            el.textContent = display;
+        });
+    });
+
     // Smooth scrolling for nav links (replaces jQuery Easing plugin)
     document.querySelectorAll('a[href^="#"]').forEach(function (link) {
         link.addEventListener("click", function (e) {

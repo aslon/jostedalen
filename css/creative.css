@@ -726,6 +726,20 @@ html[lang="fr"] .review-toggle {
 #tarifs .section-heading {
     color: #2E4057;
 }
+.tarifs-contact-msg {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+.tarifs-contact-msg a {
+    color: #D4924B;
+    font-weight: 600;
+    text-decoration: none;
+}
+.tarifs-contact-msg a:hover {
+    color: #2E4057;
+    text-decoration: underline;
+}
 .tarifs-table-wrapper {
     overflow-x: auto;
     margin-bottom: 30px;

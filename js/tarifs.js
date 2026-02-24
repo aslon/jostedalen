@@ -59,9 +59,10 @@
                 var bookPrice = promo !== null ? promo : price;
                 if (price !== null) {
                     var msg = encodeURIComponent(buildBookMsg(start, end));
+                    var ph = window._phone || '';
                     bookCell = '<td class="tarif-book">'
-                        + '<a href="https://wa.me/33651311169?text=' + msg + '" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>'
-                        + '<a href="sms:+33651311169&body=' + msg + '" aria-label="SMS"><i class="bi bi-chat-dots"></i></a>'
+                        + '<a href="https://wa.me/' + ph + '?text=' + msg + '" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>'
+                        + '<a href="sms:+' + ph + '&body=' + msg + '" aria-label="SMS"><i class="bi bi-chat-dots"></i></a>'
                         + '</td>';
                 } else {
                     bookCell = '<td></td>';

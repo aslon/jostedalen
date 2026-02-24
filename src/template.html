@@ -110,7 +110,13 @@
         "https://www.location-chalet-jostedalen.com/img/chalet/s014.webp",
         "https://www.location-chalet-jostedalen.com/img/chalet/s015.webp",
         "https://www.location-chalet-jostedalen.com/img/chalet/s016.webp",
-        "https://www.location-chalet-jostedalen.com/img/chalet/s017.webp"
+        "https://www.location-chalet-jostedalen.com/img/chalet/s017.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s018.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s019.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s020.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s021.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s022.webp",
+        "https://www.location-chalet-jostedalen.com/img/chalet/s023.webp"
       ],
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "{{jsonld_amenity_wifi}}", "value": true },
@@ -538,6 +544,42 @@
                     <picture>
                         <source srcset="/img/chalet/s000.webp" type="image/webp">
                         <img src="/img/chalet/s000.jpg" class="img-fluid" alt="{{photo_alt_18}}" loading="lazy">
+                    </picture>
+                </div>
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <picture>
+                        <source srcset="/img/chalet/s018.webp" type="image/webp">
+                        <img src="/img/chalet/s018.jpg" class="img-fluid" alt="{{photo_alt_19}}" loading="lazy">
+                    </picture>
+                </div>
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <picture>
+                        <source srcset="/img/chalet/s019.webp" type="image/webp">
+                        <img src="/img/chalet/s019.jpg" class="img-fluid" alt="{{photo_alt_20}}" loading="lazy">
+                    </picture>
+                </div>
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <picture>
+                        <source srcset="/img/chalet/s020.webp" type="image/webp">
+                        <img src="/img/chalet/s020.jpg" class="img-fluid" alt="{{photo_alt_21}}" loading="lazy">
+                    </picture>
+                </div>
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <picture>
+                        <source srcset="/img/chalet/s021.webp" type="image/webp">
+                        <img src="/img/chalet/s021.jpg" class="img-fluid" alt="{{photo_alt_22}}" loading="lazy">
+                    </picture>
+                </div>
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <picture>
+                        <source srcset="/img/chalet/s022.webp" type="image/webp">
+                        <img src="/img/chalet/s022.jpg" class="img-fluid" alt="{{photo_alt_23}}" loading="lazy">
+                    </picture>
+                </div>
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <picture>
+                        <source srcset="/img/chalet/s023.webp" type="image/webp">
+                        <img src="/img/chalet/s023.jpg" class="img-fluid" alt="{{photo_alt_24}}" loading="lazy">
                     </picture>
                 </div>
             </div>
@@ -1245,6 +1287,7 @@
                 <div class="col-lg-10 offset-lg-1">
                     <h2 class="section-heading text-center" style="color:#2E4057;">{{section_tarifs_title}}</h2>
                     <hr style="border-color:#D4924B; margin-bottom:30px;">
+                    <p class="text-center tarifs-contact-msg">{{tarifs_contact_msg}} <a href="#" data-phone-link="wa" data-wa-msg="{{contact_whatsapp_message}}" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> {{contact_whatsapp}}</a> | <a href="#" data-phone-link="sms" data-sms-msg="{{contact_sms_message}}"><i class="bi bi-phone"></i> {{contact_imessage}}</a></p>
                     <div id="tarifsContainer"
                          data-source="/data/tarifs.json"
                          data-label-from="{{tarifs_from}}"
@@ -1280,15 +1323,15 @@
             <div class="row justify-content-center">
                 <div class="col-md-3 text-center mb-4">
                     <i class="bi bi-telephone fa-3x animate-on-scroll"></i>
-                    <p><a href="tel:+33651311169">+33 6 51 31 11 69</a></p>
+                    <p><a href="#" data-phone-link="tel"><span class="phone-display"></span></a></p>
                 </div>
                 <div class="col-md-3 text-center mb-4">
                     <i class="bi bi-whatsapp fa-3x animate-on-scroll"></i>
-                    <p><a href="https://wa.me/33651311169?text={{contact_whatsapp_message}}" target="_blank" rel="noopener">{{contact_whatsapp}}</a></p>
+                    <p><a href="#" data-phone-link="wa" data-wa-msg="{{contact_whatsapp_message}}" target="_blank" rel="noopener">{{contact_whatsapp}}</a></p>
                 </div>
                 <div class="col-md-3 text-center mb-4">
                     <i class="bi bi-chat-dots fa-3x animate-on-scroll"></i>
-                    <p><a href="sms:+33651311169&body={{contact_sms_message}}">{{contact_imessage}}</a></p>
+                    <p><a href="#" data-phone-link="sms" data-sms-msg="{{contact_sms_message}}">{{contact_imessage}}</a></p>
                 </div>
                 <div class="col-md-3 text-center mb-4">
                     <i class="bi bi-envelope fa-3x animate-on-scroll"></i>
@@ -1308,10 +1351,10 @@
         <a href="#page-top" class="backtotop-float" aria-label="{{back_to_top_aria}}" id="backToTop">
             <i class="bi bi-arrow-up"></i>
         </a>
-        <a href="sms:+33651311169&body={{contact_sms_message}}" class="imessage-float" aria-label="{{contact_float_imessage_aria}}">
+        <a href="#" data-phone-link="sms" data-sms-msg="{{contact_sms_message}}" class="imessage-float" aria-label="{{contact_float_imessage_aria}}">
             <i class="bi bi-chat-dots"></i>
         </a>
-        <a href="https://wa.me/33651311169?text={{contact_whatsapp_message}}" class="whatsapp-float" target="_blank" rel="noopener" aria-label="{{contact_float_whatsapp_aria}}">
+        <a href="#" data-phone-link="wa" data-wa-msg="{{contact_whatsapp_message}}" class="whatsapp-float" target="_blank" rel="noopener" aria-label="{{contact_float_whatsapp_aria}}">
             <i class="bi bi-whatsapp"></i>
         </a>
     </div>

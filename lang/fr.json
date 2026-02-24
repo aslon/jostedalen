@@ -129,6 +129,12 @@
   "photo_alt_16": "Environnement montagne",
   "photo_alt_17": "Pistes de ski",
   "photo_alt_18": "Chalet sous la neige",
+  "photo_alt_19": "Escalier du chalet",
+  "photo_alt_20": "Chalet en &eacute;t&eacute;",
+  "photo_alt_21": "Chalet en &eacute;t&eacute; - vue 2",
+  "photo_alt_22": "Chalet sous la neige - vue 2",
+  "photo_alt_23": "Vue sur les pistes",
+  "photo_alt_24": "Vue du chalet",
 
   "nav_avis": "Avis",
   "nav_faq": "FAQ",
@@ -237,6 +243,7 @@
   "tarifs_note": "Tarif, m&eacute;nage fin de s&eacute;jour inclus",
   "tarifs_book_msg": "Bonjour, je souhaite réserver le Chalet Jostedalen du samedi {start} au samedi {end}.",
   "tarifs_all": "Toutes les saisons",
+  "tarifs_contact_msg": "Pour toute autre date, contactez-nous :",
 
   "back_to_top_aria": "Retour en haut de page",
 

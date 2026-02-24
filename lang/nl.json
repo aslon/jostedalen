@@ -129,6 +129,12 @@
   "photo_alt_16": "Bergomgeving",
   "photo_alt_17": "Skipistes",
   "photo_alt_18": "Chalet in de sneeuw",
+  "photo_alt_19": "Trap van het chalet",
+  "photo_alt_20": "Chalet in de zomer",
+  "photo_alt_21": "Chalet in de zomer - aanzicht 2",
+  "photo_alt_22": "Chalet in de sneeuw - aanzicht 2",
+  "photo_alt_23": "Uitzicht op de pistes",
+  "photo_alt_24": "Uitzicht op het chalet",
 
   "nav_avis": "Beoordelingen",
   "nav_faq": "FAQ",
@@ -235,8 +241,9 @@
   "tarifs_day": "zaterdag",
   "tarifs_reserved": "gereserveerd",
   "tarifs_note": "Tarief, eindschoonmaak inbegrepen",
-  "tarifs_book_msg": "Hallo, ik wil graag Chalet Jostedalen reserveren van zaterdag {start} tot zaterdag {end}.",
+  "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
   "tarifs_all": "Alle seizoenen",
+  "tarifs_contact_msg": "Voor andere data, neem contact met ons op:",
 
   "back_to_top_aria": "Terug naar boven",
 
@@ -245,8 +252,8 @@
   "contact_whatsapp": "WhatsApp",
   "contact_imessage": "iMessage / SMS",
   "contact_email": "Schrijf ons",
-  "contact_whatsapp_message": "Hallo%2C%20ik%20wil%20graag%20informatie%20over%20Chalet%20Jostedalen",
-  "contact_sms_message": "Hallo%2C%20ik%20wil%20graag%20informatie%20over%20Chalet%20Jostedalen",
+  "contact_whatsapp_message": "Hello%2C%20I%20would%20like%20information%20about%20Chalet%20Jostedalen",
+  "contact_sms_message": "Hello%2C%20I%20would%20like%20information%20about%20Chalet%20Jostedalen",
   "contact_float_whatsapp_aria": "Neem contact op via WhatsApp",
   "contact_float_imessage_aria": "Neem contact op via iMessage",
 
