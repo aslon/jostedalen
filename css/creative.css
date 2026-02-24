@@ -743,9 +743,11 @@ html[lang="fr"] .review-toggle {
 .tarifs-table-wrapper {
     overflow-x: auto;
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-overflow-scrolling: touch;
+}
+.tarifs-table-wrapper table {
+    margin-left: auto;
+    margin-right: auto;
 }
 .tarifs-table {
     width: auto;
