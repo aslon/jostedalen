@@ -22,8 +22,15 @@
     // Close mobile menu on link click
     var navCollapse = document.getElementById("navbarNav");
     if (navCollapse) {
-        navCollapse.querySelectorAll(".nav-link").forEach(function (link) {
+        navCollapse.querySelectorAll(".nav-link:not(.dropdown-toggle)").forEach(function (link) {
             link.addEventListener("click", function () {
+                var bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+                if (bsCollapse) bsCollapse.hide();
+            });
+        });
+        // Close mobile menu when a language is selected
+        navCollapse.querySelectorAll("#langSwitcher .dropdown-item").forEach(function (item) {
+            item.addEventListener("click", function () {
                 var bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
                 if (bsCollapse) bsCollapse.hide();
             });

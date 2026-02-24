@@ -27,6 +27,7 @@
   "jsonld_amenity_garden": "Jardin",
   "jsonld_amenity_bbq": "Barbecue",
   "jsonld_amenity_baby": "Équipement bébé",
+  "jsonld_amenity_ev": "Borne de recharge VÉ 22 kW",
   "jsonld_accommodation_category": "Chalet",
 
   "nav_toggle": "Toggle navigation",
@@ -69,6 +70,7 @@
   "chalet_nearby_5": "Plan d'eau surveill&eacute; &agrave; 200 m (&eacute;t&eacute;)",
   "chalet_nearby_6": "Jardin avec table et barbecue (&eacute;t&eacute;)",
   "chalet_nearby_7": "Randonn&eacute;e, escalade, &eacute;quitation, via-ferrata...",
+  "chalet_nearby_8": "Prise de recharge V&Eacute; 22 kW",
 
   "section_plans_aria": "Plans du chalet",
   "plan_alt_rdc": "Plan du rez-de-chauss&eacute;e",
@@ -132,7 +134,8 @@
   "nav_faq": "FAQ",
   "section_reviews_aria": "Avis clients",
   "section_reviews_title": "Avis de nos h&ocirc;tes",
-  "reviews_label": "avis",
+  "reviews_label": "avis vérifiés",
+  "reviews_airbnb_link": "Voir notre page Airbnb",
   "reviews_show_all": "Voir tous les avis",
   "reviews_show_original": "Voir l'original",
   "review_1_text": "Séjour très bon et conforme à la description. Hôte arrangeant, boîte à clé pratique. Très bien équipé en électroménager et vaisselle.",
@@ -298,6 +301,7 @@
   "llms_nearby_4": "Plan d'eau surveille a 200 m (ete)",
   "llms_nearby_5": "Jardin avec table et barbecue (ete)",
   "llms_nearby_6": "Randonnee, escalade, equitation, via-ferrata",
+  "llms_nearby_7": "Prise de recharge VE 22 kW",
   "llms_section_rates": "Tarifs",
   "llms_section_photos": "Photos",
   "llms_photos_count": "18 photos disponibles sur le site web",

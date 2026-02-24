@@ -27,6 +27,7 @@
   "jsonld_amenity_garden": "Garden",
   "jsonld_amenity_bbq": "Barbecue",
   "jsonld_amenity_baby": "Baby equipment",
+  "jsonld_amenity_ev": "EV charging station 22 kW",
   "jsonld_accommodation_category": "Chalet",
 
   "nav_toggle": "Toggle navigation",
@@ -69,6 +70,7 @@
   "chalet_nearby_5": "Supervised lake at 200 m (summer)",
   "chalet_nearby_6": "Garden with table and barbecue (summer)",
   "chalet_nearby_7": "Hiking, climbing, horse riding, via ferrata...",
+  "chalet_nearby_8": "EV charging station 22 kW",
 
   "section_plans_aria": "Chalet floor plans",
   "plan_alt_rdc": "Ground floor plan",
@@ -132,7 +134,8 @@
   "nav_faq": "FAQ",
   "section_reviews_aria": "Guest reviews",
   "section_reviews_title": "Guest reviews",
-  "reviews_label": "reviews",
+  "reviews_label": "verified reviews",
+  "reviews_airbnb_link": "See our Airbnb page",
   "reviews_show_all": "Show all reviews",
   "reviews_show_original": "Show original",
   "review_1_text": "Very good stay, matches the description. Accommodating host, practical key box. Very well equipped with appliances and dishes.",
@@ -298,6 +301,7 @@
   "llms_nearby_4": "Supervised lake at 200 m (summer)",
   "llms_nearby_5": "Garden with table and barbecue (summer)",
   "llms_nearby_6": "Hiking, climbing, horse riding, via ferrata",
+  "llms_nearby_7": "EV charging station 22 kW",
   "llms_section_rates": "Rates",
   "llms_section_photos": "Photos",
   "llms_photos_count": "18 photos available on the website",

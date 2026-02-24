@@ -71,6 +71,7 @@
 - {{llms_nearby_4}}
 - {{llms_nearby_5}}
 - {{llms_nearby_6}}
+- {{llms_nearby_7}}
 
 ## {{llms_section_rates}}
 

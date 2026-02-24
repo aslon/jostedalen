@@ -27,6 +27,7 @@
   "jsonld_amenity_garden": "Garten",
   "jsonld_amenity_bbq": "Grill",
   "jsonld_amenity_baby": "Babyausstattung",
+  "jsonld_amenity_ev": "E-Auto-Ladestation 22 kW",
   "jsonld_accommodation_category": "Chalet",
 
   "nav_toggle": "Navigation umschalten",
@@ -69,6 +70,7 @@
   "chalet_nearby_5": "Überwachter Badesee in 200 m (Sommer)",
   "chalet_nearby_6": "Garten mit Tisch und Grill (Sommer)",
   "chalet_nearby_7": "Wandern, Klettern, Reiten, Klettersteig...",
+  "chalet_nearby_8": "E-Auto-Ladestation 22 kW",
 
   "section_plans_aria": "Grundrisse des Chalets",
   "plan_alt_rdc": "Grundriss Erdgeschoss",
@@ -132,7 +134,8 @@
   "nav_faq": "FAQ",
   "section_reviews_aria": "G&auml;stebewertungen",
   "section_reviews_title": "Bewertungen unserer G&auml;ste",
-  "reviews_label": "Bewertungen",
+  "reviews_label": "verifizierte Bewertungen",
+  "reviews_airbnb_link": "Unsere Airbnb-Seite ansehen",
   "reviews_show_all": "Alle Bewertungen anzeigen",
   "reviews_show_original": "Original anzeigen",
   "review_1_text": "Sehr guter Aufenthalt, entspricht der Beschreibung. Entgegenkommender Gastgeber, praktischer Schlüsseltresor. Sehr gut ausgestattet mit Haushaltsgeräten und Geschirr.",
@@ -298,6 +301,7 @@
   "llms_nearby_4": "Überwachter Badesee in 200 m (Sommer)",
   "llms_nearby_5": "Garten mit Tisch und Grill (Sommer)",
   "llms_nearby_6": "Wandern, Klettern, Reiten, Klettersteig",
+  "llms_nearby_7": "E-Auto-Ladestation 22 kW",
   "llms_section_rates": "Preise",
   "llms_section_photos": "Fotos",
   "llms_photos_count": "18 Fotos auf der Website verfügbar",

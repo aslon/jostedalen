@@ -623,6 +623,22 @@ header .header-content .header-content-inner p {
     color: #666;
     margin-top: 5px;
 }
+.reviews-airbnb-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: #D4924B;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.reviews-airbnb-link:hover {
+    color: #2E4057;
+    text-decoration: underline;
+}
+.reviews-airbnb-link i {
+    margin-right: 4px;
+}
 .review-card {
     background: #fff;
     border-radius: 8px;

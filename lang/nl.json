@@ -27,6 +27,7 @@
   "jsonld_amenity_garden": "Tuin",
   "jsonld_amenity_bbq": "Barbecue",
   "jsonld_amenity_baby": "Babyuitrusting",
+  "jsonld_amenity_ev": "Oplaadpunt voor EV 22 kW",
   "jsonld_accommodation_category": "Chalet",
 
   "nav_toggle": "Navigatie wisselen",
@@ -69,6 +70,7 @@
   "chalet_nearby_5": "Bewaakte zwemplas op 200 m (zomer)",
   "chalet_nearby_6": "Tuin met tafel en barbecue (zomer)",
   "chalet_nearby_7": "Wandelen, klimmen, paardrijden, via ferrata...",
+  "chalet_nearby_8": "Oplaadpunt voor EV 22 kW",
 
   "section_plans_aria": "Plattegronden van het chalet",
   "plan_alt_rdc": "Plattegrond begane grond",
@@ -132,7 +134,8 @@
   "nav_faq": "FAQ",
   "section_reviews_aria": "Gastbeoordelingen",
   "section_reviews_title": "Beoordelingen van onze gasten",
-  "reviews_label": "beoordelingen",
+  "reviews_label": "geverifieerde beoordelingen",
+  "reviews_airbnb_link": "Bekijk onze Airbnb-pagina",
   "reviews_show_all": "Alle beoordelingen tonen",
   "reviews_show_original": "Toon origineel",
   "review_1_text": "Heel goed verblijf, conform de beschrijving. Behulpzame gastheer, praktische sleutelkluis. Zeer goed uitgerust met huishoudelijke apparaten en servies.",
@@ -298,6 +301,7 @@
   "llms_nearby_4": "Bewaakte zwemplas op 200 m (zomer)",
   "llms_nearby_5": "Tuin met tafel en barbecue (zomer)",
   "llms_nearby_6": "Wandelen, klimmen, paardrijden, via ferrata",
+  "llms_nearby_7": "Oplaadpunt voor EV 22 kW",
   "llms_section_rates": "Tarieven",
   "llms_section_photos": "Foto's",
   "llms_photos_count": "18 foto's beschikbaar op de website",
