@@ -75,6 +75,8 @@
   "plan_alt_1er": "Plattegrond 1e verdieping",
   "plan_alt_2eme": "Plattegrond 2e verdieping",
   "plan_alt_dernier": "Plattegrond bovenste verdieping",
+  "plan_prev": "Vorige",
+  "plan_next": "Volgende",
 
   "section_equip_aria": "Voorzieningen van het chalet",
   "section_equip_title": "Voorzieningen",

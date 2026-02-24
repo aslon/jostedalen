@@ -75,6 +75,8 @@
   "plan_alt_1er": "Grundriss 1. Obergeschoss",
   "plan_alt_2eme": "Grundriss 2. Obergeschoss",
   "plan_alt_dernier": "Grundriss Dachgeschoss",
+  "plan_prev": "Zur&uuml;ck",
+  "plan_next": "Weiter",
 
   "section_equip_aria": "Ausstattung des Chalets",
   "section_equip_title": "Ausstattung",

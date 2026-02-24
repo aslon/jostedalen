@@ -1,5 +1,7 @@
 (function () {
     var images = [];
+    var planImages = [];
+    var activeSet;
     var currentIndex = 0;
     var touchStartX = 0;
 
@@ -17,6 +19,7 @@
         if (img) {
             images.push(source ? source.getAttribute('srcset') : img.getAttribute('src'));
             box.addEventListener('click', function () {
+                activeSet = images;
                 currentIndex = i;
                 updateImage();
                 modal.show();
@@ -24,7 +27,24 @@
         }
     });
 
-    if (images.length === 0) return;
+    // Collect plan images (zoom on click)
+    document.querySelectorAll('.plan-zoom').forEach(function (el, i) {
+        var source = el.querySelector('source');
+        var img = el.querySelector('img');
+        if (img) {
+            planImages.push(source ? source.getAttribute('srcset') : img.getAttribute('src'));
+            el.addEventListener('click', function () {
+                activeSet = planImages;
+                currentIndex = i;
+                updateImage();
+                modal.show();
+            });
+        }
+    });
+
+    activeSet = images;
+
+    if (images.length === 0 && planImages.length === 0) return;
 
     // Controls
     modalEl.querySelector('.lightbox-close').addEventListener('click', function () { modal.hide(); });
@@ -49,12 +69,12 @@
     }, { passive: true });
 
     function navigate(dir) {
-        currentIndex = (currentIndex + dir + images.length) % images.length;
+        currentIndex = (currentIndex + dir + activeSet.length) % activeSet.length;
         updateImage();
     }
 
     function updateImage() {
-        modalImg.src = images[currentIndex];
-        counter.textContent = (currentIndex + 1) + ' / ' + images.length;
+        modalImg.src = activeSet[currentIndex];
+        counter.textContent = (currentIndex + 1) + ' / ' + activeSet.length;
     }
 })();

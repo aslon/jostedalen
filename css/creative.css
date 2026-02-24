@@ -786,6 +786,11 @@ html[lang="fr"] .review-toggle {
     }
 }
 
+/* ===== Plans Zoom ===== */
+.plan-zoom {
+    cursor: zoom-in;
+}
+
 /* ===== Map ===== */
 .map-container {
     border-radius: 8px;
@@ -933,8 +938,8 @@ html[lang="fr"] .review-toggle {
     position: relative;
 }
 .lightbox-img {
-    max-width: 90vw;
-    max-height: 90vh;
+    width: 98vw;
+    height: 96vh;
     object-fit: contain;
 }
 .lightbox-close {

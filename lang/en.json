@@ -75,6 +75,8 @@
   "plan_alt_1er": "First floor plan",
   "plan_alt_2eme": "Second floor plan",
   "plan_alt_dernier": "Top floor plan",
+  "plan_prev": "Previous",
+  "plan_next": "Next",
 
   "section_equip_aria": "Chalet amenities",
   "section_equip_title": "Amenities",
