@@ -838,7 +838,13 @@ html[lang="fr"] .review-toggle {
 .tarif-book .bi-chat-dots {
     color: #34C759;
 }
+.tarif-book .bi-envelope {
+    color: #D4924B;
+}
 @media (max-width: 575.98px) {
+    .tarif-day-label {
+        display: none;
+    }
     .tarifs-table {
         font-size: 13px;
     }

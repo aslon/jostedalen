@@ -64,15 +64,16 @@
                     bookCell = '<td class="tarif-book">'
                         + '<a href="https://wa.me/' + ph + '?text=' + msg + '" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>'
                         + '<a href="sms:+' + ph + '&body=' + msg + '" aria-label="SMS"><i class="bi bi-chat-dots"></i></a>'
+                        + '<a href="https://goo.gl/forms/bAMhK9uY5H" target="_blank" rel="noopener" aria-label="Email"><i class="bi bi-envelope"></i></a>'
                         + '</td>';
                 } else {
                     bookCell = '<td></td>';
                 }
                 html += '<tr class="' + cls + '">';
-                html += '<td>' + labelFrom + '</td>';
-                html += '<td>' + labelDay + '</td>';
+                html += '<td class="tarif-day-label">' + labelFrom + '</td>';
+                html += '<td class="tarif-day-label">' + labelDay + '</td>';
                 html += '<td>' + formatDate(start) + '</td>';
-                html += '<td>' + labelDay + '</td>';
+                html += '<td class="tarif-day-label">' + labelDay + '</td>';
                 html += '<td>' + formatDate(end) + '</td>';
                 html += '<td class="tarif-price">' + priceText + '</td>';
                 html += bookCell;
