@@ -51,6 +51,13 @@
     // Store current language as preference
     localStorage.setItem(STORAGE_KEY, currentLang);
 
+    // Only auto-redirect from the default homepage (/)
+    // If user navigated to /en/, /nl/, etc. explicitly, respect that choice
+    var path = window.location.pathname;
+    if (currentLang !== DEFAULT_LANG) {
+      return;
+    }
+
     // Redirect if browser language differs from current page
     if (browserLang !== currentLang) {
       localStorage.setItem(STORAGE_KEY, browserLang);
