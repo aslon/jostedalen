@@ -9,6 +9,7 @@
     var labelReserved = container.getAttribute('data-label-reserved');
     var labelNote = container.getAttribute('data-label-note');
     var labelBookMsg = container.getAttribute('data-label-book-msg');
+    var labelFootnote = container.getAttribute('data-label-footnote');
 
     function formatDate(dateStr) {
         var parts = dateStr.split('-');
@@ -34,7 +35,7 @@
             html += '<table class="tarifs-table">';
             html += '<thead><tr>';
             html += '<th colspan="5">' + seasonName + '</th>';
-            html += '<th>' + labelNote + '</th>';
+            html += '<th>' + labelNote + ' *</th>';
             html += '<th></th>';
             html += '</tr></thead>';
             html += '<tbody>';
@@ -77,7 +78,11 @@
                 html += bookCell;
                 html += '</tr>';
             });
-            html += '</tbody></table></div>';
+            html += '</tbody></table>';
+            if (labelFootnote) {
+                html += '<p class="tarifs-footnote">' + labelFootnote + '</p>';
+            }
+            html += '</div>';
         });
         container.innerHTML = html;
 

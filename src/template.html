@@ -308,7 +308,7 @@
                     <span class="share-label">{{share_label}}</span>
                     <a href="https://wa.me/?text={{share_text}}%20{{canonical_url}}" target="_blank" rel="noopener" aria-label="{{share_whatsapp_aria}}"><i class="bi bi-whatsapp"></i></a>
                     <a href="mailto:?subject={{share_email_subject}}&body={{share_email_body}}%20{{canonical_url}}" aria-label="{{share_email_aria}}"><i class="bi bi-envelope"></i></a>
-                    <a href="#" class="share-copy-link" data-url="{{canonical_url}}" aria-label="{{share_copy_aria}}"><i class="bi bi-link-45deg"></i></a>
+                    <a href="#" class="share-copy-link" data-url="{{canonical_url}}" data-copied="{{share_copied}}" aria-label="{{share_copy_aria}}"><i class="bi bi-link-45deg"></i></a>
                 </div>
             </div>
         </div>
@@ -1295,7 +1295,8 @@
                          data-label-reserved="{{tarifs_reserved}}"
                          data-label-note="{{tarifs_note}}"
                          data-label-book-msg="{{tarifs_book_msg}}"
-                         data-label-all="{{tarifs_all}}">
+                         data-label-all="{{tarifs_all}}"
+                         data-label-footnote="{{tarifs_footnote}}">
                     </div>
                 </div>
             </div>

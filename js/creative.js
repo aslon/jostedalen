@@ -118,7 +118,14 @@
             navigator.clipboard.writeText(url).then(function () {
                 var icon = link.querySelector('i');
                 icon.className = 'bi bi-check-lg';
-                setTimeout(function () { icon.className = 'bi bi-link-45deg'; }, 2000);
+                var tooltip = document.createElement('span');
+                tooltip.className = 'copy-tooltip';
+                tooltip.textContent = link.getAttribute('data-copied') || 'Copié !';
+                link.appendChild(tooltip);
+                setTimeout(function () {
+                    icon.className = 'bi bi-link-45deg';
+                    if (tooltip.parentNode) tooltip.parentNode.removeChild(tooltip);
+                }, 2000);
             });
         });
     });

@@ -743,6 +743,9 @@ html[lang="fr"] .review-toggle {
 .tarifs-table-wrapper {
     overflow-x: auto;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tarifs-table {
     width: auto;
@@ -962,6 +965,22 @@ html[lang="fr"] .review-toggle {
     color: #fff;
     transform: scale(1.15);
 }
+.share-copy-link {
+    position: relative;
+}
+.copy-tooltip {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2E4057;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    animation: fadeInUp 0.3s ease-out;
+}
 
 /* ===== Header CTA Button ===== */
 .header-cta {
@@ -1064,6 +1083,13 @@ html[lang="fr"] .review-toggle {
         height: 40px;
         font-size: 22px;
     }
+}
+
+.tarifs-footnote {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 8px;
+    text-align: center;
 }
 
 /* ===== Tarifs Season Filters ===== */

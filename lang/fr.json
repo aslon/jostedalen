@@ -50,6 +50,7 @@
   "share_whatsapp_aria": "Partager sur WhatsApp",
   "share_email_aria": "Partager par email",
   "share_copy_aria": "Copier le lien",
+  "share_copied": "Copi&eacute; !",
   "share_label": "Partager",
   "map_view_larger": "Agrandir la carte",
 
@@ -244,6 +245,7 @@
   "tarifs_book_msg": "Bonjour, je souhaite réserver le Chalet Jostedalen du samedi {start} au samedi {end}.",
   "tarifs_all": "Toutes les saisons",
   "tarifs_contact_msg": "Pour toute autre date, contactez-nous :",
+  "tarifs_footnote": "* Taxe de s&eacute;jour en sus : 0,99&nbsp;&euro; / adulte / nuit. Draps et serviettes en option.",
 
   "back_to_top_aria": "Retour en haut de page",
 
