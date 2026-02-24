@@ -738,6 +738,19 @@ html[lang="fr"] .review-toggle {
     line-height: 1.7;
     padding: 16px 20px;
 }
+.faq-category {
+    color: #D4924B;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+.faq-category:first-of-type {
+    margin-top: 0;
+}
+.faq-category i {
+    margin-right: 8px;
+}
 
 /* ===== Tarifs Section ===== */
 #tarifs .section-heading {
