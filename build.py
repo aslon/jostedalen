@@ -133,6 +133,13 @@ def apply_translations(template, translations, hreflang_tags):
     return result
 
 
+def minify_html(html):
+    """Minify HTML by collapsing whitespace between tags."""
+    # Collapse whitespace between tags (safe for block-level elements)
+    html = re.sub(r">\s+<", "><", html)
+    return html
+
+
 def write_file(filepath, content):
     """Write content to file, creating directories as needed."""
     os.makedirs(os.path.dirname(filepath) or ".", exist_ok=True)
@@ -223,6 +230,12 @@ def main():
 
         # Inject inline CSS (done via string replace to avoid regex issues with CSS content)
         html = html.replace("/* {{inline_css}} */", inline_css)
+
+        # Minify HTML (collapse whitespace between tags)
+        raw_size = len(html)
+        html = minify_html(html)
+        if lang == DEFAULT_LANG:
+            print(f"  HTML minified: {raw_size} -> {len(html)} bytes ({100 - len(html)*100//raw_size}% smaller)")
 
         # Generate llms.txt
         llms = apply_translations(llms_template, translations, hreflang_tags)
