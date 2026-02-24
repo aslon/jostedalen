@@ -40,7 +40,7 @@
 - Lave-vaisselle
 - 2 appareils a raclette
 - 2 appareils a fondue
-- Cafetiere a grains
+- Cafetiere a grains et filtre
 - Grille-pain
 - Robot menager
 - Presse-orange electrique
@@ -49,11 +49,11 @@
 
 - Wifi
 - Telephone
-- Chaine HiFi (Bluetooth)
-- Television, lecteur DVD
-- 1 couverture par couchage
+- Enceinte Bluetooth AirPlay
+- Television
+- 1 couette par couchage
 - Lave-linge
-- 2 seche-linge
+- Seche-linge
 - Fer et table a repasser
 
 ## Equipements bebe

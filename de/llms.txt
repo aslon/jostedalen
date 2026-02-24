@@ -40,7 +40,7 @@
 - Geschirrspüler
 - 2 Raclette-Geräte
 - 2 Fondue-Sets
-- Kaffeevollautomat
+- Kaffeevollautomat und Filterkaffeemaschine
 - Toaster
 - Küchenmaschine
 - Elektrische Saftpresse
@@ -49,11 +49,11 @@
 
 - WLAN
 - Telefon
-- HiFi-Anlage (Bluetooth)
-- Fernseher, DVD-Player
-- 1 Decke pro Schlafplatz
+- Bluetooth-AirPlay-Lautsprecher
+- Fernseher
+- 1 Bettdecke pro Schlafplatz
 - Waschmaschine
-- 2 Wäschetrockner
+- Wäschetrockner
 - Bügeleisen und Bügelbrett
 
 ## Babyausstattung

@@ -40,7 +40,7 @@
 - Dishwasher
 - 2 raclette machines
 - 2 fondue sets
-- Bean-to-cup coffee machine
+- Bean-to-cup &amp; filter coffee machine
 - Toaster
 - Food processor
 - Electric juicer
@@ -49,11 +49,11 @@
 
 - Wifi
 - Telephone
-- HiFi system (Bluetooth)
-- Television, DVD player
-- 1 blanket per bed
+- Bluetooth AirPlay speaker
+- Television
+- 1 duvet per bed
 - Washing machine
-- 2 tumble dryers
+- Tumble dryer
 - Iron and ironing board
 
 ## Baby equipment
