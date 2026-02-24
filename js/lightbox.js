@@ -17,7 +17,9 @@
         var source = box.querySelector('source');
         var img = box.querySelector('img');
         if (img) {
-            images.push(source ? source.getAttribute('srcset') : img.getAttribute('src'));
+            var srcset = source ? source.getAttribute('srcset') : '';
+            var fullSrc = srcset.split(',').pop().trim().split(' ')[0] || img.getAttribute('src');
+            images.push(fullSrc);
             box.addEventListener('click', function () {
                 activeSet = images;
                 currentIndex = i;
@@ -32,7 +34,9 @@
         var source = el.querySelector('source');
         var img = el.querySelector('img');
         if (img) {
-            planImages.push(source ? source.getAttribute('srcset') : img.getAttribute('src'));
+            var srcset = source ? source.getAttribute('srcset') : '';
+            var fullSrc = srcset.split(',').pop().trim().split(' ')[0] || img.getAttribute('src');
+            planImages.push(fullSrc);
             el.addEventListener('click', function () {
                 activeSet = planImages;
                 currentIndex = i;
