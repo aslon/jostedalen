@@ -879,11 +879,32 @@ html[lang="fr"] .review-toggle {
 .tarif-day-mobile {
     display: none;
 }
+.tarif-date-short {
+    display: none;
+}
+.tarif-thead-mobile {
+    display: none;
+}
 @media (max-width: 575.98px) {
     .tarif-day-desktop {
         display: none;
     }
     .tarif-day-mobile {
+        display: inline;
+    }
+    .tarif-col-label {
+        display: none;
+    }
+    .tarif-thead-desktop {
+        display: none;
+    }
+    .tarif-thead-mobile {
+        display: table-row;
+    }
+    .tarif-date-full {
+        display: none;
+    }
+    .tarif-date-short {
         display: inline;
     }
     .tarifs-table {

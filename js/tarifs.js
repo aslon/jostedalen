@@ -17,11 +17,15 @@
         return parts[2] + '/' + parts[1] + '/' + parts[0];
     }
 
+    function formatDateShort(dateStr) {
+        var parts = dateStr.split('-');
+        return parts[2] + '-' + parts[1] + '-' + parts[0].slice(2);
+    }
+
     function formatPrice(price) {
-        var formatted = price.toFixed(2).replace('.', ',');
-        var parts = formatted.split(',');
-        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-        return '\u20ac' + parts.join(',');
+        var formatted = price.toFixed(0);
+        formatted = formatted.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+        return '\u20ac' + formatted;
     }
 
     function buildBookMsg(start, end) {
@@ -34,11 +38,10 @@
             var seasonName = season.name[lang] || season.name.fr;
             html += '<div class="tarifs-table-wrapper" data-season-index="' + idx + '">';
             html += '<table class="tarifs-table">';
-            html += '<thead><tr>';
-            html += '<th colspan="5">' + seasonName + '</th>';
-            html += '<th>' + labelNote + ' *</th>';
-            html += '<th></th>';
-            html += '</tr></thead>';
+            html += '<thead>';
+            html += '<tr class="tarif-thead-desktop"><th colspan="5">' + seasonName + '</th><th>' + labelNote + ' *</th><th></th></tr>';
+            html += '<tr class="tarif-thead-mobile"><th colspan="2">' + seasonName + '</th><th>' + labelNote + ' *</th><th></th></tr>';
+            html += '</thead>';
             html += '<tbody>';
             season.weeks.forEach(function (week) {
                 var start = week[0];
@@ -70,11 +73,11 @@
                     bookCell = '<td></td>';
                 }
                 html += '<tr class="' + cls + '">';
-                html += '<td>' + labelFrom + '</td>';
-                html += '<td>' + labelDay + '</td>';
-                html += '<td>' + formatDate(start) + '</td>';
-                html += '<td><span class="tarif-day-desktop">' + labelTo + ' ' + labelDay + '</span><span class="tarif-day-mobile">' + labelTo + '</span></td>';
-                html += '<td>' + formatDate(end) + '</td>';
+                html += '<td class="tarif-col-label">' + labelFrom + '</td>';
+                html += '<td class="tarif-col-label">' + labelDay + '</td>';
+                html += '<td><span class="tarif-date-full">' + formatDate(start) + '</span><span class="tarif-date-short">' + formatDateShort(start) + '</span></td>';
+                html += '<td class="tarif-col-label"><span class="tarif-day-desktop">' + labelTo + ' ' + labelDay + '</span><span class="tarif-day-mobile">' + labelTo + '</span></td>';
+                html += '<td><span class="tarif-date-full">' + formatDate(end) + '</span><span class="tarif-date-short"> - ' + formatDateShort(end) + '</span></td>';
                 html += '<td class="tarif-price">' + priceText + '</td>';
                 html += bookCell;
                 html += '</tr>';
