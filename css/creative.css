@@ -744,6 +744,10 @@ html[lang="fr"] .review-toggle {
     color: rgba(255, 255, 255, 0.85);
     font-size: 15px;
     line-height: 1.7;
+}
+#faq .accordion-body a:not(.faq-contact-links a) {
+    color: #D4924B;
+    text-decoration: underline;
     padding: 16px 20px;
 }
 .faq-category {
