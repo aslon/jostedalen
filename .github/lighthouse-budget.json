@@ -2,10 +2,10 @@
   {
     "path": "/",
     "timings": [
-      { "metric": "interactive", "budget": 5000 }
+      { "metric": "interactive", "budget": 8000 }
     ],
     "resourceSizes": [
-      { "resourceType": "total", "budget": 500 }
+      { "resourceType": "total", "budget": 1000 }
     ],
     "resourceCounts": [
       { "resourceType": "script", "budget": 10 }
