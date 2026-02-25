@@ -185,5 +185,13 @@ document.addEventListener('click', function (e) {
     else if (href.indexOf('sms:') === 0) event = 'click_sms';
     else if (href.indexOf('tel:') === 0) event = 'click_phone';
     else if (href.indexOf('mailto:') === 0) event = 'click_email';
-    if (event) window.dataLayer.push({ event: event, link_url: href });
+    if (!event) return;
+    var section = 'other';
+    if (link.classList.contains('whatsapp-float') || link.classList.contains('imessage-float')) section = 'float';
+    else if (link.closest('#tarifsContainer')) section = 'tarifs_table';
+    else if (link.closest('.tarifs-contact-links')) section = 'tarifs_contact';
+    else if (link.closest('#contact')) section = 'contact';
+    else if (link.closest('#tarifs')) section = 'tarifs';
+    else if (link.closest('header')) section = 'share';
+    window.dataLayer.push({ event: event, link_url: href, click_section: section });
 });
