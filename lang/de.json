@@ -333,11 +333,11 @@
   "tarifs_day": "Samstag",
   "tarifs_to": "bis",
   "tarifs_reserved": "reserviert",
-  "tarifs_note": "Preis, Endreinigung inklusive",
+  "tarifs_note": "Preis",
   "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
   "tarifs_all": "Alle Saisons",
   "tarifs_contact_msg": "F&uuml;r jedes andere Datum kontaktieren Sie uns:",
-  "tarifs_footnote": "* Kurtaxe nicht inbegriffen: 0,99&nbsp;&euro; / Erwachsener / Nacht. Bettw&auml;sche und Handt&uuml;cher optional.",
+  "tarifs_footnote": "* Endreinigung inklusive. Kurtaxe nicht inbegriffen: 0,99&nbsp;&euro; / Erwachsener / Nacht. Bettw&auml;sche und Handt&uuml;cher optional.",
 
   "back_to_top_aria": "Zur&uuml;ck nach oben",
 

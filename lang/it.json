@@ -333,11 +333,11 @@
   "tarifs_day": "sabato",
   "tarifs_to": "al",
   "tarifs_reserved": "prenotato",
-  "tarifs_note": "Tariffa, pulizia di fine soggiorno inclusa",
+  "tarifs_note": "Tariffa",
   "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
   "tarifs_all": "Tutte le stagioni",
   "tarifs_contact_msg": "Per qualsiasi altra data, contattateci:",
-  "tarifs_footnote": "* Tassa di soggiorno esclusa: 0,99&nbsp;&euro; / adulto / notte. Lenzuola e asciugamani disponibili su richiesta.",
+  "tarifs_footnote": "* Pulizia di fine soggiorno inclusa. Tassa di soggiorno esclusa: 0,99&nbsp;&euro; / adulto / notte. Lenzuola e asciugamani disponibili su richiesta.",
 
   "back_to_top_aria": "Torna in cima alla pagina",
 

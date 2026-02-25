@@ -790,14 +790,13 @@ html[lang="fr"] .review-toggle {
 .tarifs-table-wrapper {
     overflow-x: auto;
     margin-bottom: 30px;
-    -webkit-overflow-scrolling: touch;
-}
-.tarifs-table-wrapper table {
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .tarifs-table {
-    width: auto;
+    width: 100%;
     border-collapse: collapse;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 14px;
@@ -806,13 +805,13 @@ html[lang="fr"] .review-toggle {
     background-color: #2E4057;
     color: #fff;
     padding: 12px 10px;
-    text-align: left;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
 }
 .tarifs-table thead th:last-child {
-    text-align: right;
+    text-align: center;
     text-transform: none;
     font-weight: 600;
     font-size: 13px;
@@ -821,6 +820,7 @@ html[lang="fr"] .review-toggle {
     padding: 8px 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     white-space: nowrap;
+    text-align: center;
 }
 .tarifs-table .tarif-available {
     background-color: #c6efce;
@@ -829,7 +829,7 @@ html[lang="fr"] .review-toggle {
     background-color: #fcd4b6;
 }
 .tarifs-table .tarif-price {
-    text-align: right;
+    text-align: center;
     font-weight: 700;
 }
 .tarif-original {
@@ -856,6 +856,7 @@ html[lang="fr"] .review-toggle {
 .tarif-book {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     white-space: nowrap;
 }
@@ -876,24 +877,24 @@ html[lang="fr"] .review-toggle {
 .tarif-book .bi-chat-dots {
     color: #34C759;
 }
-.tarif-day-mobile {
-    display: none;
-}
 .tarif-date-short {
     display: none;
 }
 .tarif-thead-mobile {
     display: none;
 }
+.tarif-reserved-icon {
+    display: none;
+}
 @media (max-width: 575.98px) {
-    .tarif-day-desktop {
-        display: none;
-    }
-    .tarif-day-mobile {
-        display: inline;
-    }
     .tarif-col-label {
         display: none;
+    }
+    .tarif-reserved-text {
+        display: none;
+    }
+    .tarif-reserved-icon {
+        display: inline;
     }
     .tarif-thead-desktop {
         display: none;

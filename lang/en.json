@@ -333,11 +333,11 @@
   "tarifs_day": "Saturday",
   "tarifs_to": "to",
   "tarifs_reserved": "reserved",
-  "tarifs_note": "Rate, end-of-stay cleaning included",
+  "tarifs_note": "Rate",
   "tarifs_book_msg": "Hello, I would like to book Chalet Jostedalen from Saturday {start} to Saturday {end}.",
   "tarifs_all": "All seasons",
   "tarifs_contact_msg": "For any other date, contact us:",
-  "tarifs_footnote": "* Tourist tax not included: &euro;0.99 / adult / night. Bed linen and towels available as an option.",
+  "tarifs_footnote": "* End-of-stay cleaning included. Tourist tax not included: &euro;0.99 / adult / night. Bed linen and towels available as an option.",
 
   "back_to_top_aria": "Back to top",
 
