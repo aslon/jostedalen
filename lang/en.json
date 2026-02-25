@@ -7,18 +7,15 @@
     "lang_url_prefix": "en",
     "canonical_url": "https://www.location-chalet-jostedalen.com/en/"
   },
-
   "gtm_id": "GTM-552T5L7T",
   "breadcrumb_home": "Home",
   "faq_search_placeholder": "Search FAQ...",
-
   "meta_title": "Chalet Jostedalen Rental - Saint-Sorlin d'Arves",
   "meta_description": "Chalet Jostedalen rental for skiing and hiking in Saint-Sorlin d'Arves (Savoie, French Alps) - 240m², 6 bedrooms, jacuzzi, Les Sybelles ski area",
   "og_title": "Chalet Jostedalen - Rental in Saint-Sorlin d'Arves",
   "og_description": "Triplex chalet 240m², 6 bedrooms, jacuzzi, 8-15 guests. Ski-in/ski-out, Les Sybelles ski area (310 km). Saint-Sorlin d'Arves, Savoie.",
   "twitter_title": "Chalet Jostedalen - Rental in Saint-Sorlin d'Arves",
   "twitter_description": "Triplex chalet 240m², 6 bedrooms, jacuzzi, 8-15 guests. Les Sybelles ski area, Savoie.",
-
   "jsonld_description": "High-end triplex chalet in Saint-Sorlin d'Arves (Savoie, French Alps), at the foot of Les Sybelles ski area. 240 m², 6 bedrooms, jacuzzi, for 8 to 15 guests.",
   "jsonld_amenity_wifi": "Wifi",
   "jsonld_amenity_jacuzzi": "Jacuzzi",
@@ -31,7 +28,6 @@
   "jsonld_amenity_baby": "Baby equipment",
   "jsonld_amenity_ev": "EV charging station 22 kW",
   "jsonld_accommodation_category": "Chalet",
-
   "nav_toggle": "Toggle navigation",
   "nav_chalet": "The chalet",
   "nav_plans": "Floor plans",
@@ -39,7 +35,6 @@
   "nav_photos": "Photos",
   "nav_contact": "Contact",
   "nav_tarifs": "Rates",
-
   "header_title": "Chalet Jostedalen",
   "header_location": "Saint-Sorlin d'Arves (Savoie) &mdash; 1600 m",
   "header_features": "240 m&sup2; &bull; 6 bedrooms &bull; Jacuzzi 6/7 seats",
@@ -57,7 +52,6 @@
   "share_label": "Share",
   "skip_to_content": "Skip to content",
   "map_view_larger": "View larger map",
-
   "section_chalet_aria": "Chalet description",
   "section_chalet_title": "High-end triplex chalet",
   "section_chalet_subtitle": "240 m&sup2; for 12-15 guests, south-facing, ski slopes and mountain views",
@@ -76,7 +70,6 @@
   "chalet_nearby_6": "Garden with table and barbecue (summer)",
   "chalet_nearby_7": "Hiking, climbing, horse riding, via ferrata...",
   "chalet_nearby_8": "EV charging station 22 kW",
-
   "section_plans_aria": "Chalet floor plans",
   "plan_alt_rdc": "Ground floor plan",
   "plan_alt_1er": "First floor plan",
@@ -84,7 +77,6 @@
   "plan_alt_dernier": "Top floor plan",
   "plan_prev": "Previous",
   "plan_next": "Next",
-
   "section_equip_aria": "Chalet amenities",
   "section_equip_title": "Amenities",
   "equip_kitchen_title": "Kitchen &amp; Home",
@@ -114,7 +106,6 @@
   "equip_baby_2": "2 travel cots with mattresses",
   "equip_baby_3": "Stair gate",
   "equip_baby_4": "Plastic baby bath",
-  
   "section_photos_aria": "Chalet photos",
   "photo_alt_1": "Exterior view of the chalet",
   "photo_alt_2": "Chalet living room",
@@ -140,7 +131,6 @@
   "photo_alt_22": "Chalet in the snow - view 2",
   "photo_alt_23": "Slopes view",
   "photo_alt_24": "Chalet view",
-
   "nav_avis": "Reviews",
   "nav_faq": "FAQ",
   "section_reviews_aria": "Guest reviews",
@@ -186,7 +176,6 @@
   "review_35_text": "Great stay, magnificent chalet.",
   "review_36_text": "Very beautiful chalet, I highly recommend.",
   "review_37_text": "Beautiful property with excellent amenities. Highly recommended.",
-
   "review_1_date": "February 2026",
   "review_2_date": "August 2025",
   "review_3_date": "July 2025",
@@ -224,7 +213,6 @@
   "review_35_date": "October 2021",
   "review_36_date": "July 2021",
   "review_37_date": "January 2019",
-
   "section_faq_aria": "Frequently asked questions",
   "section_faq_title": "Frequently asked questions",
   "faq_cat_1": "Booking &amp; Availability",
@@ -355,8 +343,7 @@
   "faq_55_q": "Is the chalet suitable for young children?",
   "faq_55_a": "The chalet has 2 travel cots with mattresses and high chairs. However, as with any multi-level mountain chalet (triplex), it has stairs. We recommend staying vigilant with toddlers, especially near the stairs and the spa. A stair gate is available for the upper living room.",
   "faq_56_q": "Is there a ski rental shop nearby?",
-  "faq_56_a": "Yes, a Skiset &ldquo;CyberSki&rdquo; shop is right next to the chalet. You can rent your ski equipment directly on site, without taking the car. Chalet guests may receive a 20 to 25&nbsp;% discount depending on the period. Contact Pascale: <span class=\"faq-contact-links\"><a href=\"https://wa.me/33688950883?text=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" target=\"_blank\" rel=\"noopener\" aria-label=\"WhatsApp\"><i class=\"bi bi-whatsapp\"></i></a><a href=\"sms:+33688950883&amp;body=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" aria-label=\"SMS\"><i class=\"bi bi-chat-dots\"></i></a><a href=\"tel:+33688950883\" aria-label=\"Phone\"><i class=\"bi bi-telephone\"></i></a><a href=\"#\" onclick=\"this.href='mai'+'lto:'+'pascale.skiset'+'@'+'wanadoo.fr'+'?subject=Demande%20de%20devis%20-%20Chalet%20Jostedalen&amp;body=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski%20%3F'\" aria-label=\"Email\"><i class=\"bi bi-envelope\"></i></a></span>",
-
+  "faq_56_a": "Yes, a Skiset &ldquo;CyberSki&rdquo; shop is right next to the chalet. You can rent your ski equipment directly on site, without taking the car. Chalet guests may receive a 20 to 25&nbsp;% discount depending on the period. Contact Pascale: <span class=\"faq-contact-links\"><a href=\"https://wa.me/33688950883?text=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" target=\"_blank\" rel=\"noopener\" aria-label=\"WhatsApp\"><i class=\"bi bi-whatsapp\"></i></a><a href=\"sms:+33688950883&amp;body=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" aria-label=\"SMS\"><i class=\"bi bi-chat-dots\"></i></a><a href=\"tel:+33688950883\" aria-label=\"Phone\"><i class=\"bi bi-telephone\"></i></a><a href=\"#\" class=\"obfuscated-email\" data-eu=\"cGFzY2FsZS5za2lzZXQ=\" data-ed=\"d2FuYWRvby5mcg==\" data-es=\"Demande%20de%20devis%20-%20Chalet%20Jostedalen\" data-eb=\"Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski%20%3F\" aria-label=\"Email\"><i class=\"bi bi-envelope\"></i></a></span>",
   "section_tarifs_aria": "Rates and availability",
   "section_tarifs_title": "Rates &amp; Availability",
   "tarifs_from": "from",
@@ -368,9 +355,7 @@
   "tarifs_all": "All seasons",
   "tarifs_contact_msg": "For any other date, contact us:",
   "tarifs_footnote": "* End-of-stay cleaning included. Tourist tax not included: &euro;0.99 / adult / night. Bed linen and towels available as an option.",
-
   "back_to_top_aria": "Back to top",
-
   "section_contact_aria": "Contact",
   "contact_title": "Contact us",
   "contact_whatsapp": "WhatsApp",
@@ -380,11 +365,9 @@
   "contact_sms_message": "Hello%2C%20I%20would%20like%20information%20about%20Chalet%20Jostedalen",
   "contact_float_whatsapp_aria": "Contact us on WhatsApp",
   "contact_float_imessage_aria": "Contact us via iMessage",
-
   "footer_copyright": "&copy; Chalet Jostedalen &mdash; Saint-Sorlin d'Arves, Savoie",
   "footer_facebook_aria": "Follow us on Facebook",
   "footer_instagram_aria": "Follow us on Instagram",
-
   "llms_title": "Chalet Jostedalen - Holiday Rental",
   "llms_intro": "High-end triplex chalet in Saint-Sorlin d'Arves (Savoie, French Alps), at the foot of Les Sybelles ski area (310 km of runs). 240 m2, 6 bedrooms, jacuzzi, for 8 to 15 guests.",
   "llms_section_general": "General information",
@@ -426,7 +409,6 @@
   "llms_baby_2": "2 travel cots with mattresses",
   "llms_baby_3": "Stair gate",
   "llms_baby_4": "Plastic baby bath",
-  
   "llms_section_nearby": "Nearby and activities",
   "llms_nearby_1": "Ski slopes at 200 m",
   "llms_nearby_2": "Free shuttle at 30 m",
@@ -439,12 +421,10 @@
   "llms_section_photos": "Photos",
   "llms_photos_count": "18 photos available on the website",
   "llms_photos_desc": "Exterior view, living room, kitchen, bedrooms, bathrooms, jacuzzi, terrace, mountain views, ski slopes",
-
   "cookie_message": "This site uses cookies to measure audience.",
   "cookie_accept": "Accept",
   "cookie_reject": "Decline",
   "cookie_learn_more": "Learn more",
-
   "404_title": "Page not found",
   "404_message": "The page you are looking for does not exist or has been moved.",
   "404_back": "Back to homepage"

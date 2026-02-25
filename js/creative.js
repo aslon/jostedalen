@@ -129,6 +129,50 @@
             });
         });
     });
+    // Activate async-loaded CSS (replaces inline onload="this.media='all'")
+    document.querySelectorAll('link.async-css').forEach(function (link) {
+        if (link.sheet) {
+            link.media = 'all';
+        } else {
+            link.addEventListener('load', function () { this.media = 'all'; });
+        }
+    });
+
+    // Toggle original/translated review text (replaces inline onclick)
+    document.addEventListener('click', function (e) {
+        var toggle = e.target.closest('.review-toggle');
+        if (!toggle) return;
+        e.preventDefault();
+        var card = toggle.closest('.review-card');
+        var translated = card.querySelector('.review-translated');
+        var original = card.querySelector('.review-original');
+        var showing = original.style.display !== 'none';
+        translated.style.display = showing ? '' : 'none';
+        original.style.display = showing ? 'none' : '';
+    });
+
+    // Obfuscated email links (base64-encoded parts to prevent bot scraping)
+    document.addEventListener('click', function (e) {
+        var link = e.target.closest('.obfuscated-email');
+        if (!link) return;
+        var u = link.getAttribute('data-eu');
+        var d = link.getAttribute('data-ed');
+        if (!u || !d) return;
+        var addr = atob(u) + '@' + atob(d);
+        var subject = link.getAttribute('data-es') || '';
+        var body = link.getAttribute('data-eb') || '';
+        link.href = 'mailto:' + addr + '?subject=' + subject + '&body=' + body;
+    });
+
+    // Show all reviews button
+    var btnShow = document.getElementById('btnShowReviews');
+    if (btnShow) {
+        btnShow.addEventListener('click', function () {
+            var items = document.querySelectorAll('.review-extra');
+            for (var i = 0; i < items.length; i++) items[i].classList.remove('review-extra');
+            this.style.display = 'none';
+        });
+    }
 })();
 
 // GTM conversion tracking

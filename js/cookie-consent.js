@@ -29,7 +29,9 @@
   }
 
   function loadGTM() {
-    if (!window.GTM_ID || window._gtmLoaded) return;
+    var gtmMeta = document.querySelector('meta[name="gtm-id"]');
+    var gtmId = gtmMeta ? gtmMeta.getAttribute('content') : '';
+    if (!gtmId || window._gtmLoaded) return;
     window._gtmLoaded = true;
 
     // Initialize dataLayer
@@ -39,7 +41,7 @@
     // Inject GTM script
     var s = document.createElement('script');
     s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + window.GTM_ID;
+    s.src = 'https://www.googletagmanager.com/gtm.js?id=' + gtmId;
     document.head.appendChild(s);
   }
 

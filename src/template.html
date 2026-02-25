@@ -4,13 +4,11 @@
 <head>
     <meta charset="utf-8">
 
-    <!-- GTM loaded conditionally by cookie-consent.js -->
-    <script>window.GTM_ID='{{gtm_id}}';</script>
-
+    <meta name="gtm-id" content="{{gtm_id}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#2E4057">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; frame-src https://www.openstreetmap.org https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; frame-src https://www.openstreetmap.org https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 
     <!-- LCP image preload (must be early, before inline CSS and JSON-LD) -->
     <link rel="preload" as="image" fetchpriority="high"
@@ -68,11 +66,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Non-critical CSS (media="print" trick = lowest fetch priority, gives bandwidth to LCP image) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="print" onload="this.media='all'" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/brands.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" media="print" class="async-css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" media="print" class="async-css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/fontawesome.min.css" media="print" class="async-css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/brands.min.css" media="print" class="async-css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" media="print" class="async-css">
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -736,7 +734,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_1_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Séjour très bon et conforme à la description. Hôte arrangeant, boîte à clé pratique. Très bien équipé en électroménager et vaisselle."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <!-- Avis 2 -->
@@ -751,7 +749,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_2_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Beaucoup d'espace, pièce à vivre très agréable."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <!-- Avis 3 -->
@@ -766,7 +764,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_3_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très agréable, le jacuzzi est un vrai plus. Bien équipé, spacieux et chaleureux."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <!-- Avis 4 -->
@@ -781,7 +779,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_4_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Super séjour sportif, très bien équipé. Proche du village et du point d'eau."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <!-- Avis 5 -->
@@ -796,7 +794,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_5_text}}"</p>
                         <p class="review-text review-original" style="display:none">"En haut du village avec de belles balades. Agréable, pratique, spacieux et lumineux."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <!-- Avis 6 -->
@@ -811,7 +809,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_6_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très bonne semaine entre amis dans un cadre magnifique."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <!-- Avis 7-37 (cachés par défaut) -->
@@ -826,7 +824,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_7_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Super spot, très bien équipé pour les randos. Jacuzzi apprécié."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -840,7 +838,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_8_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Parfait pour 12 personnes, grande surface avec nombreuses SDB et WC. Très bien équipé, jacuzzi. Accueil sympa."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -854,7 +852,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_9_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Triplex spacieux et lumineux. Rando, parapente et jacuzzi après la rando. Bon accueil."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -868,7 +866,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_10_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Week-end idéal. Spacieux et très bien équipé. Bonne communication avec l'hôte."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -882,7 +880,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_11_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Bien situé et bien équipé. Grande pièce de vie. Souci de chauffe-eau géré rapidement par le propriétaire."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -896,7 +894,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_12_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Séjour entre amis avec enfants très agréable. Bien agencé et équipé. Jacuzzi fonctionnel et spacieux."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -910,7 +908,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_13_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Week-end entre copains. Pièce principale plus grande qu'en photos. Rando à proximité, jacuzzi un gros plus."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -924,7 +922,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_14_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Joliment décoré et bien équipé. Cyrille très disponible et gentil."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -938,7 +936,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_15_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Séjour en grande famille avec randos et plan d'eau. Super équipé avec jacuzzi. Prêts à y retourner !"</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -952,7 +950,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_16_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Excellente semaine en famille. Spacieux et conforme à la description. Bon accueil."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -966,7 +964,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_17_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Belle vue et jacuzzi. SDB dans presque toutes les chambres, cuisine bien équipée. Skibus, 2 salons. Parfait avec enfants."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -980,7 +978,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_18_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très bien situé et fonctionnel. Déco soignée, hôte réactif. Accueil chaleureux."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -994,7 +992,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_19_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très bien équipé pour les grands groupes. Bien situé. Les défauts signalés ont été traités rapidement."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1008,7 +1006,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_20_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Idéal entre amis. Grands espaces pour 7 adultes et 5 enfants. Propre, accueil chaleureux. Plan d'eau à 5 min."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1022,7 +1020,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_21_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Parfait pour 12 personnes. Grande table pour cuisiner ensemble. Montagne et jacuzzi."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1036,7 +1034,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_22_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très bien équipé avec une déco top. En mai la station est déserte, idéal pour les balades."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1050,7 +1048,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_23_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très bien situé, proche des commodités. Beaucoup de place et bien décoré."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1064,7 +1062,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_24_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très propre et très spacieux. Activités proches. Vacances géniales !"</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1078,7 +1076,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_25_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Excellent. Très bien équipé et conçu. Idéalement placé."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1092,7 +1090,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_26_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Bien situé, tout à pied. Bien équipé et joliment décoré. On reviendra !"</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1106,7 +1104,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_27_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très bien équipé, chaleureux et convivial. Conforme à la description."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1120,7 +1118,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_28_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très bon week-end en famille. Grand chalet bien équipé."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1134,7 +1132,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_29_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Contact agréable, personne sur place disponible et à l'écoute. Parfait."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1148,7 +1146,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_30_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Conforme aux photos, top pour un week-end."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1162,7 +1160,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_31_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Excellent séjour dans un magnifique chalet. On reviendra !"</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1176,7 +1174,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_32_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Accueil et site au top. Cyrille très sympa."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1190,7 +1188,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_33_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très agréable et très bien équipé. Moderne et chaleureux."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1204,7 +1202,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_34_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Plus spacieux qu'en photos. Grands espaces sociaux, cuisine bien équipée. Idéal pour un grand groupe."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1218,7 +1216,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_35_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Super séjour, chalet magnifique."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1232,7 +1230,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_36_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Très beau chalet, je recommande fortement."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 review-extra">
@@ -1246,7 +1244,7 @@
                         </div>
                         <p class="review-text review-translated">"{{review_37_text}}"</p>
                         <p class="review-text review-original" style="display:none">"Belle propriété avec d'excellents équipements. Hautement recommandé."</p>
-                        <a href="#" class="review-toggle" onclick="toggleOriginal(this);return false">{{reviews_show_original}}</a>
+                        <a href="#" class="review-toggle">{{reviews_show_original}}</a>
                     </div>
                 </div>
             </div>
@@ -1254,23 +1252,6 @@
                 <button class="btn btn-primary btn-reviews" id="btnShowReviews">{{reviews_show_all}}</button>
             </div>
         </div>
-    <script>
-    function toggleOriginal(link) {
-        var card = link.closest('.review-card');
-        var translated = card.querySelector('.review-translated');
-        var original = card.querySelector('.review-original');
-        var showing = original.style.display !== 'none';
-        translated.style.display = showing ? '' : 'none';
-        original.style.display = showing ? 'none' : '';
-    }
-    </script>
-        <script>
-        document.getElementById('btnShowReviews').addEventListener('click', function() {
-            var items = document.querySelectorAll('.review-extra');
-            for (var i = 0; i < items.length; i++) items[i].classList.remove('review-extra');
-            this.style.display = 'none';
-        });
-        </script>
     </section>
 
     <!-- FAQ -->

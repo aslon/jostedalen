@@ -7,18 +7,15 @@
     "lang_url_prefix": "",
     "canonical_url": "https://www.location-chalet-jostedalen.com/"
   },
-
   "gtm_id": "GTM-552T5L7T",
   "breadcrumb_home": "Accueil",
   "faq_search_placeholder": "Rechercher dans la FAQ...",
-
   "meta_title": "Location Chalet Jostedalen - Saint-Sorlin d'Arves",
   "meta_description": "Location Chalet Jostedalen pour le ski et la randonnée à Saint-Sorlin d'Arves (Savoie) - 240m², 6 chambres, jacuzzi, domaine Les Sybelles",
   "og_title": "Chalet Jostedalen - Location à Saint-Sorlin d'Arves",
   "og_description": "Chalet triplex 240m², 6 chambres, jacuzzi, 8-15 personnes. Au pied des pistes, domaine Les Sybelles (310 km). Saint-Sorlin d'Arves, Savoie.",
   "twitter_title": "Chalet Jostedalen - Location à Saint-Sorlin d'Arves",
   "twitter_description": "Chalet triplex 240m², 6 chambres, jacuzzi, 8-15 personnes. Domaine Les Sybelles, Savoie.",
-
   "jsonld_description": "Chalet triplex très grand confort à Saint-Sorlin d'Arves (Savoie), au pied du domaine skiable Les Sybelles. 240 m², 6 chambres, jacuzzi, pour 8 à 15 personnes.",
   "jsonld_amenity_wifi": "Wifi",
   "jsonld_amenity_jacuzzi": "Jacuzzi",
@@ -31,7 +28,6 @@
   "jsonld_amenity_baby": "Équipement bébé",
   "jsonld_amenity_ev": "Borne de recharge VÉ 22 kW",
   "jsonld_accommodation_category": "Chalet",
-
   "nav_toggle": "Toggle navigation",
   "nav_chalet": "Le chalet",
   "nav_plans": "Plans",
@@ -39,7 +35,6 @@
   "nav_photos": "Photos",
   "nav_contact": "Contact",
   "nav_tarifs": "Tarifs",
-
   "header_title": "Chalet Jostedalen",
   "header_location": "Saint-Sorlin d'Arves (Savoie) &mdash; 1600 m",
   "header_features": "240 m&sup2; &bull; 6 chambres &bull; Jacuzzi 6/7 places",
@@ -57,7 +52,6 @@
   "share_label": "Partager",
   "skip_to_content": "Aller au contenu",
   "map_view_larger": "Agrandir la carte",
-
   "section_chalet_aria": "Description du chalet",
   "section_chalet_title": "Triplex tr&egrave;s grand confort",
   "section_chalet_subtitle": "240 m&sup2; pour 12-15 personnes, orientation sud, vues pistes et montagne",
@@ -76,7 +70,6 @@
   "chalet_nearby_6": "Jardin avec table et barbecue (&eacute;t&eacute;)",
   "chalet_nearby_7": "Randonn&eacute;e, escalade, &eacute;quitation, via-ferrata...",
   "chalet_nearby_8": "Prise de recharge V&Eacute; 22 kW",
-
   "section_plans_aria": "Plans du chalet",
   "plan_alt_rdc": "Plan du rez-de-chauss&eacute;e",
   "plan_alt_1er": "Plan du 1er &eacute;tage",
@@ -84,7 +77,6 @@
   "plan_alt_dernier": "Plan du dernier &eacute;tage",
   "plan_prev": "Pr&eacute;c&eacute;dent",
   "plan_next": "Suivant",
-
   "section_equip_aria": "Equipements du chalet",
   "section_equip_title": "Equipements",
   "equip_kitchen_title": "Cuisine &amp; Maison",
@@ -114,7 +106,6 @@
   "equip_baby_2": "2 lits parapluies avec matelas",
   "equip_baby_3": "Protection escalier",
   "equip_baby_4": "Baignoire plastique",
-  
   "section_photos_aria": "Photos du chalet",
   "photo_alt_1": "Vue ext&eacute;rieure du chalet",
   "photo_alt_2": "S&eacute;jour du chalet",
@@ -140,7 +131,6 @@
   "photo_alt_22": "Chalet sous la neige - vue 2",
   "photo_alt_23": "Vue sur les pistes",
   "photo_alt_24": "Vue du chalet",
-
   "nav_avis": "Avis",
   "nav_faq": "FAQ",
   "section_reviews_aria": "Avis clients",
@@ -186,7 +176,6 @@
   "review_35_text": "Super séjour, chalet magnifique.",
   "review_36_text": "Très beau chalet, je recommande fortement.",
   "review_37_text": "Belle propriété avec d'excellents équipements. Hautement recommandé.",
-
   "review_1_date": "F&eacute;vrier 2026",
   "review_2_date": "Ao&ucirc;t 2025",
   "review_3_date": "Juillet 2025",
@@ -224,7 +213,6 @@
   "review_35_date": "Octobre 2021",
   "review_36_date": "Juillet 2021",
   "review_37_date": "Janvier 2019",
-
   "section_faq_aria": "Questions fr&eacute;quentes",
   "section_faq_title": "Questions fr&eacute;quentes",
   "faq_cat_1": "R&eacute;servation &amp; Disponibilit&eacute;s",
@@ -355,8 +343,7 @@
   "faq_55_q": "Le chalet est-il adapt&eacute; aux jeunes enfants&nbsp;?",
   "faq_55_a": "Le chalet dispose de 2 lits parapluie avec matelas et de chaises hautes. Cependant, comme tout chalet de montagne sur plusieurs niveaux (triplex), il comporte des escaliers. Nous vous recommandons de rester vigilants avec les tout-petits, notamment &agrave; proximit&eacute; des escaliers et du spa. Une barri&egrave;re d'escalier est disponible pour le salon du haut.",
   "faq_56_q": "Y a-t-il un magasin de location de ski &agrave; proximit&eacute;&nbsp;?",
-  "faq_56_a": "Oui, un magasin Skiset &laquo;&nbsp;CyberSki&nbsp;&raquo; est mitoyen au chalet. Vous pourrez y louer votre mat&eacute;riel de ski directement sur place, sans prendre la voiture. Pour les locataires du chalet, une remise de 20 &agrave; 25&nbsp;% pourra vous &ecirc;tre accord&eacute;e selon la p&eacute;riode. Contacter Pascale&nbsp;: <span class=\"faq-contact-links\"><a href=\"https://wa.me/33688950883?text=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" target=\"_blank\" rel=\"noopener\" aria-label=\"WhatsApp\"><i class=\"bi bi-whatsapp\"></i></a><a href=\"sms:+33688950883&amp;body=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" aria-label=\"SMS\"><i class=\"bi bi-chat-dots\"></i></a><a href=\"tel:+33688950883\" aria-label=\"T&eacute;l&eacute;phone\"><i class=\"bi bi-telephone\"></i></a><a href=\"#\" onclick=\"this.href='mai'+'lto:'+'pascale.skiset'+'@'+'wanadoo.fr'+'?subject=Demande%20de%20devis%20-%20Chalet%20Jostedalen&amp;body=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski%20%3F'\" aria-label=\"Email\"><i class=\"bi bi-envelope\"></i></a></span>",
-
+  "faq_56_a": "Oui, un magasin Skiset &laquo;&nbsp;CyberSki&nbsp;&raquo; est mitoyen au chalet. Vous pourrez y louer votre mat&eacute;riel de ski directement sur place, sans prendre la voiture. Pour les locataires du chalet, une remise de 20 &agrave; 25&nbsp;% pourra vous &ecirc;tre accord&eacute;e selon la p&eacute;riode. Contacter Pascale&nbsp;: <span class=\"faq-contact-links\"><a href=\"https://wa.me/33688950883?text=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" target=\"_blank\" rel=\"noopener\" aria-label=\"WhatsApp\"><i class=\"bi bi-whatsapp\"></i></a><a href=\"sms:+33688950883&amp;body=Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski\" aria-label=\"SMS\"><i class=\"bi bi-chat-dots\"></i></a><a href=\"tel:+33688950883\" aria-label=\"T&eacute;l&eacute;phone\"><i class=\"bi bi-telephone\"></i></a><a href=\"#\" class=\"obfuscated-email\" data-eu=\"cGFzY2FsZS5za2lzZXQ=\" data-ed=\"d2FuYWRvby5mcg==\" data-es=\"Demande%20de%20devis%20-%20Chalet%20Jostedalen\" data-eb=\"Bonjour%2C%20je%20viens%20de%20la%20part%20du%20Chalet%20Jostedalen%2C%20pouvez-vous%20me%20faire%20un%20devis%20pour%20la%20location%20de%20ski%20%3F\" aria-label=\"Email\"><i class=\"bi bi-envelope\"></i></a></span>",
   "section_tarifs_aria": "Tarifs et disponibilit&eacute;s",
   "section_tarifs_title": "Tarifs &amp; Disponibilit&eacute;s",
   "tarifs_from": "du",
@@ -368,9 +355,7 @@
   "tarifs_all": "Toutes les saisons",
   "tarifs_contact_msg": "Pour toute autre date, contactez-nous :",
   "tarifs_footnote": "* M&eacute;nage fin de s&eacute;jour inclus. Taxe de s&eacute;jour en sus : 0,99&nbsp;&euro; / adulte / nuit. Draps et serviettes en option.",
-
   "back_to_top_aria": "Retour en haut de page",
-
   "section_contact_aria": "Contact",
   "contact_title": "Nous contacter",
   "contact_whatsapp": "WhatsApp",
@@ -380,11 +365,9 @@
   "contact_sms_message": "Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20le%20Chalet%20Jostedalen",
   "contact_float_whatsapp_aria": "Nous contacter sur WhatsApp",
   "contact_float_imessage_aria": "Nous contacter par iMessage",
-
   "footer_copyright": "&copy; Chalet Jostedalen &mdash; Saint-Sorlin d'Arves, Savoie",
   "footer_facebook_aria": "Suivez-nous sur Facebook",
   "footer_instagram_aria": "Suivez-nous sur Instagram",
-
   "llms_title": "Chalet Jostedalen - Location de vacances",
   "llms_intro": "Chalet triplex tres grand confort a Saint-Sorlin d'Arves (Savoie), au pied du domaine skiable Les Sybelles (310 km de pistes). 240 m2, 6 chambres, jacuzzi, pour 8 a 15 personnes.",
   "llms_section_general": "Informations generales",
@@ -426,7 +409,6 @@
   "llms_baby_2": "2 lits parapluies avec matelas",
   "llms_baby_3": "Protection escalier",
   "llms_baby_4": "Baignoire plastique",
-  
   "llms_section_nearby": "Proximite et activites",
   "llms_nearby_1": "Pistes de ski a 200 m",
   "llms_nearby_2": "Navette gratuite a 30 m",
@@ -439,12 +421,10 @@
   "llms_section_photos": "Photos",
   "llms_photos_count": "18 photos disponibles sur le site web",
   "llms_photos_desc": "Vue exterieure, sejour, cuisine, chambres, salles de bain, jacuzzi, terrasse, vues montagne, pistes de ski",
-
   "cookie_message": "Ce site utilise des cookies pour mesurer l'audience.",
   "cookie_accept": "Accepter",
   "cookie_reject": "Refuser",
   "cookie_learn_more": "En savoir plus",
-
   "404_title": "Page non trouv&eacute;e",
   "404_message": "La page que vous cherchez n'existe pas ou a &eacute;t&eacute; d&eacute;plac&eacute;e.",
   "404_back": "Retour &agrave; l'accueil"
