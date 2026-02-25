@@ -130,3 +130,16 @@
         });
     });
 })();
+
+// GTM conversion tracking
+document.addEventListener('click', function (e) {
+    var link = e.target.closest('a');
+    if (!link || !window.dataLayer) return;
+    var href = link.getAttribute('href') || '';
+    var event = null;
+    if (href.indexOf('wa.me') !== -1) event = 'click_whatsapp';
+    else if (href.indexOf('sms:') === 0) event = 'click_sms';
+    else if (href.indexOf('tel:') === 0) event = 'click_phone';
+    else if (href.indexOf('mailto:') === 0) event = 'click_email';
+    if (event) window.dataLayer.push({ event: event, link_url: href });
+});

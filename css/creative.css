@@ -760,6 +760,26 @@ html[lang="fr"] .review-toggle {
 .faq-category:first-of-type {
     margin-top: 0;
 }
+.faq-search-wrapper {
+    max-width: 500px;
+    margin: 0 auto 30px;
+}
+.faq-search-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+.faq-search-input:focus {
+    border-color: #D4924B;
+}
+.faq-search-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
 .faq-category i {
     margin-right: 8px;
 }

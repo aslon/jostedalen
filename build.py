@@ -175,6 +175,7 @@ def minify_assets():
         "js/reviews-carousel.js",
         "js/lang-switcher.js",
         "js/cookie-consent.js",
+        "js/faq-search.js",
     ]
     for js in js_files:
         src = os.path.join(BASE_DIR, js)
@@ -186,6 +187,29 @@ def minify_assets():
             f.write(minified)
         saving = 100 - (len(minified) / len(original) * 100)
         print(f"  {js} -> {os.path.basename(dst)} ({saving:.0f}% smaller)")
+
+
+def bundle_js():
+    """Bundle all minified JS into a single app.min.js."""
+    js_order = [
+        "js/creative.min.js",
+        "js/tarifs.min.js",
+        "js/lightbox.min.js",
+        "js/reviews-carousel.min.js",
+        "js/lang-switcher.min.js",
+        "js/cookie-consent.min.js",
+        "js/faq-search.min.js",
+    ]
+    parts = []
+    for js in js_order:
+        path = os.path.join(BASE_DIR, js)
+        with open(path, "r", encoding="utf-8") as f:
+            parts.append(f.read())
+    bundle = "\n".join(parts)
+    dst = os.path.join(BASE_DIR, "js", "app.min.js")
+    with open(dst, "w", encoding="utf-8") as f:
+        f.write(bundle)
+    print(f"  Bundled {len(js_order)} JS files -> app.min.js ({len(bundle)} bytes)")
 
 
 def build_inline_css():
@@ -209,6 +233,9 @@ def main():
     # Minify CSS/JS first (needed for inline CSS)
     print("  Minifying assets...")
     minify_assets()
+
+    # Bundle all JS into single file
+    bundle_js()
 
     # Build inline CSS (critical Bootstrap + creative)
     inline_css = build_inline_css()
