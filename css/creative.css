@@ -759,6 +759,20 @@ html[lang="fr"] .review-toggle {
 .faq-category i {
     margin-right: 8px;
 }
+.faq-contact-links {
+    display: inline-flex;
+    gap: 12px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+.faq-contact-links a {
+    color: #25D366;
+    font-size: 22px;
+    transition: opacity 0.2s;
+}
+.faq-contact-links a:hover {
+    opacity: 0.75;
+}
 
 /* ===== Tarifs Section ===== */
 #tarifs .section-heading {
