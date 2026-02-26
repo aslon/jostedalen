@@ -92,6 +92,11 @@ def generate_sitemap():
     return "\n".join(lines)
 
 
+def json_escape(s):
+    """Escape a string for use inside a JSON string literal."""
+    return s.replace("\\", "\\\\").replace('"', '\\"').replace("\n", "\\n").replace("\r", "\\r").replace("\t", "\\t")
+
+
 def apply_translations(template, translations, hreflang_tags):
     """Replace {{key}} placeholders with translation values."""
     result = template
@@ -114,7 +119,24 @@ def apply_translations(template, translations, hreflang_tags):
     else:
         flat["llms_txt_url"] = f"/{lang_code}/llms.txt"
 
-    # Replace all {{key}} placeholders
+    # Replace placeholders inside JSON-LD blocks with JSON-escaped values
+    def replace_jsonld_block(block_match):
+        block = block_match.group(0)
+        def replace_jsonld_placeholder(match):
+            key = match.group(1)
+            if key in flat:
+                return json_escape(str(flat[key]))
+            return match.group(0)
+        return re.sub(r"\{\{(\w+)\}\}", replace_jsonld_placeholder, block)
+
+    result = re.sub(
+        r'<script type="application/ld\+json">.*?</script>',
+        replace_jsonld_block,
+        result,
+        flags=re.DOTALL,
+    )
+
+    # Replace remaining {{key}} placeholders (HTML context, no escaping)
     def replace_placeholder(match):
         key = match.group(1)
         if key in flat:
