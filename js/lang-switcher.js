@@ -40,8 +40,8 @@
   }
 
   function autoRedirect() {
-    // Never redirect bots/crawlers (they don't have localStorage and would redirect every crawl)
-    if (/bot|crawl|spider|slurp|googlebot|bingbot|yandex/i.test(navigator.userAgent)) {
+    // Never redirect bots, crawlers, LLMs, or link previewers
+    if (/bot|crawl|spider|slurp|facebookexternalhit|WhatsApp|ChatGPT|Anthropic|Claude|Perplexity/i.test(navigator.userAgent)) {
       return;
     }
 
