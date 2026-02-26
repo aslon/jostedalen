@@ -40,6 +40,11 @@
   }
 
   function autoRedirect() {
+    // Never redirect bots/crawlers (they don't have localStorage and would redirect every crawl)
+    if (/bot|crawl|spider|slurp|googlebot|bingbot|yandex/i.test(navigator.userAgent)) {
+      return;
+    }
+
     // Only redirect on first visit (no stored preference)
     if (localStorage.getItem(STORAGE_KEY)) {
       return;
