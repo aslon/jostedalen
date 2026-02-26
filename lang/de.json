@@ -424,7 +424,7 @@
   "lang_suggestion_text": "Wir haben erkannt, dass Ihre Browsersprache {lang} ist.",
   "lang_suggestion_switch": "Zu {lang} wechseln",
   "lang_suggestion_stay": "Auf Deutsch bleiben",
-  "cookie_message": "Diese Website verwendet Cookies zur Besuchermessung.",
+  "cookie_message": "Diese Website verwendet Cookies f\u00fcr Besucherstatistiken.",
   "cookie_accept": "Akzeptieren",
   "cookie_reject": "Ablehnen",
   "cookie_learn_more": "Mehr erfahren",

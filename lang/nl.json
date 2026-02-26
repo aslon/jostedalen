@@ -424,7 +424,7 @@
   "lang_suggestion_text": "We hebben gedetecteerd dat uw browser in het {lang} staat.",
   "lang_suggestion_switch": "Overschakelen naar {lang}",
   "lang_suggestion_stay": "Blijf in het Nederlands",
-  "cookie_message": "Deze site gebruikt cookies om het bezoek te meten.",
+  "cookie_message": "Deze site gebruikt cookies voor bezoekersstatistieken.",
   "cookie_accept": "Accepteren",
   "cookie_reject": "Weigeren",
   "cookie_learn_more": "Meer informatie",
