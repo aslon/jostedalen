@@ -398,7 +398,8 @@ header .header-content .header-content-inner p {
 }
 .backtotop-float,
 .whatsapp-float,
-.imessage-float {
+.imessage-float,
+.email-float {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -427,9 +428,13 @@ header .header-content .header-content-inner p {
 .imessage-float {
   background-color: #34C759;
 }
+.email-float {
+  background-color: #D4924B;
+}
 .backtotop-float:hover,
 .whatsapp-float:hover,
-.imessage-float:hover {
+.imessage-float:hover,
+.email-float:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
   color: #fff;

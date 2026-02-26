@@ -11,6 +11,8 @@
     var labelBookMsg = container.getAttribute('data-label-book-msg');
     var labelFootnote = container.getAttribute('data-label-footnote');
     var labelTo = container.getAttribute('data-label-to');
+    var labelEmailSubject = container.getAttribute('data-label-email-subject');
+    var labelEmailBody = container.getAttribute('data-label-email-body');
 
     function formatDate(dateStr) {
         var parts = dateStr.split('-');
@@ -68,6 +70,7 @@
                     bookCell = '<td class="tarif-book">'
                         + '<a href="https://wa.me/' + ph + '?text=' + msg + '" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>'
                         + '<a href="sms:+' + ph + '&body=' + msg + '" aria-label="SMS"><i class="bi bi-chat-dots"></i></a>'
+                        + '<a href="#" class="obfuscated-email" data-eu="Y2hhbGV0Lmpvc3RlZGFsZW4=" data-ed="Z21haWwuY29t" data-es="' + encodeURIComponent(labelEmailSubject.replace('{start}', formatDate(start)).replace('{end}', formatDate(end))) + '" data-eb="' + encodeURIComponent(labelEmailBody.replace('{start}', formatDate(start)).replace('{end}', formatDate(end))) + '" aria-label="Email"><i class="bi bi-envelope"></i></a>'
                         + '</td>';
                 } else {
                     bookCell = '<td></td>';
