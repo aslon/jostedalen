@@ -1,7 +1,7 @@
 /**
  * Language switcher for Chalet Jostedalen multilingual site.
  * - Detects browser language on first visit
- * - Redirects to matching language version
+ * - Shows a suggestion banner (no auto-redirect)
  * - Stores preference in localStorage
  * - Highlights active language in navbar dropdown
  */
@@ -11,6 +11,14 @@
   var SUPPORTED_LANGS = ['fr', 'en', 'nl', 'de', 'it'];
   var DEFAULT_LANG = 'fr';
   var STORAGE_KEY = 'chalet_lang_pref';
+
+  var LANG_NAMES = {
+    fr: { en: 'anglais', nl: 'n\u00e9erlandais', de: 'allemand', it: 'italien', fr: 'fran\u00e7ais' },
+    en: { fr: 'French', nl: 'Dutch', de: 'German', it: 'Italian', en: 'English' },
+    nl: { fr: 'Frans', en: 'Engels', de: 'Duits', it: 'Italiaans', nl: 'Nederlands' },
+    de: { fr: 'Franz\u00f6sisch', en: 'Englisch', nl: 'Niederl\u00e4ndisch', it: 'Italienisch', de: 'Deutsch' },
+    it: { fr: 'francese', en: 'inglese', nl: 'olandese', de: 'tedesco', it: 'italiano' }
+  };
 
   function getCurrentLang() {
     var path = window.location.pathname;
@@ -24,7 +32,6 @@
 
   function detectBrowserLang() {
     var navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    // Check exact match first (e.g. "nl-NL" -> "nl")
     var primary = navLang.split('-')[0];
     if (SUPPORTED_LANGS.indexOf(primary) !== -1) {
       return primary;
@@ -39,13 +46,7 @@
     return '/' + lang + '/';
   }
 
-  function autoRedirect() {
-    // Never redirect bots, crawlers, LLMs, or link previewers
-    if (/bot|crawl|spider|slurp|facebookexternalhit|WhatsApp|ChatGPT|Anthropic|Claude|Perplexity/i.test(navigator.userAgent)) {
-      return;
-    }
-
-    // Only redirect on first visit (no stored preference)
+  function showLanguageSuggestion() {
     if (localStorage.getItem(STORAGE_KEY)) {
       return;
     }
@@ -53,21 +54,39 @@
     var currentLang = getCurrentLang();
     var browserLang = detectBrowserLang();
 
-    // Store current language as preference
-    localStorage.setItem(STORAGE_KEY, currentLang);
-
-    // Only auto-redirect from the default homepage (/)
-    // If user navigated to /en/, /nl/, etc. explicitly, respect that choice
-    var path = window.location.pathname;
-    if (currentLang !== DEFAULT_LANG) {
+    if (browserLang === currentLang) {
+      localStorage.setItem(STORAGE_KEY, currentLang);
       return;
     }
 
-    // Redirect if browser language differs from current page
-    if (browserLang !== currentLang) {
-      localStorage.setItem(STORAGE_KEY, browserLang);
-      window.location.href = getLangUrl(browserLang);
+    var banner = document.getElementById('langSuggestion');
+    if (!banner) { return; }
+
+    var langName = (LANG_NAMES[currentLang] && LANG_NAMES[currentLang][browserLang]) || browserLang;
+
+    var textEl = banner.querySelector('.lang-suggestion-text');
+    if (textEl) {
+      textEl.textContent = textEl.textContent.replace(/\{lang\}/g, langName);
     }
+
+    var switchBtn = document.getElementById('langSwitchBtn');
+    if (switchBtn) {
+      switchBtn.textContent = switchBtn.textContent.replace(/\{lang\}/g, langName);
+      switchBtn.href = getLangUrl(browserLang);
+      switchBtn.addEventListener('click', function () {
+        localStorage.setItem(STORAGE_KEY, browserLang);
+      });
+    }
+
+    var stayBtn = document.getElementById('langStayBtn');
+    if (stayBtn) {
+      stayBtn.addEventListener('click', function () {
+        localStorage.setItem(STORAGE_KEY, currentLang);
+        banner.style.display = 'none';
+      });
+    }
+
+    banner.style.display = '';
   }
 
   function highlightActiveLang() {
@@ -89,7 +108,6 @@
       items[i].addEventListener('click', function (e) {
         var lang = this.getAttribute('data-lang');
         localStorage.setItem(STORAGE_KEY, lang);
-        // Navigation happens via href
       });
     }
   }
@@ -98,6 +116,6 @@
   document.addEventListener('DOMContentLoaded', function () {
     highlightActiveLang();
     setupSwitcher();
-    autoRedirect();
+    showLanguageSuggestion();
   });
 })();
