@@ -173,6 +173,21 @@
             this.style.display = 'none';
         });
     }
+    // Stacking sections: adjust sticky top for tall sections
+    function updateStickyOffsets() {
+        var vh = window.innerHeight;
+        document.querySelectorAll('main#main > section').forEach(function (s) {
+            var h = s.offsetHeight;
+            s.style.top = (h > vh) ? (vh - h) + 'px' : '0px';
+        });
+        var footer = document.querySelector('footer.bg-dark');
+        if (footer) {
+            var fh = footer.offsetHeight;
+            footer.style.top = (fh > vh) ? (vh - fh) + 'px' : '0px';
+        }
+    }
+    window.addEventListener('load', updateStickyOffsets);
+    window.addEventListener('resize', updateStickyOffsets);
 })();
 
 // GTM conversion tracking
