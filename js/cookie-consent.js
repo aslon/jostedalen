@@ -11,18 +11,18 @@
         localStorage.removeItem(STORAGE_KEY);
         return null;
       }
-      return data.accepted;
+      return data;
     } catch (e) {
       return null;
     }
   }
 
-  function setConsent(accepted) {
+  function setConsent(categories) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      accepted: accepted,
+      categories: categories,
       timestamp: Date.now()
     }));
-    if (accepted) {
+    if (categories.analytics) {
       loadGTM();
     }
     hideBanner();
@@ -57,11 +57,8 @@
 
   function init() {
     var consent = getConsent();
-    if (consent === true) {
-      loadGTM();
-      return;
-    }
-    if (consent === false) {
+    if (consent && consent.categories) {
+      if (consent.categories.analytics) loadGTM();
       return;
     }
     // No preference yet — show banner
@@ -69,8 +66,25 @@
 
     var acceptBtn = document.getElementById('cookieAccept');
     var rejectBtn = document.getElementById('cookieReject');
-    if (acceptBtn) acceptBtn.addEventListener('click', function () { setConsent(true); });
-    if (rejectBtn) rejectBtn.addEventListener('click', function () { setConsent(false); });
+    var configBtn = document.getElementById('cookieConfigure');
+    var saveBtn = document.getElementById('cookieSave');
+    var mainScreen = document.getElementById('cookieMain');
+    var configScreen = document.getElementById('cookieConfig');
+
+    if (acceptBtn) acceptBtn.addEventListener('click', function () {
+      setConsent({ analytics: true });
+    });
+    if (rejectBtn) rejectBtn.addEventListener('click', function () {
+      setConsent({ analytics: false });
+    });
+    if (configBtn) configBtn.addEventListener('click', function () {
+      mainScreen.style.display = 'none';
+      configScreen.style.display = '';
+    });
+    if (saveBtn) saveBtn.addEventListener('click', function () {
+      var analyticsToggle = document.getElementById('cookieAnalytics');
+      setConsent({ analytics: analyticsToggle ? analyticsToggle.checked : false });
+    });
   }
 
   if (document.readyState === 'loading') {

@@ -1798,7 +1798,8 @@
                          data-label-email-body="{{tarifs_email_body}}"
                          data-label-all="{{tarifs_all}}"
                          data-label-footnote="{{tarifs_footnote}}"
-                         data-label-to="{{tarifs_to}}">
+                         data-label-to="{{tarifs_to}}"
+                         data-label-comment-option="{{tarifs_comment_option}}">
                     </div>
                 </div>
             </div>
@@ -1899,10 +1900,41 @@
     <!-- Cookie Consent Banner -->
     <div id="cookieConsent" class="cookie-banner" style="display:none;">
         <div class="cookie-banner-inner">
-            <p class="cookie-banner-text">{{cookie_message}}</p>
-            <div class="cookie-banner-buttons">
-                <button id="cookieAccept" class="btn-cookie-accept">{{cookie_accept}}</button>
-                <button id="cookieReject" class="btn-cookie-reject">{{cookie_reject}}</button>
+            <!-- Screen 1: main consent -->
+            <div id="cookieMain" class="cookie-banner-main">
+                <div class="cookie-banner-top">
+                    <button id="cookieReject" class="btn-cookie-skip">{{cookie_reject}} ›</button>
+                </div>
+                <p class="cookie-banner-text">{{cookie_message}}</p>
+                <div class="cookie-banner-buttons">
+                    <button id="cookieConfigure" class="btn-cookie-configure">{{cookie_configure}}</button>
+                    <button id="cookieAccept" class="btn-cookie-accept">{{cookie_accept}}</button>
+                </div>
+            </div>
+            <!-- Screen 2: cookie configuration -->
+            <div id="cookieConfig" class="cookie-banner-config" style="display:none;">
+                <h3 class="cookie-config-title">{{cookie_config_title}}</h3>
+                <div class="cookie-category">
+                    <div class="cookie-category-info">
+                        <strong>{{cookie_necessary}}</strong>
+                        <p>{{cookie_necessary_desc}}</p>
+                    </div>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" checked disabled>
+                        <span class="cookie-toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="cookie-category">
+                    <div class="cookie-category-info">
+                        <strong>{{cookie_analytics}}</strong>
+                        <p>{{cookie_analytics_desc}}</p>
+                    </div>
+                    <label class="cookie-toggle">
+                        <input type="checkbox" id="cookieAnalytics" checked>
+                        <span class="cookie-toggle-slider"></span>
+                    </label>
+                </div>
+                <button id="cookieSave" class="btn-cookie-accept cookie-save-btn">{{cookie_save}}</button>
             </div>
         </div>
     </div>

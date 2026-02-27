@@ -50,10 +50,15 @@
                 var end = week[1];
                 var price = week[2];
                 var promo = week.length > 3 ? week[3] : null;
-                var cls = price === null ? 'tarif-reserved' : 'tarif-available';
+                var comment = week.length > 4 ? week[4] : null;
+                var cls = price === null ? 'tarif-reserved' : (comment ? 'tarif-option' : 'tarif-available');
                 var priceText;
                 if (price === null) {
                     priceText = '<span class="tarif-reserved-text">' + labelReserved + ' <i class="bi bi-lock-fill"></i></span><span class="tarif-reserved-icon" aria-label="' + labelReserved + '"><i class="bi bi-lock-fill"></i></span>';
+                } else if (comment) {
+                    var commentLabel = container.getAttribute('data-label-comment-' + comment) || comment;
+                    priceText = formatPrice(price)
+                        + '<span class="tarif-comment">' + commentLabel + '</span>';
                 } else if (promo !== null) {
                     var pct = Math.ceil((price - promo) / price * 100);
                     priceText = '<span class="tarif-original">' + formatPrice(price) + '</span>'
