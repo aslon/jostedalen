@@ -116,6 +116,7 @@ footer.bg-dark { position: sticky; top: 0; z-index: 9; }
   text-transform: uppercase;
   font-size: 16px;
   transition: all 0.35s;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3);
 }
 #mainNav .navbar-brand:hover,
 #mainNav .navbar-brand:focus {
@@ -127,6 +128,7 @@ footer.bg-dark { position: sticky; top: 0; z-index: 9; }
   font-size: 13px;
   color: rgba(255, 255, 255, 0.85);
   padding: 0.5rem 1rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3);
 }
 #mainNav .nav-link:hover,
 #mainNav .nav-link:focus {
@@ -145,6 +147,7 @@ footer.bg-dark { position: sticky; top: 0; z-index: 9; }
 #mainNav.navbar-scrolled .navbar-brand {
   color: #fff;
   font-size: 14px;
+  text-shadow: none;
 }
 #mainNav.navbar-scrolled .navbar-brand:hover,
 #mainNav.navbar-scrolled .navbar-brand:focus {
@@ -152,6 +155,7 @@ footer.bg-dark { position: sticky; top: 0; z-index: 9; }
 }
 #mainNav.navbar-scrolled .nav-link {
   color: rgba(255, 255, 255, 0.85);
+  text-shadow: none;
 }
 #mainNav.navbar-scrolled .nav-link:hover,
 #mainNav.navbar-scrolled .nav-link:focus {
@@ -230,9 +234,9 @@ header .header-content .header-content-inner h1 {
 header .header-content .header-content-inner h3 {
   font-weight: 600;
   font-size: 1.2rem;
-  color: rgba(255,255,255,0.95);
+  color: #fff;
   margin-bottom: 5px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.4), 0 0 12px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4), 1px 1px 4px rgba(0,0,0,0.5), -1px -1px 4px rgba(0,0,0,0.5);
 }
 header .header-content .header-content-inner hr {
   margin: 25px auto;
@@ -1400,7 +1404,7 @@ html[lang="fr"] .review-toggle {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.4), 0 0 12px rgba(0,0,0,0.3);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.4), 1px 1px 4px rgba(0,0,0,0.5), -1px -1px 4px rgba(0,0,0,0.5);
 }
 .header-share a {
     font-size: 28px;
