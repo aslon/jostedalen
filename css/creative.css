@@ -1221,8 +1221,12 @@ html[lang="fr"] .review-toggle {
     .tarifs-table .tarif-price {
         font-size: 15px;
     }
+    .tarifs-table tbody tr {
+        transition: none;
+    }
     .tarifs-table tbody tr.tarif-available:hover {
         transform: none;
+        background-color: #fff;
     }
 }
 
