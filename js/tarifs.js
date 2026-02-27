@@ -92,10 +92,10 @@
                 html += '</tr>';
             });
             html += '</tbody></table>';
+            html += '</div>';
             if (labelFootnote) {
                 html += '<p class="tarifs-footnote">' + labelFootnote + '</p>';
             }
-            html += '</div>';
         });
         container.innerHTML = html;
 

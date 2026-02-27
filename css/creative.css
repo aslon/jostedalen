@@ -1053,11 +1053,11 @@ html[lang="fr"] .review-toggle {
     box-shadow: 0 8px 32px rgba(0,0,0,0.25);
     position: relative;
 }
-.tarifs-table-wrapper + .tarifs-table-note {
-    max-width: 720px;
-    margin: 12px auto 0;
+.tarifs-table-wrapper + .tarifs-footnote {
+    margin-top: 12px;
 }
-.tarifs-table-wrapper + .tarifs-table-note + .tarifs-table-wrapper {
+.tarifs-table-wrapper + .tarifs-footnote + .tarifs-season-divider + .tarifs-table-wrapper,
+.tarifs-table-wrapper + .tarifs-season-divider + .tarifs-table-wrapper {
     margin-top: 40px;
 }
 .tarifs-season-divider {
