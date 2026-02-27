@@ -1398,10 +1398,9 @@ html[lang="fr"] .review-toggle {
     font-weight: 600;
     color: rgba(255, 255, 255, 0.95);
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.4), 0 0 12px rgba(0,0,0,0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.5), 0 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6), 0 1px 3px rgba(0,0,0,0.4), 0 0 12px rgba(0,0,0,0.3);
 }
 .header-share a {
     font-size: 28px;
