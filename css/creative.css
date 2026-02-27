@@ -1035,26 +1035,41 @@ html[lang="fr"] .review-toggle {
 }
 .tarifs-table-wrapper {
     overflow-x: auto;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     -webkit-overflow-scrolling: touch;
 }
+.tarifs-table-wrapper + .tarifs-table-note {
+    max-width: 700px;
+    margin: 12px auto 0;
+}
+.tarifs-table-wrapper + .tarifs-table-note + .tarifs-table-wrapper {
+    margin-top: 40px;
+}
+.tarifs-season-divider {
+    width: 60px;
+    height: 1px;
+    background: #ccc;
+    margin: 40px auto 0;
+}
 .tarifs-table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 14px;
 }
 .tarifs-table thead th {
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
     color: #fff;
-    padding: 12px 10px;
+    padding: 16px 10px;
     text-align: center;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     text-transform: uppercase;
+    letter-spacing: 3px;
 }
 .tarifs-table thead th:last-child {
     text-align: center;
@@ -1063,10 +1078,17 @@ html[lang="fr"] .review-toggle {
     font-size: 13px;
 }
 .tarifs-table tbody td {
-    padding: 8px 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 14px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     white-space: nowrap;
     text-align: center;
+}
+.tarifs-table tbody tr {
+    transition: background-color 0.2s, transform 0.2s;
+}
+.tarifs-table tbody tr.tarif-available:hover {
+    background-color: #f5f5f5;
+    transform: translateX(4px);
 }
 .tarifs-table .tarif-available {
     background-color: #fff;
@@ -1075,12 +1097,15 @@ html[lang="fr"] .review-toggle {
     background-color: #f0f0f0;
 }
 .tarifs-table .tarif-reserved {
-    background-color: #e8e8e8;
-    color: #999;
+    background-color: #fff;
+    color: #ccc;
+    font-size: 13px;
 }
 .tarifs-table .tarif-price {
     text-align: center;
     font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.5px;
 }
 .tarif-original {
     text-decoration: line-through;
@@ -1095,13 +1120,15 @@ html[lang="fr"] .review-toggle {
 }
 .tarif-badge {
     display: inline-block;
-    background: #1a1a1a;
-    color: #fff;
+    background: #fff;
+    color: #1a1a1a;
     font-size: 11px;
     font-weight: 700;
-    padding: 1px 5px;
+    padding: 2px 7px;
     border-radius: 3px;
+    border: 1px solid #1a1a1a;
     margin-left: 6px;
+    letter-spacing: 0.5px;
 }
 .tarif-comment {
     display: inline-block;
@@ -1177,10 +1204,19 @@ html[lang="fr"] .review-toggle {
     }
     .tarifs-table tbody td,
     .tarifs-table thead th {
-        padding: 6px 6px;
+        padding: 10px 6px;
+    }
+    .tarifs-table thead th {
+        letter-spacing: 2px;
     }
     .tarif-book a {
         font-size: 16px;
+    }
+    .tarifs-table .tarif-price {
+        font-size: 15px;
+    }
+    .tarifs-table tbody tr.tarif-available:hover {
+        transform: none;
     }
 }
 
@@ -1446,12 +1482,13 @@ html[lang="fr"] .review-toggle {
 }
 .btn-tarifs-filter {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 8px 20px;
-    border-radius: 300px;
-    border: 2px solid #1a1a1a;
+    letter-spacing: 1px;
+    padding: 7px 18px;
+    border-radius: 24px;
+    border: 1px solid #1a1a1a;
     background: transparent;
     color: #1a1a1a;
     margin: 4px;

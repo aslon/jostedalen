@@ -37,6 +37,7 @@
     function render(data) {
         var html = '';
         data.seasons.forEach(function (season, idx) {
+            if (idx > 0) html += '<div class="tarifs-season-divider" data-season-index="' + idx + '"></div>';
             var seasonName = season.name[lang] || season.name.fr;
             html += '<div class="tarifs-table-wrapper" data-season-index="' + idx + '">';
             html += '<table class="tarifs-table">';
@@ -117,6 +118,9 @@
                     var season = btn.getAttribute('data-season');
                     container.querySelectorAll('.tarifs-table-wrapper').forEach(function (wrapper) {
                         wrapper.style.display = (season === 'all' || wrapper.getAttribute('data-season-index') === season) ? '' : 'none';
+                    });
+                    container.querySelectorAll('.tarifs-season-divider').forEach(function (div) {
+                        div.style.display = (season === 'all') ? '' : 'none';
                     });
                 });
             });
