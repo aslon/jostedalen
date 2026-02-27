@@ -318,10 +318,10 @@
                         <a class="nav-link" href="#avis">{{nav_avis}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">{{nav_faq}}</a>
+                        <a class="nav-link" href="#tarifs">{{nav_tarifs}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tarifs">{{nav_tarifs}}</a>
+                        <a class="nav-link" href="#faq">{{nav_faq}}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">{{nav_contact}}</a>
@@ -1257,8 +1257,35 @@
         </div>
     </section>
 
+    <!-- Tarifs -->
+    <section class="bg-primary-darken" id="tarifs" aria-label="{{section_tarifs_aria}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h2 class="section-heading text-center">{{section_tarifs_title}}</h2>
+                    <hr style="border-color:#fff; margin-bottom:30px;">
+                    <p class="text-center tarifs-contact-msg">{{tarifs_contact_msg}} <span class="tarifs-contact-links"><a href="#" data-phone-link="wa" data-wa-msg="{{contact_whatsapp_message}}" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> {{contact_whatsapp}}</a> <span class="tarifs-contact-sep">|</span> <a href="#" data-phone-link="sms" data-sms-msg="{{contact_sms_message}}"><i class="bi bi-phone"></i> {{contact_imessage}}</a> <span class="tarifs-contact-sep">|</span> <a href="#" class="obfuscated-email" data-eu="Y2hhbGV0Lmpvc3RlZGFsZW4=" data-ed="Z21haWwuY29t" data-es="{{contact_email_subject}}" data-eb="{{contact_email_body}}"><i class="bi bi-envelope"></i> {{contact_email}}</a></span></p>
+                    <div id="tarifsContainer"
+                         data-source="/data/tarifs.json"
+                         data-label-from="{{tarifs_from}}"
+                         data-label-day="{{tarifs_day}}"
+                         data-label-reserved="{{tarifs_reserved}}"
+                         data-label-note="{{tarifs_note}}"
+                         data-label-book-msg="{{tarifs_book_msg}}"
+                         data-label-email-subject="{{tarifs_email_subject}}"
+                         data-label-email-body="{{tarifs_email_body}}"
+                         data-label-all="{{tarifs_all}}"
+                         data-label-footnote="{{tarifs_footnote}}"
+                         data-label-to="{{tarifs_to}}"
+                         data-label-comment-option="{{tarifs_comment_option}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ -->
-    <section class="bg-primary-darken" id="faq" aria-label="{{section_faq_aria}}">
+    <section class="bg-primary" id="faq" aria-label="{{section_faq_aria}}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
@@ -1773,33 +1800,6 @@
                                 <div class="accordion-body">{{faq_55_a}}</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tarifs -->
-    <section class="bg-primary" id="tarifs" aria-label="{{section_tarifs_aria}}">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
-                    <h2 class="section-heading text-center" style="color:#1a1a1a;">{{section_tarifs_title}}</h2>
-                    <hr style="border-color:#1a1a1a; margin-bottom:30px;">
-                    <p class="text-center tarifs-contact-msg">{{tarifs_contact_msg}} <span class="tarifs-contact-links"><a href="#" data-phone-link="wa" data-wa-msg="{{contact_whatsapp_message}}" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> {{contact_whatsapp}}</a> <span class="tarifs-contact-sep">|</span> <a href="#" data-phone-link="sms" data-sms-msg="{{contact_sms_message}}"><i class="bi bi-phone"></i> {{contact_imessage}}</a> <span class="tarifs-contact-sep">|</span> <a href="#" class="obfuscated-email" data-eu="Y2hhbGV0Lmpvc3RlZGFsZW4=" data-ed="Z21haWwuY29t" data-es="{{contact_email_subject}}" data-eb="{{contact_email_body}}"><i class="bi bi-envelope"></i> {{contact_email}}</a></span></p>
-                    <div id="tarifsContainer"
-                         data-source="/data/tarifs.json"
-                         data-label-from="{{tarifs_from}}"
-                         data-label-day="{{tarifs_day}}"
-                         data-label-reserved="{{tarifs_reserved}}"
-                         data-label-note="{{tarifs_note}}"
-                         data-label-book-msg="{{tarifs_book_msg}}"
-                         data-label-email-subject="{{tarifs_email_subject}}"
-                         data-label-email-body="{{tarifs_email_body}}"
-                         data-label-all="{{tarifs_all}}"
-                         data-label-footnote="{{tarifs_footnote}}"
-                         data-label-to="{{tarifs_to}}"
-                         data-label-comment-option="{{tarifs_comment_option}}">
                     </div>
                 </div>
             </div>
