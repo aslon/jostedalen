@@ -299,10 +299,16 @@ header .header-content .header-content-inner p {
 .portfolio-box img {
   width: 100%;
   height: auto;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 .portfolio-box:hover img {
   transform: scale(1.05);
+}
+#photo .portfolio-box img {
+  filter: grayscale(80%) contrast(1.1);
+}
+#photo .portfolio-box:hover img {
+  filter: grayscale(0%) contrast(1);
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
@@ -1240,6 +1246,11 @@ html[lang="fr"] .review-toggle {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    filter: grayscale(80%) contrast(1.1);
+    transition: filter 0.4s;
+}
+.map-container:hover {
+    filter: grayscale(0%) contrast(1);
 }
 .map-container iframe {
     width: 100%;
