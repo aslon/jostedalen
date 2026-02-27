@@ -210,3 +210,21 @@ document.addEventListener('click', function (e) {
     else if (link.closest('header')) section = 'share';
     window.dataLayer.push({ event: event, link_url: href, click_section: section });
 });
+
+// Header image reveal: grayscale → color
+(function () {
+    var img = document.querySelector('.header-bg');
+    if (!img) return;
+    var timer = null;
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                timer = setTimeout(function () { img.classList.add('revealed'); }, 1000);
+            } else {
+                if (timer) { clearTimeout(timer); timer = null; }
+                img.classList.remove('revealed');
+            }
+        });
+    }, { threshold: 0.3 });
+    observer.observe(img);
+})();

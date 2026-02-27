@@ -196,6 +196,11 @@ header {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: grayscale(100%);
+  transition: filter 2.5s ease-in-out;
+}
+.header-bg.revealed {
+  filter: grayscale(0%);
 }
 header::before {
   content: '';
@@ -306,6 +311,7 @@ header .header-content .header-content-inner p {
 }
 #photo .portfolio-box img {
   filter: grayscale(80%) contrast(1.1);
+  transition: filter 1.5s ease-in-out, transform 0.4s;
 }
 #photo .portfolio-box:hover img {
   filter: grayscale(0%) contrast(1);
@@ -1268,7 +1274,7 @@ html[lang="fr"] .review-toggle {
 }
 .plan-zoom img {
     filter: grayscale(80%) contrast(1.1);
-    transition: filter 0.4s;
+    transition: filter 1.5s ease-in-out;
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
@@ -1282,7 +1288,7 @@ html[lang="fr"] .review-toggle {
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
     filter: grayscale(80%) contrast(1.1);
-    transition: filter 0.4s;
+    transition: filter 1.5s ease-in-out;
 }
 .map-container:hover {
     filter: grayscale(0%) contrast(1);
