@@ -1223,6 +1223,16 @@ html[lang="fr"] .review-toggle {
 /* ===== Plans Zoom ===== */
 .plan-zoom {
     cursor: zoom-in;
+    padding: 6px;
+}
+.plan-zoom img {
+    filter: grayscale(80%) contrast(1.1);
+    transition: filter 0.4s;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+.plan-zoom:hover img {
+    filter: grayscale(0%) contrast(1);
 }
 
 /* ===== Map ===== */
