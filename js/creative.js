@@ -173,13 +173,14 @@
             this.style.display = 'none';
         });
     }
-    // Stacking sections: adjust sticky top for tall sections
+    // Stacking section: adjust sticky top for contact + footer
     function updateStickyOffsets() {
         var vh = window.innerHeight;
-        document.querySelectorAll('main#main > section').forEach(function (s) {
-            var h = s.offsetHeight;
-            s.style.top = (h > vh) ? (vh - h) + 'px' : '0px';
-        });
+        var contact = document.getElementById('contact');
+        if (contact) {
+            var ch = contact.offsetHeight;
+            contact.style.top = (ch > vh) ? (vh - ch) + 'px' : '0px';
+        }
         var footer = document.querySelector('footer.bg-dark');
         if (footer) {
             var fh = footer.offsetHeight;
