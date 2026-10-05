@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addc8081-5505-4f2b-ab7c-1e80c9149789" name="Default" comment="maj tarifs.json" />
+    <list default="true" id="addc8081-5505-4f2b-ab7c-1e80c9149789" name="Default" comment="maj tarifs.json">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tarifs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/tarifs.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +18,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="1798" />
+    <option name="cachedIndexableFilesCount" value="247" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileEditorManager">
@@ -133,23 +136,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000000000018" />
-      <entry key="MS500" value="1.0017873557438222" />
-      <entry key="S2" value="1.2598392630937538" />
-      <entry key="S5" value="1.9645010440894268" />
-      <entry key="S10" value="2.6746319315531863" />
-      <entry key="S30" value="4.079886334938529" />
-      <entry key="S60" value="5.0886040948253894" />
-      <entry key="M2" value="5.885507106734511" />
-      <entry key="M5" value="6.507938265174181" />
-      <entry key="M10" value="6.74545371595371" />
-      <entry key="M15" value="6.828345414442486" />
-      <entry key="M30" value="6.913177457184907" />
-      <entry key="H1" value="6.956336730058204" />
-      <entry key="H2" value="6.9781049625897955" />
-      <entry key="H4" value="6.989036580047007" />
-      <entry key="D1" value="6.998170550523109" />
-      <entry key="W1" value="6.9997385958269565" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0" />
+      <entry key="M5" value="1.0" />
+      <entry key="M10" value="1.0" />
+      <entry key="M15" value="1.0" />
+      <entry key="M30" value="1.0" />
+      <entry key="H1" value="1.0" />
+      <entry key="H2" value="1.0" />
+      <entry key="H4" value="1.0000000001050626" />
+      <entry key="D1" value="1.03870543506019" />
+      <entry key="W1" value="2.88629468123987" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -171,23 +174,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9526379980439547" />
-      <entry key="MS500" value="0.9921154087953844" />
-      <entry key="S2" value="1.2568388343859536" />
-      <entry key="S5" value="1.9625736798606142" />
-      <entry key="S10" value="2.6718622768352533" />
-      <entry key="S30" value="4.06935701622685" />
-      <entry key="S60" value="5.077634188419079" />
-      <entry key="M2" value="5.87753586655514" />
-      <entry key="M5" value="6.503941701062257" />
-      <entry key="M10" value="6.743298670301289" />
-      <entry key="M15" value="6.8268720547860555" />
-      <entry key="M30" value="6.912421969527336" />
-      <entry key="H1" value="6.955954192975536" />
-      <entry key="H2" value="6.9779124841498446" />
-      <entry key="H4" value="6.988940036893287" />
-      <entry key="D1" value="6.998154417660112" />
-      <entry key="W1" value="6.999736290093786" />
+      <entry key="MS100" value="0.005961950035002182" />
+      <entry key="MS500" value="0.3589861276558588" />
+      <entry key="S2" value="0.7740507158253322" />
+      <entry key="S5" value="0.9026258493019534" />
+      <entry key="S10" value="0.9500662341657835" />
+      <entry key="S30" value="0.983070418043403" />
+      <entry key="S60" value="0.9914990761687088" />
+      <entry key="M2" value="0.9957404662705582" />
+      <entry key="M5" value="0.9982940043130385" />
+      <entry key="M10" value="0.9991466380432046" />
+      <entry key="M15" value="0.9994310110840294" />
+      <entry key="M30" value="0.9997154650619492" />
+      <entry key="H1" value="0.9998577224095182" />
+      <entry key="H2" value="0.999928858674215" />
+      <entry key="H4" value="0.9999644288095014" />
+      <entry key="D1" value="1.0386988860117614" />
+      <entry key="W1" value="2.886290984601433" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -411,6 +414,7 @@
       <workItem from="1779285164162" duration="1853000" />
       <workItem from="1782200877323" duration="76000" />
       <workItem from="1788162654229" duration="634000" />
+      <workItem from="1789118212995" duration="2970000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1457191775150</created>
@@ -624,7 +628,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788162907243</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1789118275869</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1789118275869</updated>
+    </task>
+    <task id="LOCAL-00031" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1790694406598</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1790694406598</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
