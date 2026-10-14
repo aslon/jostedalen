@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addc8081-5505-4f2b-ab7c-1e80c9149789" name="Default" comment="maj tarifs.json">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/tarifs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/tarifs.json" afterDir="false" />
-    </list>
+    <list default="true" id="addc8081-5505-4f2b-ab7c-1e80c9149789" name="Default" comment="maj tarifs.json" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -414,7 +411,7 @@
       <workItem from="1779285164162" duration="1853000" />
       <workItem from="1782200877323" duration="76000" />
       <workItem from="1788162654229" duration="634000" />
-      <workItem from="1789118212995" duration="2970000" />
+      <workItem from="1789118212995" duration="3253000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1457191775150</created>
@@ -644,7 +641,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790694406598</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1791186060536</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1791186060536</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
