@@ -1,4 +1,17 @@
 {
+  "_doc": {
+    "format": "[date_debut, date_fin, prix, promo, commentaire]",
+    "prix": "nombre (ex: 3590) ou null = reserve (cadenas)",
+    "promo": "nombre = prix barre + prix promo + badge -x%, sinon null",
+    "commentaire": "cle traduite, ex: \"option\" = badge Option en cours (prix affiche, fond vert)",
+    "exemples": [
+      ["2027-01-16", "2027-01-23", 4090],
+      ["2027-01-16", "2027-01-23", 4090, 3690],
+      ["2027-01-16", "2027-01-23", 4090, null, "option"],
+      ["2027-01-16", "2027-01-23", null]
+    ],
+    "attention": "ne jamais mettre de texte a la place du prix, cela casse l'affichage du tableau"
+  },
   "seasons": [
 
     {
