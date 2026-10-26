@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addc8081-5505-4f2b-ab7c-1e80c9149789" name="Default" comment="maj tarifs.json" />
+    <list default="true" id="addc8081-5505-4f2b-ab7c-1e80c9149789" name="Default" comment="maj tarifs.json">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +17,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="247" />
+    <option name="cachedIndexableFilesCount" value="275" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileEditorManager">
@@ -139,17 +141,17 @@
       <entry key="S5" value="1.0" />
       <entry key="S10" value="1.0" />
       <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0000000001050626" />
-      <entry key="D1" value="1.03870543506019" />
-      <entry key="W1" value="2.88629468123987" />
+      <entry key="S60" value="1.0000000000000004" />
+      <entry key="M2" value="1.000000041729027" />
+      <entry key="M5" value="1.0049892401626928" />
+      <entry key="M10" value="1.2990333427079812" />
+      <entry key="M15" value="2.1992994121269946" />
+      <entry key="M30" value="5.868507258438643" />
+      <entry key="H1" value="10.853129529912374" />
+      <entry key="H2" value="15.032769127625189" />
+      <entry key="H4" value="17.751246714229588" />
+      <entry key="D1" value="20.45498568139216" />
+      <entry key="W1" value="22.793180907897504" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -171,24 +173,27 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.005961950035002182" />
-      <entry key="MS500" value="0.3589861276558588" />
-      <entry key="S2" value="0.7740507158253322" />
-      <entry key="S5" value="0.9026258493019534" />
-      <entry key="S10" value="0.9500662341657835" />
-      <entry key="S30" value="0.983070418043403" />
-      <entry key="S60" value="0.9914990761687088" />
-      <entry key="M2" value="0.9957404662705582" />
-      <entry key="M5" value="0.9982940043130385" />
-      <entry key="M10" value="0.9991466380432046" />
-      <entry key="M15" value="0.9994310110840294" />
-      <entry key="M30" value="0.9997154650619492" />
-      <entry key="H1" value="0.9998577224095182" />
-      <entry key="H2" value="0.999928858674215" />
-      <entry key="H4" value="0.9999644288095014" />
-      <entry key="D1" value="1.0386988860117614" />
-      <entry key="W1" value="2.886290984601433" />
+      <entry key="MS100" value="0.01089643489336254" />
+      <entry key="MS500" value="0.4050017368160229" />
+      <entry key="S2" value="0.7977452398090329" />
+      <entry key="S5" value="0.9135781174731071" />
+      <entry key="S10" value="0.955812804618722" />
+      <entry key="S30" value="0.9850485016936702" />
+      <entry key="S60" value="0.992496096563443" />
+      <entry key="M2" value="0.9962410248234284" />
+      <entry key="M5" value="1.0034816433042992" />
+      <entry key="M10" value="1.2982235053068916" />
+      <entry key="M15" value="2.1986514630024443" />
+      <entry key="M30" value="5.867967962712465" />
+      <entry key="H1" value="10.852714583888647" />
+      <entry key="H2" value="15.032500775508899" />
+      <entry key="H4" value="17.75109273144862" />
+      <entry key="D1" value="20.454956177798792" />
+      <entry key="W1" value="22.79317385602872" />
     </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -412,6 +417,7 @@
       <workItem from="1782200877323" duration="76000" />
       <workItem from="1788162654229" duration="634000" />
       <workItem from="1789118212995" duration="3253000" />
+      <workItem from="1791987489211" duration="6983000" />
     </task>
     <task id="LOCAL-00001" summary="m">
       <created>1457191775150</created>
@@ -649,7 +655,55 @@
       <option name="project" value="LOCAL" />
       <updated>1791186060536</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1791987520836</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1791987520836</updated>
+    </task>
+    <task id="LOCAL-00034" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1791987636087</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1791987636087</updated>
+    </task>
+    <task id="LOCAL-00035" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1791987690112</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1791987690112</updated>
+    </task>
+    <task id="LOCAL-00036" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1791988451184</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1791988451184</updated>
+    </task>
+    <task id="LOCAL-00037" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1791988856554</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1791988856554</updated>
+    </task>
+    <task id="LOCAL-00038" summary="maj tarifs.json">
+      <option name="closed" value="true" />
+      <created>1792073143915</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1792073143915</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
